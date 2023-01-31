@@ -58,20 +58,20 @@
                 <div class="social"></div>
                 <div class="registration">
                     <a href="members/signin.html">Sign In</a>
-                    <a href="members/become-a-member.html"">Become a Member</a>
+                    <a href="members/become-a-member.html">Become a Member</a>
                                 </div>
         <div class=" menu">
                         <div class="menuinner">
-                            <a href="index.html" class="on"">Home</a>
-                                    <a href=" about.html"">About Lots</a>
-                            <a href="membership.html"">Membership</a>
-                                    <a href=" information-service.html"">Information Service</a>
-                            <a href="publications.html"">Publications</a>
-                                    <a href=" sales.html"">Sales</a>
-                            <a href="news.html"">News</a>
-                                    <a href=" events.html"">Events</a>
-                            <a href="links.html"">Links</a>
-                                    <a href=" contact-us.html"">Contact Us</a>
+                            <a href="index.html" class="on">Home</a>
+                                    <a href=" about.html">About Lots</a>
+                            <a href="membership.html">Membership</a>
+                                    <a href=" information-service.html">Information Service</a>
+                            <a href="publications.html">Publications</a>
+                                    <a href=" sales.html">Sales</a>
+                            <a href="news.html">News</a>
+                                    <a href=" events.html">Events</a>
+                            <a href="links.html">Links</a>
+                                    <a href=" contact-us.html">Contact Us</a>
                         </div>
                 </div>
             </nav>
@@ -81,8 +81,15 @@
     <div class="message-container"></div>
     {% endif %}
         
-        
-        <article class="home noaside">
+    {% block page_header %}
+    {% endblock %}
+    
+    {% block content %}
+    {% endblock %}
+    
+    {% block postloadjs %}
+    {% endblock %}
+        <!-- <article class="home noaside">
             <div class="intro">
                 <div id="heroimagecontainer">
                     <div id="slidecontainer" style="width:500%" class="cf">
@@ -298,7 +305,7 @@
                     <a href="events.html" class="button chevron red">See all events</a>
                 </div>
             </div>
-        </article>
+        </article> -->
 
         <footer>
             <nav>
