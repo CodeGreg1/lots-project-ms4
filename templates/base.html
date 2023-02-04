@@ -5,28 +5,29 @@
 
 <head>
     {% block meta %}
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     {% endblock %}
 
     {% block extra_meta %}
     {% endblock %}
 
     {% block corecss %}
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap-grid.min.css" 
     integrity="sha512-JQksK36WdRekVrvdxNyV3B0Q1huqbTkIQNbz1dlcFVgNynEMRl0F8OSqOGdVppLUDIvsOejhr/W5L3G/b3J+8w==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Specific LOTS CSS -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <link rel="stylesheet" type="text/css" href="css/dist/app.min.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link rel="stylesheet" type="text/css" href="css/dist/app.min.css" /> -->
+    <link rel="stylesheet" href="{% static '/css/base.css' %}">
     {% endblock %}
     
     {% block extra_css %}
@@ -34,11 +35,12 @@
     
     {% block corejs %}
     <!-- Bootstrap -->
+    <script src="https://kit.fontawesome.com/9f41e2550b.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" 
     integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" 
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Specific LOTS JS -->
-    <script type="text/javascript" src="js/dist/app.min.js"></script>
+    <!-- <script type="text/javascript" src="js/dist/app.min.js"></script> -->
     {% endblock %}
     
     {% block extra_js %}
@@ -121,20 +123,20 @@
                 <div class="registration">
                     <a href="members/signin.html">Sign In</a>
                     <a href="members/become-a-member.html">Become a Member</a>
-                                </div>
-        <div class=" menu">
-                        <div class="menuinner">
-                            <a href="index.html" class="on">Home</a>
-                                    <a href=" about.html">About Lots</a>
-                            <a href="membership.html">Membership</a>
-                                    <a href=" information-service.html">Information Service</a>
-                            <a href="publications.html">Publications</a>
-                                    <a href=" sales.html">Sales</a>
-                            <a href="news.html">News</a>
-                                    <a href=" events.html">Events</a>
-                            <a href="links.html">Links</a>
-                                    <a href=" contact-us.html">Contact Us</a>
-                        </div>
+                </div>
+                <div class=" menu">
+                    <div class="menuinner">
+                        <a href="index.html" class="on">Home</a>
+                                <a href=" about.html">About Lots</a>
+                        <a href="membership.html">Membership</a>
+                                <a href=" information-service.html">Information Service</a>
+                        <a href="publications.html">Publications</a>
+                                <a href=" sales.html">Sales</a>
+                        <a href="news.html">News</a>
+                                <a href=" events.html">Events</a>
+                        <a href="links.html">Links</a>
+                                <a href=" contact-us.html">Contact Us</a>
+                    </div>
                 </div>
             </nav>
         </header>
