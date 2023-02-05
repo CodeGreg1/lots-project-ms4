@@ -1,7 +1,6 @@
-{% load static %}
-
 <!DOCTYPE html>
 <html>
+    {% load static %}
 
 <head>
     {% block meta %}
@@ -14,34 +13,38 @@
     {% endblock %}
 
     {% block corecss %}
-    <!-- Font Awesome -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap-grid.min.css" 
-    integrity="sha512-JQksK36WdRekVrvdxNyV3B0Q1huqbTkIQNbz1dlcFVgNynEMRl0F8OSqOGdVppLUDIvsOejhr/W5L3G/b3J+8w==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Specific LOTS CSS -->
-    <!-- <link rel="stylesheet" type="text/css" href="css/styles.css" />
-        <link rel="stylesheet" type="text/css" href="css/dist/app.min.css" /> -->
-    <link rel="stylesheet" href="{% static '/css/base.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
-    
+
     {% block extra_css %}
     {% endblock %}
-    
+
     {% block corejs %}
+    <!-- <script src="https://kit.fontawesome.com/9f41e2550b.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/4863a75fd6.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    {% endblock %}
+    <!-- Google Fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> -->
     <!-- Bootstrap -->
-    <script src="https://kit.fontawesome.com/9f41e2550b.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" 
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap-grid.min.css" 
+    integrity="sha512-JQksK36WdRekVrvdxNyV3B0Q1huqbTkIQNbz1dlcFVgNynEMRl0F8OSqOGdVppLUDIvsOejhr/W5L3G/b3J+8w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <!-- Specific LOTS CSS -->
+    <!-- <link rel="stylesheet" href="{% static 'css/base.css' %}"> -->
+
+
+    <!-- Font Awesome -->
+    <!-- Bootstrap -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" 
     integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <!-- Specific LOTS JS -->
     <!-- <script type="text/javascript" src="js/dist/app.min.js"></script> -->
-    {% endblock %}
     
     {% block extra_js %}
     {% endblock %}
@@ -53,7 +56,7 @@
 </head>
 <body>
     <header class="container-fluid fixed-top">
-        <div class="row">
+        <div class="row tophead">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
                     <h2 class="logo-font text-black my-0">
@@ -114,28 +117,19 @@
                 </ul>
             </div>
         </div>
-
-
-            <h1>LOTS</h1>
             <nav>
-                <em class="hamburger"></em>
-                <div class="social"></div>
-                <div class="registration">
-                    <a href="members/signin.html">Sign In</a>
-                    <a href="members/become-a-member.html">Become a Member</a>
-                </div>
                 <div class=" menu">
                     <div class="menuinner">
-                        <a href="index.html" class="on">Home</a>
-                                <a href=" about.html">About Lots</a>
-                        <a href="membership.html">Membership</a>
-                                <a href=" information-service.html">Information Service</a>
-                        <a href="publications.html">Publications</a>
-                                <a href=" sales.html">Sales</a>
-                        <a href="news.html">News</a>
-                                <a href=" events.html">Events</a>
-                        <a href="links.html">Links</a>
-                                <a href=" contact-us.html">Contact Us</a>
+                        <a href="index.html" class="text-white">Home</a>
+                                <a href=" about.html" class="text-white">About Lots</a>
+                        <a href="membership.html" class="text-white">Membership</a>
+                                <a href=" information-service.html" class="text-white">Information Service</a>
+                        <a href="publications.html" class="text-white">Publications</a>
+                                <a href=" sales.html" class="text-white">Sales</a>
+                        <a href="news.html" class="text-white">News</a>
+                                <a href=" events.html" class="text-white">Events</a>
+                        <a href="links.html" class="text-white">Links</a>
+                                <a href=" contact-us.html" class="text-white">Contact Us</a>
                     </div>
                 </div>
             </nav>
@@ -153,224 +147,6 @@
     
     {% block postloadjs %}
     {% endblock %}
-        <!-- <article class="home noaside">
-            <div class="intro">
-                <div id="heroimagecontainer">
-                    <div id="slidecontainer" style="width:500%" class="cf">
-                        <div class="slide" style="width:20%">
-                            <figure class="heroimage">
-                                <a href="#"
-                                    onClick="App.GoogleAnalytics.DelayedTrackEvent('Homepage Slideshow', 'click', 'Bus1','#'); return false;">
-                                    <img src="dynamic/slideshows/2000x1000/10.jpg" id="slideshowimage0" data-loaded="0"
-                                        data-src="dynamic/slideshows/2000x1000/10.jpg" />
-                                </a>
-                                <figcaption>Bus1</figcaption>
-                            </figure>
-                        </div>
-                        <div class="slide" style="width:20%">
-                            <figure class="heroimage">
-                                <a href="#"
-                                    onClick="App.GoogleAnalytics.DelayedTrackEvent('Homepage Slideshow', 'click', 'Bus2','#'); return false;">
-                                    <img src="img/placeholder.jpg" id="slideshowimage1" data-loaded="0"
-                                        data-src="dynamic/slideshows/2000x1000/6.jpg" />
-                                </a>
-                                <figcaption>Bus2</figcaption>
-                            </figure>
-                        </div>
-                        <div class="slide" style="width:20%">
-                            <figure class="heroimage">
-                                <a href="#"
-                                    onClick="App.GoogleAnalytics.DelayedTrackEvent('Homepage Slideshow', 'click', 'Bus3','#'); return false;">
-                                    <img src="img/placeholder.jpg" id="slideshowimage2" data-loaded="0"
-                                        data-src="dynamic/slideshows/2000x1000/7.jpg" />
-                                </a>
-                                <figcaption>Bus3</figcaption>
-                            </figure>
-                        </div>
-                        <div class="slide" style="width:20%">
-                            <figure class="heroimage">
-                                <a href="#"
-                                    onClick="App.GoogleAnalytics.DelayedTrackEvent('Homepage Slideshow', 'click', 'Bus4','#'); return false;">
-                                    <img src="img/placeholder.jpg" id="slideshowimage3" data-loaded="0"
-                                        data-src="dynamic/slideshows/2000x1000/8.jpg" />
-                                </a>
-                                <figcaption>Bus4</figcaption>
-                            </figure>
-                        </div>
-                        <div class="slide" style="width:20%">
-                            <figure class="heroimage">
-                                <a href="#"
-                                    onClick="App.GoogleAnalytics.DelayedTrackEvent('Homepage Slideshow', 'click', 'Bus5','#'); return false;">
-                                    <img src="img/placeholder.jpg" id="slideshowimage4" data-loaded="0"
-                                        data-src="dynamic/slideshows/2000x1000/9.jpg" />
-                                </a>
-                                <figcaption>Bus5</figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <h2>
-                    Welcome to LOTS </h2>
-                <p><strong>The London Omnibus Traction Society was founded in 1964, and now has one of the largest
-                        memberships of any bus enthusiasts' organisation in the UK. </strong></p>
-                <p><strong>For those who are already members, Welcome to our new website! And to those London bus
-                        enthusiasts who have yet to join we are proud to offer you the many benefits of doing so. So
-                        please enjoy our website and see what&rsquo;s out there!</strong></p>
-                <p></p>
-            </div>
-            <div class="membership">
-                <h2>Membership</h2>
-                <p>Becoming a LOTS member means you&rsquo;ll receive both our information-packed TLB Newsletter and our
-                    quarterly London Bus Magazine (or whichever one of these you choose).</p>
-                <p>Not only will you receive annual subscriptions for our monthly and quarterly publications, but you
-                    will get exclusive access to our monthly meetings too.</p>
-                <p>By joining you will also become part of a friendly and welcoming community of London bus enthusiasts
-                    and benefit from a wealth of knowledge and expertise. So join us on a fantastic bus journey from
-                    Aylesbury to Sevenoaks and Harlow to Virginia Water with the whole of London in between!</p>
-                <div class="two-buttons">
-                    <a href="members/become-a-member.html" class="button chevron red">Become a Member</a>
-                    <a href="members/sign-in.html" class="button chevron red">Renew Membership</a>
-                </div>
-            </div>
-            <div class="member_panels_container">
-                <div class="member_panels">
-                    <h3>Annual Membership (TLB + LBM)</h3>
-                    <h4>Includes 12 issues of THE LONDON BUS plus 4 issues of LONDON BUS MAGAZINE</h4>
-                    <p>
-                        £47.00 UK<br />
-                        £57.00 Europe<br />
-                        £61.00 Rest of World
-                    </p>
-                    <a href="members/payment/1.html" class="button chevron red">Become a Member</a>
-                </div>
-                <div class="member_panels">
-                    <h3>Annual Membership (TLB)</h3>
-                    <h4>Includes 12 issues of THE LONDON BUS</h4>
-                    <p>
-                        £30.00 UK<br />
-                        £40.00 Europe<br />
-                        £40.00 Rest of World
-                    </p>
-                    <a href="members/payment/3.html" class="button chevron red">Become a Member</a>
-                </div>
-                <div class="member_panels">
-                    <h3>Non-Members (LBM)</h3>
-                    <h4>Annual subscription to LONDON BUS MAGAZINE</h4>
-                    <p>
-                        £24.00 UK<br />
-                        £27.00 Europe<br />
-                        £27.00 Rest of World
-                    </p>
-                    <a href="members/payment/4.html" class="button chevron red">Become a Member</a>
-                </div>
-            </div>
-            <div class="publications">
-                <h2>Publications</h2>
-                <a href="publications.html" class="button chevron red">View Publications</a>
-                <ul>
-                    <li>
-                        <img src="dynamic/publications/542x/1.jpg" />
-                        <p>
-                            <strong>TLB - The London Bus</strong><br />
-                            <b>Our flagship monthly title</b><br />
-                            The latest news about routes and vehicles. </p>
-                    </li>
-                    <li>
-                        <img src="dynamic/publications/542x/2.jpg" />
-                        <p>
-                            <strong>LBM - London Bus Magazine</strong><br />
-                            <b>Our quarterly flagship title</b><br />
-                            Full of articles about past and present. </p>
-                    </li>
-                    <li>
-                        <img src="dynamic/publications/542x/6.jpg" />
-                        <p>
-                            <strong>REV - London Bus Review</strong><br />
-                            <b>Published every spring</b><br />
-                            Tells you everything you could possibly want to know about what’s been happening in and
-                            around London during the preceding year. </p>
-                    </li>
-                    <li>
-                        <img src="dynamic/publications/542x/3.jpg" />
-                        <p>
-                            <strong>Fleetbook</strong><br />
-                            <b>The London Bus and Tram Fleetbook, published annually</b><br />
-                            Is a 128-page pocket-sized book containing fleetlists for around 60 operators in London and
-                            the Home Counties. </p>
-                    </li>
-                    <li>
-                        <img src="dynamic/publications/542x/5.jpg" />
-                        <p>
-                            <strong>TLB Extra</strong><br />
-                            <b>Series of Booklets</b><br />
-                            This is a series of booklets covering London Transport vehicle news for specific years and
-                            is presented in the style of THE LONDON BUS. </p>
-                    </li>
-                    <li>
-                        <img src="dynamic/publications/542x/4.jpg" />
-                        <p>
-                            <strong>SUPS - Supplements</strong><br />
-                            <b>TLB Supplements</b><br />
-                            Provide specialist information supplementary to that published in TLB and Fleetbook. </p>
-                    </li>
-                </ul>
-            </div>
-            <hr />
-            <div class="two-columns">
-                <div class="news">
-                    <h2>News</h2>
-                    <ul>
-                        <li>
-                            <a href="news/6/we-can-add-news-items.html">
-                                <img src="dynamic/news/346x346/6.jpg" />
-                                <p>
-                                    <strong>We can add News Items</strong>
-                                    We can add News Items <span>read more</span>
-                                </p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="news/5/reduced-service-on-london-buses-during-virus-outbreak.html">
-                                <img src="dynamic/news/346x346/5.jpg" />
-                                <p>
-                                    <strong>REDUCED SERVICE ON LONDON BUSES DURING VIRUS OUTBREAK</strong>
-                                    Buses services drastically reduced <span>read more</span>
-                                </p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="news/2/website-soft-launches.html">
-                                <img src="dynamic/news/346x346/2.jpg" />
-                                <p>
-                                    <strong>Website soft launches</strong>
-                                    We are pleased to announce our new website is finally here.
-                                    You can now buy and renew membership online! <span>read more</span>
-                                </p>
-                            </a>
-                        </li>
-                    </ul>
-                    <a href="news.html" class="button chevron red">See all news</a>
-                </div>
-                <div class="events">
-                    <h2>Events</h2>
-                    <ul>
-                        <li>
-                            <a href="events/2/event-more.html">
-                                <img src="dynamic/events/346x346/2.jpg" />
-                                <p>
-                                    <strong>Event more</strong>
-                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                                    qui officia deserunt mollit anim id est laborum. <span>read more</span>
-                                </p>
-                            </a>
-                        </li>
-                    </ul>
-                    <a href="events.html" class="button chevron red">See all events</a>
-                </div>
-            </div>
-        </article> -->
-
         <footer>
             <nav>
                 <a href="index.html">Home</a>

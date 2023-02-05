@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
 html {
     height: 100%;
 }
@@ -7,6 +5,7 @@ html {
 body {
     background: url('/media/7.jpg') no-repeat center center fixed;
     background-size: cover;
+    top: 200px;
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
@@ -36,7 +35,7 @@ body {
 }
 
 .btn-black {
-    background: black;
+    background: red;
     color: white;
 }
 
@@ -46,7 +45,7 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background: #d86262;
     color: white;
 }
 
@@ -80,4 +79,8 @@ body {
     .header-container {
         padding-top: 164px;
     }
+}
+
+.row.tophead {
+    background: white;
 }

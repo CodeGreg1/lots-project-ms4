@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.contrib.staticfiles import storage
 
 
 # Create your views here.
