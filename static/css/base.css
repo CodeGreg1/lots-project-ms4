@@ -2,7 +2,7 @@ html {
     height: 100%;
 }
 
-body {
+.busbackground {
     background: url('/media/7.jpg') no-repeat center center fixed;
     background-size: cover;
     top: 200px;
@@ -28,23 +28,46 @@ body {
     width: fit-content;
 }
 
-.shop-now-button {
-    background: pink;
-    color: white;
-    min-width: 260px;
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: white;
+    color: red;
 }
 
-.btn-black {
-    background: red;
+
+.shop-now-button {
+    background: white;
+    color: red;
+    min-width: 260px;
+    border-radius: 10px;
+}
+
+li.nav-item {
+    min-width: 150px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+li.nav-item:hover,
+li.nav-item:active,
+li.nav-item:focus {
     color: white;
+}
+
+
+.nav-item:active,
+.nav-item:hover,
+.nav-item:focus {
+    background: red;
+    color: white !important;
+    text-align: center;
+    transition: ease-in-out 0.2s;
 }
 
 .shop-now-button:hover,
 .shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
+.shop-now-button:focus {
     background: #d86262;
     color: white;
 }
@@ -83,4 +106,39 @@ body {
 
 .row.tophead {
     background: white;
+}
+
+footer {
+    background: #000;
+}
+
+.navbar {
+    padding: 5px;
+    border-top: solid 2px rgba(0, 0, 0, 0.4);
+}
+
+
+#home-link:hover,
+#membership-link:hover,
+#news-link:hover,
+#pub-link:hover,
+#sales-link:hover,
+#about-link:hover {
+    color: white;
+}
+
+.largeblue {
+    height: 300px;
+    background-color: blue;
+}
+.largered {
+    height: 300px;
+}
+.largegreen {
+    height: 300px;
+    background-color: purple;
+}
+
+.aboutimg {
+    width: 100%;
 }

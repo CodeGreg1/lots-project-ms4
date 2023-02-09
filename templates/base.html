@@ -1,19 +1,21 @@
-<!DOCTYPE html>
-<html>
-    {% load static %}
+{% load static %}
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
+
     {% block meta %}
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     {% endblock %}
 
     {% block extra_meta %}
     {% endblock %}
 
     {% block corecss %}
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
@@ -24,9 +26,12 @@
     {% block corejs %}
     <!-- <script src="https://kit.fontawesome.com/9f41e2550b.js" crossorigin="anonymous"></script> -->
     <script src="https://kit.fontawesome.com/4863a75fd6.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     {% endblock %}
     <!-- Google Fonts -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> -->
@@ -45,70 +50,76 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <!-- Specific LOTS JS -->
     <!-- <script type="text/javascript" src="js/dist/app.min.js"></script> -->
-    
+
     {% block extra_js %}
     {% endblock %}
-    
+
     <link href="favicon.ico" type="image/x-icon" rel="icon" />
     <link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
     <title>London Omnibus Traction Society {% block extra_title %}{% endblock %}</title>
-    
+
 </head>
+
 <body>
     <header class="container-fluid fixed-top">
         <div class="row tophead">
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+            <div class="col-4 col-sm-6 my-auto py-1 py-lg-0 text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
+                    <img class="d-none d-sm-block" src="/media/logo-red.png" height="75px"alt="">
+                    <img class="d-block d-sm-none" src="/media/logo-sm.png" height="75px"alt="">
                     <h2 class="logo-font text-black my-0">
-                        <strong>London Omnibus</strong>
+                        <!-- <strong>London Omnibus Traction Society</strong> -->
                     </h2>
                 </a>
             </div>
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+            <!-- <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="">
                     <div class="input-group w-100">
-                        <input class="form-control border border-black rounded-0" type="text" name="q" placeholder= "Search our site">
-                            <div class="input-group-append">
-                                <button class="form-control btn btn-black border border-black rounded-0" type="submit">
-                                    <span class="icon">
-                                        <i class="fas fa-search"></i>
-                                    </span>
-                                </button>
-                            </div>
+                        <input class="form-control border border-black rounded-0" type="text" name="q"
+                            placeholder="Search our site">
+                        <div class="input-group-append">
+                            <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                                <span class="icon">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </button>
+                        </div>
                     </div>
                 </form>
-            </div>
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+            </div> -->
+            <div class="col-8 col-sm-6 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
-                        <a href="#" class="text-black nav-link" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a href="#" class="text-black nav-link" id="user-options" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
                                 <p class="my-0">My Account</p>
                             </div>
                         </a>
-                    <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                        {% if request.user.is_authenicated %}
+                        <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                            {% if request.user.is_authenicated %}
                             {% if request.user.is_superuser %}
-                                <a href="" class="dropdown-item">Shop Management</a>
+                            <a href="" class="dropdown-item">Shop Management</a>
                             {% endif %}
                             <a href="" class="dropdown-item">My Profile</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                        {% else%}
+                            {% else%}
                             <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
                             <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                        {% endif %}
+                            {% endif %}
                         </div>
                     </li>
                     <li class="list-inline-item">
-                        <a href="" class="{% if grand_total %}text-info font-weight-bold{% else %} text-black{% endif %} nav-link">
+                        <a href=""
+                            class="{% if grand_total %}text-info font-weight-bold{% else %} text-black{% endif %} nav-link">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                 <p class="my-o">
                                     {% if grand_total %}
-                                        £{{ grand_total|floatformat:2 }}
+                                    £{{ grand_total|floatformat:2 }}
                                     {% else %}
-                                        £0.00
+                                    £0.00
                                     {% endif %}
                                 </p>
                             </div>
@@ -117,62 +128,51 @@
                 </ul>
             </div>
         </div>
-            <nav>
-                <div class=" menu">
-                    <div class="menuinner">
-                        <a href="index.html" class="text-white">Home</a>
-                                <a href=" about.html" class="text-white">About Lots</a>
-                        <a href="membership.html" class="text-white">Membership</a>
-                                <a href=" information-service.html" class="text-white">Information Service</a>
-                        <a href="publications.html" class="text-white">Publications</a>
-                                <a href=" sales.html" class="text-white">Sales</a>
-                        <a href="news.html" class="text-white">News</a>
-                                <a href=" events.html" class="text-white">Events</a>
-                        <a href="links.html" class="text-white">Links</a>
-                                <a href=" contact-us.html" class="text-white">Contact Us</a>
-                    </div>
-                </div>
+        <div class="row bg-white">
+            <nav class="navbar navbar-expand-lg navbar-light w-100">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                {% include 'includes/mob-nav.html' %}
+                {% include 'includes/main-nav.html' %}
             </nav>
-        </header>
+        </div>
+    </header>
 
     {% if messages %}
     <div class="message-container"></div>
     {% endif %}
-        
+
     {% block page_header %}
     {% endblock %}
-    
+
     {% block content %}
     {% endblock %}
-    
+
     {% block postloadjs %}
     {% endblock %}
-        <footer>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About Lots</a>
-                <a href="membership.html">Membership</a>
-                <a href="information-service.html">Information Service</a>
-                <a href="publications.html">Publications</a>
-                <a href="sales.html">Sales</a>
-                <a href="news.html">News</a>
-                <a href="events.html">Events</a>
-                <a href="links.html">Links</a>
-                <a href="contact-us.html">Contact Us</a>
-                <a href="cookie-policy.html">Cookie Policy</a>
-                <a href="privacy-and-data-protection-policy.html">Privacy and Data Protection Policy</a>
-            </nav>
-            <div>
-                <p>
-                    Copyright © London Omnibus Traction Society
-                </p>
-                <p>
-                    <a href="#"></a>
-                </p>
-            </div>
-        </footer>
-    </div>
-
+    <footer>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Lots</a>
+            <a href="membership.html">Membership</a>
+            <a href="information-service.html">Information Service</a>
+            <a href="publications.html">Publications</a>
+            <a href="sales.html">Sales</a>
+            <a href="news.html">News</a>
+            <a href="events.html">Events</a>
+            <a href="links.html">Links</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a href="cookie-policy.html">Cookie Policy</a>
+            <a href="privacy-and-data-protection-policy.html">Privacy and Data Protection Policy</a>
+        </nav>
+        <div>
+            <p>
+                Copyright © London Omnibus Traction Society
+            </p>
+        </div>
+    </footer>
 
 </body>
+
 </html>
