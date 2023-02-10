@@ -1,66 +1,55 @@
-<div class="collapse navbar-collapse" id="main-nav">
+<div class="collapse navbar-collapse bg-dark text-light" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-center" href="{% url 'home' %}" id="home-link">
+            <a class="logo-font font-weight-bold nav-link text-center text-light" href="{% url 'home' %}"
+                id="home-link">
                 Home
             </a>
         </li>
 
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-center" href="{% url 'membership' %}" id="membership-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Memberships
+            <a class="logo-font font-weight-bold nav-link text-center text-light" href="{% url 'membership' %}"
+                id="membership-link">
+                How to join
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">TLB</a>
-                <a href="" class="dropdown-item">LBM</a>
-                <a href="" class="dropdown-item">Other</a>
-            </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-center" href="{% url 'news' %}" id="news-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-center text-light" href="{% url 'news' %}"
+                id="news-link">
                 News
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Updates</a>
-                <a href="" class="dropdown-item">Events</a>
-            </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-center" href="{% url 'publications' %}" id="pub-link">
+            <a class="logo-font font-weight-bold nav-link text-center text-light" href="{% url 'publications' %}"
+                id="pub-link">
                 Publications
             </a>
-            <!-- <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Activewear &amp; Essentials</a>
-                <a href="" class="dropdown-item">Jeans</a>
-                <a href="" class="dropdown-item">Shirts</a>
-                <a href="" class="dropdown-item">All Clothing</a>
-            </div> -->
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-center" href="{% url 'sales' %}" id="sales-link">
+            <a class="logo-font font-weight-bold nav-link text-center text-light" href="{% url 'sales' %}"
+                id="sales-link">
                 Sales
             </a>
-            <!-- <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Bed &amp; Bath</a>
-                <a href="" class="dropdown-item">Kitchen &amp; Dining</a>
-                <a href="" class="dropdown-item">All Homeware</a>
-            </div> -->
         </li>
-
+        <!--  -->
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-center" href="{% url 'about_us' %}" id="about-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle logo-font font-weight-bold text-center text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 About LOTS
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="{% url 'about_us' %}" class="dropdown-item">About Us</a>
-                <a href="" class="dropdown-item">Information Service</a>
-                <a href="{% url 'links' %}" class="dropdown-item">Links</a>
-                <a href="" class="dropdown-item">Contact Us</a>
-            </div>
+            <ul class="dropdown-menu">
+                <li><a href="{% url 'about_us' %}" class="dropdown-item">About Us</a></li>
+                <li><a href="" class="dropdown-item">Information Service</a></li>
+                <li><a href="{% url 'links' %}" class="dropdown-item">Links</a></li>
+                <li><a href="" class="dropdown-item">Contact Us</a></li>
+            </ul>
         </li>
+
+        <!--  -->
+
+       
     </ul>
 </div>

@@ -39,7 +39,7 @@ html {
 .shop-now-button {
     background: white;
     color: red;
-    min-width: 260px;
+    min-width: 220px;
     border-radius: 10px;
 }
 
@@ -114,7 +114,7 @@ footer {
 
 .navbar {
     padding: 5px;
-    border-top: solid 2px rgba(0, 0, 0, 0.4);
+    /* border-top: solid 2px rgba(0, 0, 0, 0.4); */
 }
 
 
@@ -140,5 +140,17 @@ footer {
 }
 
 .aboutimg {
-    width: 100%;
+    width: 400px;
+    float: left;
+    margin: 20px 20px 10px 0;
+}
+
+#btntopl {
+    top: 140px;
+    left: 40px;
+    position: absolute;
+}
+
+#main-nav {
+    background-color: #000;
 }
