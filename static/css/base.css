@@ -146,11 +146,20 @@ footer {
 }
 
 #btntopl {
-    top: 140px;
+    top: 180px;
     left: 40px;
     position: absolute;
 }
 
 #main-nav {
     background-color: #000;
+}
+
+
+.buslogo {
+    max-height: 50px;
+    width: 100px;
+}
+.card {
+    height: 100px;
 }
