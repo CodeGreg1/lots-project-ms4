@@ -1,0 +1,26 @@
+[
+    {
+        "pk": 1,
+        "model": "products.category",
+        "fields": {
+            "name": "lots_publications",
+            "friendly_name": "LOTS Publications"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.category",
+        "fields": {
+            "name": "capital_publications",
+            "friendly_name": "Capital Transport Publications"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.category",
+        "fields": {
+            "name": "other_publications",
+            "friendly_name": "Other Publications"
+        }
+    }
+]

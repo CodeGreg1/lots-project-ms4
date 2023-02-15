@@ -2,27 +2,173 @@
 {% load static %}
 
 {% block page_header %}
-<!-- <div class="container header-container">
-    <div class="row">
-        <div class="col">
-        </div>
-    </div>
-</div> -->
+
 {% endblock %}
 
 {% block content %}
-<div class="busbackground">
-<div class="container h-100">
-    <div class="row h-100">
-        <div class="col-7 col-6-md my-auto">
-            <a href="{% url 'membership' %}" id="btntopl"class="shop-now-button py-3 btn btn-lg border border-dark shadow-lg text-uppercase">How to join!</a>
-            <!-- <h1 class="display-4 logo-font text-white">Publication Memberships here</h1> -->
+<div class="busbackground sliderind">
+    <ul>
+        <li><img src="/media/buses/6.jpg" alt="Image 1"></li>
+        <li><img src="/media/buses/7.jpg" alt="Image 2"></li>
+        <li><img src="/media/buses/8.jpg" alt="Image 3"></li>
+    </ul>
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-7 col-6-md my-auto">
+                <a href="{% url 'membership' %}" id="btntopl"
+                    class="shop-now-button py-3 btn btn-lg border border-dark shadow-lg text-uppercase">How to join!</a>
+                <!-- <h1 class="display-4 logo-font text-white">Publication Memberships here</h1> -->
+            </div>
         </div>
     </div>
 </div>
+<div class="row">
+    <div class="col">
+        <br>
+        <div class="container text-center">
+            <h2 class=""><strong>Welcome to LOTS</strong></h2>
+            <br>
+            <p><strong>The London Omnibus Traction Society was founded in 1964, and now has one of the largest
+                    memberships
+                    of any bus enthusiasts' organisation in the UK. </strong></p>
+            <p><strong>For those who are already members, Welcome to our new website! And to those London bus
+                    enthusiasts
+                    who have yet to join we are proud to offer you the many benefits of doing so. So please enjoy our
+                    website and see what’s out there!</strong></p>
+            <!--  -->
+            <br>
+            <h2 class="text-danger"><strong>Membership</strong></h2>
+            <br>
+            <p>Becoming a LOTS member means you’ll receive both our information-packed TLB Newsletter and our
+                quarterly London Bus Magazine (or whichever one of these you choose).</p>
+            <p>Not only will you receive annual subscriptions for our monthly and quarterly publications, but you
+                will get exclusive access to our monthly meetings too.</p>
+            <p>By joining you will also become part of a friendly and welcoming community of London bus enthusiasts
+                and benefit from a wealth of knowledge and expertise. So join us on a fantastic bus journey from
+                Aylesbury to Sevenoaks and Harlow to Virginia Water with the whole of London in between!</p>
+        </div>
+        <!--  -->
+    </div>
 </div>
-<h1 class="display-4 text-success">It works!</h1>
-<div class="largeblue"></div>
-<div class="largered"></div>
-<div class="largegreen"></div>
+</div>
+<!-- Membership cards -->
+<div class="container-fluid">
+    <div class="row ">
+        <div class="col-12 col-lg-3 col-sm-5 pt-3 position-relative m-2 mb-5 border rounded-4 memcard mx-auto">
+            <h5><strong>Annual Membership (TLB + LBM)</strong></h5>
+            <h6>Includes 12 issues of THE LONDON BUS plus 4 issues of LONDON BUS MAGAZINE</h6>
+            <p>
+                £56.00 UK<br>
+                £68.00 Europe<br>
+                £75.00 Rest of World
+            </p>
+            <br>
+            <a href="{% url 'membership' %}"
+                class="btn btn-danger position-absolute top-100 start-50 translate-middle memberbtn">Become a Member</a>
+        </div>
+        <div class="col-12 col-lg-3 col-sm-5 pt-3 position-relative m-2 mb-5 border rounded-4 memcard mx-auto">
+            <h5><strong>Annual Membership (TLB)</strong></h5>
+            <h6>Includes 12 issues of THE LONDON BUS</h6>
+            <p>
+                £36.00 UK<br>
+                £48.00 Europe<br>
+                £55.00 Rest of World
+            </p>
+            <br>
+            <a href="{% url 'membership' %}"
+                class="btn btn-danger position-absolute top-100 start-50 translate-middle memberbtn" memberbtn>Become a
+                Member</a>
+        </div>
+        <div class="col-12 col-lg-3 col-sm-5 pt-3 position-relative m-2 mb-5 border rounded-4 memcard mx-auto">
+            <h5><strong>Non-Members (LBM)</strong></h5>
+            <h6>Annual subscription to LONDON BUS MAGAZINE</h6>
+            <p>
+                £29.00 UK<br>
+                £39.00 Europe<br>
+                £49.00 Rest of World
+            </p>
+            <br>
+            <a href="{% url 'membership' %}"
+                class="btn btn-danger position-absolute top-100 start-50 translate-middle memberbtn">Become a Member</a>
+        </div>
+
+
+    </div>
+</div>
+<hr>
+<!-- Publications -->
+<div class="container-fluid">
+    <div class="row ">
+        <div class="col-12 col-lg-4 col-sm-5 pt-3 position-relative m-2 mb-5 mx-auto">
+            <img src="/media/publications/1.jpg" alt="" width="60%" class="vstack mx-auto ">
+            <br>
+            <h5 class="text-center"><strong>TLB - The London Bus</strong></h5>
+            <h6 class="text-center">Our flagship monthly title</h6>
+            <p class="text-center">The latest news about routes and vehicles.</p>
+            <br>
+            <a href="{% url 'membership' %}"
+                class="btn btn-danger position-absolute top-100 start-50 translate-middle memberbtn">Become a Member</a>
+        </div>
+
+        <div class="col-12 col-lg-4 col-sm-5 pt-3 position-relative m-2 mb-5 mx-auto">
+            <img src="/media/publications/2.jpg" alt="" width="60%" class="vstack mx-auto ">
+            <br>
+            <h5 class="text-center"><strong>LBM - London Bus Magazine</strong></h5>
+            <h6 class="text-center">Our quarterly flagship title</h6>
+            <p class="text-center">Full of articles about past and present.</p>
+            <br>
+            <a href="{% url 'membership' %}"
+                class="btn btn-danger position-absolute top-100 start-50 translate-middle memberbtn">Become a Member</a>
+        </div>
+
+        <div class="col-12 col-lg-4 col-sm-5 pt-3 position-relative m-2 mb-5 mx-auto">
+            <img src="/media/publications/3.jpg" alt="" width="60%" class="vstack mx-auto ">
+            <br>
+            <h5 class="text-center"><strong>Fleetbook</strong></h5>
+            <h6 class="text-center">The London Bus and Tram Fleetbook, published annually</h6>
+            <p class="text-center">Is a 128-page pocket-sized book containing fleetlists for around 60 operators in
+                London and the Home Counties.</p>
+            <br>
+
+            <a href="{% url 'membership' %}"
+                class="btn btn-danger position-absolute top-100 start-50 translate-middle memberbtn">Become a Member</a>
+        </div>
+
+        <div class="col-12 col-lg-4 col-sm-5 pt-3 position-relative m-2 mb-5 mx-auto">
+            <img src="/media/publications/4.jpg" alt="" width="60%" class="vstack mx-auto ">
+            <br>
+            <h5 class="text-center"><strong>SUPS - Supplements</strong></h5>
+            <h6 class="text-center">TLB Supplements</h6>
+            <p class="text-center">Provide specialist information supplementary to that published in TLB and Fleetbook.
+                <br>
+            </p>
+            <a href="{% url 'membership' %}"
+                class="btn btn-danger position-absolute top-100 start-50 translate-middle memberbtn">Become a Member</a>
+        </div>
+        <div class="col-12 col-lg-4 col-sm-5 pt-3 position-relative m-2 mb-5 mx-auto">
+            <img src="/media/publications/5.jpg" alt="" width="60%" class="vstack mx-auto ">
+            <br>
+            <h5 class="text-center"><strong>TLB Extra</strong></h5>
+            <h6 class="text-center">Series of Booklets</h6>
+            <p class="text-center">This is a series of booklets covering London Transport vehicle news for specific
+                years and is presented in the style of THE LONDON
+                BUS.</p>
+            <br>
+            <a href="{% url 'membership' %}"
+                class="btn btn-danger position-absolute top-100 start-50 translate-middle memberbtn">Become a Member</a>
+        </div>
+        <div class="col-12 col-lg-4 col-sm-5 pt-3 position-relative m-2 mb-5 mx-auto">
+            <img src="/media/publications/6.jpg" alt="" width="60%" class="vstack mx-auto ">
+            <br>
+            <h5 class="text-center"><strong>REV - London Bus Review</strong></h5>
+            <h6 class="text-center">Published every spring</h6>
+            <p class="text-center">Tells you everything you could possibly want to know about what’s been happening in
+                and around London during the preceding year.</p>
+            <br>
+            <a href="{% url 'membership' %}"
+                class="btn btn-danger position-absolute top-100 start-50 translate-middle memberbtn">Become a Member</a>
+        </div>
+
+    </div>
+</div>
 {% endblock %}

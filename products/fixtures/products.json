@@ -1,0 +1,40 @@
+
+[{
+    "pk":1,
+    "model":"products.product",
+    "fields":{
+        "sku":"",
+        "name":"London Bus and Tram Fleetbook 2022",
+        "description":"London Bus and Tram Fleetbook 2022",
+        "price":7.50,
+        "category":1,
+        "rating": 0,
+        "image_url":"",
+        "image":""
+}},
+{
+    "pk":2,
+    "model":"products.product",
+    "fields":{
+    "sku":"",
+    "name":"London Bus and Tram Fleetbook 2021",
+    "description":"London Bus and Tram Fleetbook 2021",
+    "price":7,
+    "category":1,
+    "rating": 0,
+    "image_url":"",
+    "image":""
+}}, 
+{
+    "pk":3,
+    "model":"products.product",
+    "fields":{
+        "sku":"",
+        "name":"London Bus Review 2021",
+        "description":"London Bus Review 2021",
+        "price":14.5,
+        "category":1,
+        "rating": 0,
+        "image_url":"",
+        "image":""
+}}]

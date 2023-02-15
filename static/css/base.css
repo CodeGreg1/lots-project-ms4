@@ -6,7 +6,7 @@ html {
     background: url('/media/7.jpg') no-repeat center center fixed;
     background-size: cover;
     top: 200px;
-    height: calc(100vh - 164px);
+    /* height: calc(100vh - 164px); */
     color: #555;
     font-family: 'Lato';
 }
@@ -157,9 +157,164 @@ footer {
 
 
 .buslogo {
-    max-height: 50px;
+    max-height: 47px;
     width: 100px;
 }
 .card {
     height: 100px;
 }
+
+a > .card-title {
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+@media (min-width: 991px) {
+   h1 {
+    color: red;
+}}
+
+@media (max-width: 990px) {
+    h1 {
+    width: 100%;
+    /* left: -20%; */
+    background-color: #212529;
+    color: #fff;
+    position: relative;
+    border-radius: 5px;
+    text-align: center;
+}
+}
+
+.stickyside {
+    position: sticky;
+    top: 150px;
+}
+
+.pubimg {
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .pubimg {width: 60%;
+}}
+
+/* .thirds {
+    left: 20px;
+    width: calc(100vw - 30px);
+
+    height: 260px;
+    background-color: lightgray;
+} */
+
+.memberbtn {
+    width: 165px;
+}
+
+.memcard {
+    background-color: lightgray;
+}
+
+/*  */
+
+.sliderind {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .sliderind ul {
+    list-style: none;
+    position: relative;
+    width: 500%;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    -webkit-animation: slider 20s infinite;
+    -moz-animation: slider 20s infinite;
+    animation: slider 20s infinite;
+    transition: ease-in-out;
+  }
+  
+  .sliderind li {
+    width: 20%;
+    /* height: 300px; */
+    float: left;
+    position: relative;
+  }
+  
+  .sliderind img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  @-webkit-keyframes slider {
+    0% {
+      left: 0%;
+    }
+    0% {
+      left: -100%;
+    }
+    35% {
+      left: -200%;
+    }
+    50% {
+      left: -300%;
+    }
+    65% {
+      left: -200%;
+    }
+    80% {
+        left: -100%;
+      }
+    95% {
+        left: 0%;}}
+  
+  @-moz-keyframes slider {
+    0% {
+      left: 0%;
+    }
+    0% {
+      left: -100%;
+    }
+    35% {
+      left: -200%;
+    }
+    50% {
+      left: -300%;
+    }
+    65% {
+      left: -200%;
+    }
+    80% {
+        left: -100%;
+      }
+    95% {
+        left: 0%;}}
+  
+  @keyframes slider {
+    0% {
+      left: 0%;
+    }
+    0% {
+      left: -100%;
+    }
+    35% {
+      left: -200%;
+    }
+    50% {
+      left: -300%;
+    }
+    65% {
+      left: -200%;
+    }
+    80% {
+        left: -100%;
+      }
+    95% {
+        left: 0%;
+}}

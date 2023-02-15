@@ -2,20 +2,220 @@
 {% load static %}
 
 {% block page_header %}
-<!-- <div class="container header-container">
-    <div class="row">
-        <div class="col">
-        </div>
-    </div>
-</div> -->
+
 {% endblock %}
 
 {% block content %}
-<div class="container h-100">
-    <div class="row h-100">
-        <div class="col-7 col-6-md my-auto">
-            <h1>Publication Page working</h1>
+<div class="container">
+    <div class="row">
+        <h1 class="col mt-3">Publications</h1>
+    </div>
+    <hr />
+    <div class="row">
+        <h3>TLB - The London Bus</h3>
+        <div class="col-md-4">
+            <br>
+            <img class="pubimg" src="/media/publications/1.jpg" alt="">
         </div>
+        <div class="col-md-5">
+            <div>
+                <br>
+                <p><strong>THE LONDON BUS</strong> is LOTS' monthly newsletter and LOTS' principal publication, having
+                    been produced for around 40 years. Now in A5 format with full colour cover, members receive a hard
+                    copy of it every month. The closing date for contributions is normally the first Friday of each
+                    month and, after preparation and printing, TLB normally arrives with members within two weeks.</p>
+                <p>TLB reports on the operations and vehicles of around 40 companies working local bus services in
+                    Greater London and its surrounding area within a region roughly corresponding with the original
+                    London Transport bus operating area bounded by Gravesend, Sevenoaks, Crawley, Guildford, Windsor,
+                    Aylesbury, Luton, Harlow and Tilbury.</p>
+                <p>Each issue has around 40 pages and 8 colour photos. It’s crammed with information not only about the
+                    hundreds of routes that serve the Capital and its surrounding areas, but also about the thousands of
+                    vehicles seen on them including sales and transfers. Recent and forthcoming route changes are listed
+                    for every operator, thereby providing a historical record for the present and future.</p>
+                <p>Most operators supply us with official information which is supported by members' reports so as to
+                    provide an unrivalled authoritative service. TLB also contains business and political news, and
+                    reports on forthcoming exhibitions and rallies, and much more.</p>
+                <p>A specimen issue is available to download (Please note: A few personal details have been obscured in
+                    this on-line version).</p>
+                <p><a href="mailto:lotschairman@yahoo.com">lotschairman@yahoo.com</a></p>
+            </div>
+        </div>
+        <div class="col-md-3 d-none d-md-block">
+            <div class="stickyside">
+                <br>
+                <h5><strong>Annual Membership (TLB + LBM)</strong></h5>
+                <h6>Includes 12 issues of THE LONDON BUS plus 4 issues of LONDON BUS MAGAZINE</h6>
+                <p>
+                    £56.00 UK<br>
+                    £68.00 Europe<br>
+                    £75.00 Rest of World
+                </p>
+                <a href="{% url 'membership' %}" class="btn btn-danger">Become a Member</a>
+                <hr>
+                <h5><strong>Annual Membership (TLB)</strong></h5>
+                <h6>Includes 12 issues of THE LONDON BUS</h6>
+                <p>
+                    £36.00 UK<br>
+                    £48.00 Europe<br>
+                    £55.00 Rest of World
+                </p>
+                <a href="{% url 'membership' %}" class="btn btn-danger">Become a Member</a>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <h3>LBM - London Bus Magazine</h3>
+        <div class="col-md-4">
+            <br>
+            <img class="pubimg" src="/media/publications/2.jpg" alt="">
+        </div>
+        <div class="col-md-5">
+            <div>
+                <br>
+                <p><strong>LBM</strong> is LOTS’ flagship publication. In regular production since 1972, it is produced
+                    four times per year, in Spring, Summer, Autumn and Winter. It is a fully illustrated, glossy 64-page
+                    magazine, with around 90 pictures per issue.</p>
+                <p>One or two major articles feature in each issue covering both historical and current aspects of bus
+                    operation in and around the Capital.</p>
+                <p>There are meticulously researched features not only on bus operators but also on individual bus
+                    classes, routes, garages, operating areas and manufacturers not to mention reviews of selected
+                    books.</p>
+                <p>Each issue includes a section entitled ‘Around &amp; About’ devoted to recent developments, supported
+                    by illustrations and informative captions.</p>
+            </div>
+        </div>
+        <div class="col-md-3 d-none d-md-block">
+            <div class="stickyside">
+                <br>
+                <h5><strong>Non-Members (LBM)</strong></h5>
+                <h6>Annual subscription to LONDON BUS MAGAZINE</h6>
+                <p>
+                    £29.00 UK<br>
+                    £39.00 Europe<br>
+                    £49.00 Rest of World
+                </p>
+                <a href="{% url 'membership' %}" class="btn btn-danger">Become a Member</a>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <h3>Fleetbook</h3>
+        <div class="col-md-4">
+            <br>
+            <img class="pubimg" src="/media/publications/3.jpg" alt="">
+        </div>
+        <div class="col-md-5">
+            <div>
+                <br>
+                <p>The <strong>LONDON BUS AND TRAM FLEETBOOK</strong></span> is a
+                    128-page pocket-sized book containing full fleet details of around 50 operators in London and
+                    the Home Counties.</p>
+                <p>Stock and registration numbers, chassis and body types, seating capacities, summaries of where to
+                    find main vehicle types are all included. Fleetbook is produced each Spring, and is an essential
+                    publication for the London bus enthusiast. 2018 edition coming soon!</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <h3>REV - London Bus Review</h3>
+        <div class="col-md-4">
+            <br>
+            <img class="pubimg" src="/media/publications/6.jpg" alt="">
+        </div>
+        <div class="col-md-5">
+            <div>
+                <br>
+                <p>Our most substantial publication is <strong>LONDON BUS REVIEW (REV)</strong>.</p>
+                <p>Published each Spring, it tells you everything you could possibly want to know about what’s been
+                    happening in and around London during the preceding year. Routes, vehicles (new, withdrawn and
+                    current), operators and politics – it’s all there profusely illustrated with well over a hundred
+                    colour pictures. Editions produced for recent years can be purchased at various rallies from our
+                    Sales Stand or post-free from our Postal Sales department.</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <h3>TLB Extra</h3>
+        <div class="col-md-4">
+            <br>
+            <img class="pubimg" src="/media/publications/5.jpg" alt="">
+        </div>
+        <div class="col-md-5">
+            <div>
+                <br>
+                <p>This is a series of booklets covering London Transport vehicle news for specific years and is
+                    presented in the style of <strong>THE LONDON BUS (TLB)</strong>.</p>
+                <p>Editions for the years 1957-1984 have been produced so far and further editions covering
+                    1948-1956 are in the process of production.</p>
+                <p>An essential reference series for those with a curiosity about the past.</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <h3>SUPS - Supplements</h3>
+        <div class="col-md-4">
+            <br>
+            <img class="pubimg" src="/media/publications/4.jpg" alt="">
+        </div>
+        <div class="col-md-7">
+            <div>
+                <br>
+                <p>For many years our <strong>SUPs</strong> have been providing specialist information over and
+                    above that published in TLB and Fleetbook. Currently available are:</p>
+                <p>SUP15B - Lists support vehicles until 2005 with illustrations. Includes Underground and bus
+                    operators' vans, lorries and cars.</p>
+                <p>SUP24F - Current support vehicles with a full fleetlist and allocation details. Updated August
+                    2013.</p>
+                <p>SUP36 - Issued about every eight months, and lists current vehicle allocations for the major
+                    operators in the LOTS area. It doesn't give the full information contained in the Fleetbook, but
+                    acts as a quick check on where each bus is based . It can be kept up to date by reference to
+                    TLB. It tells you which buses are based where.</p>
+                <p>SUP37 - Also issued about every eight months it gives a complete summary of vehicle requirements
+                    for bus routes in the Greater London area. So if you want to know that route 83 needs 28
+                    double-deckers to run the schedule, or that route 161 needs 15 and route 234 needs 10
+                    single-deckers, and want to find out which company runs them and from which garages, then this
+                    publication is for you. SUP37 is the ideal companion to Mike Harris' THE GREATER LONDON BUS MAP.
+                </p>
+                <p>Other SUPs dealing with specific London bus subjects are issued from time to time.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="d-md-none">
+        <hr>
+        <h5><strong>Annual Membership (TLB + LBM)</strong></h5>
+        <h6>Includes 12 issues of THE LONDON BUS plus 4 issues of LONDON BUS MAGAZINE</h6>
+        <p>
+            £56.00 UK<br>
+            £68.00 Europe<br>
+            £75.00 Rest of World
+        </p>
+        <a href="{% url 'membership' %}" class="btn btn-danger">Become a Member</a>
+        <hr>
+        <h5><strong>Annual Membership (TLB)</strong></h5>
+        <h6>Includes 12 issues of THE LONDON BUS</h6>
+        <p>
+            £36.00 UK<br>
+            £48.00 Europe<br>
+            £55.00 Rest of World
+        </p>
+        <a href="{% url 'membership' %}" class="btn btn-danger">Become a Member</a>
+
+        <hr>
+        <h5><strong>Non-Members (LBM)</strong></h5>
+        <h6>Annual subscription to LONDON BUS MAGAZINE</h6>
+        <p>
+            £29.00 UK<br>
+            £39.00 Europe<br>
+            £49.00 Rest of World
+        </p>
+        <a href="{% url 'membership' %}" class="btn btn-danger">Become a Member</a>
+        <hr>
     </div>
 </div>
 {% endblock %}
