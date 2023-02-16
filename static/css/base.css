@@ -318,3 +318,21 @@ a {
     95% {
         left: 0%;
 }}
+
+.card-body.pb-0.text-center {
+  height: 70px;
+}
+
+#imgSales {
+  height: 200px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  display: block;
+  border-radius: 0px !important;
+}
+
+#NoImgSales {
+  height: 210px !important;
+}

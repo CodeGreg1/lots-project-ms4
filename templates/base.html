@@ -63,7 +63,7 @@
 </head>
 
 <body>
-    <header class="container-fluid sticky-top">
+    <header class="container-fluid sticky-top shadow">
         <div class="row tophead">
             <div class="col-4 col-sm-6 my-auto py-3 text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
@@ -133,7 +133,7 @@
                                 aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button> -->
-                            {% include 'includes/mob-nav.html' %}
+                        {% include 'includes/mob-nav.html' %}
                         <!-- </nav> -->
                     </li>
                 </ul>
@@ -163,23 +163,23 @@
     {% block postloadjs %}
     {% endblock %}
     <footer>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Lots</a>
-            <a href="membership.html">Membership</a>
-            <a href="information-service.html">Information Service</a>
-            <a href="publications.html">Publications</a>
-            <a href="sales.html">Sales</a>
-            <a href="news.html">News</a>
-            <a href="events.html">Events</a>
-            <a href="links.html">Links</a>
-            <a href="contact-us.html">Contact Us</a>
-            <a href="cookie-policy.html">Cookie Policy</a>
-            <a href="privacy-and-data-protection-policy.html">Privacy and Data Protection Policy</a>
+        <nav class="text-light text-center">
+            <a class="text-light" href="index.html">Home |</a>
+            <a class="text-light" href="about.html">About Lots |</a>
+            <a class="text-light" href="membership.html">Membership |</a>
+            <a class="text-light" href="information-service.html">Information Service |</a>
+            <a class="text-light" href="publications.html">Publications |</a>
+            <a class="text-light" href="sales.html">Sales |</a>
+            <a class="text-light" href="news.html">News |</a>
+            <a class="text-light" href="events.html">Events |</a>
+            <a class="text-light" href="links.html">Links |</a>
+            <a class="text-light" href="contact-us.html">Contact Us |</a>
+            <a class="text-light" href="cookie-policy.html">Cookie Policy |</a>
+            <a class="text-light" href="privacy-and-data-protection-policy.html">Privacy Policy</a>
         </nav>
         <div>
-            <p>
-                Copyright © London Omnibus Traction Society
+            <p class="text-light">
+                Copyright © London Omnibus Traction Society 2023
             </p>
         </div>
     </footer>

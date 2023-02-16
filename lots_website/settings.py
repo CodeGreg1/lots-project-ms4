@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-i4viu@33bnw#_!sf1#0nrkup8gz6zya7shjg2)s26r6#ip@u8z
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', ]
-CSRF_TRUSTED_ORIGINS = ['https://8000-codegreg1-lotsprojectms-dyx26i75tfs.ws-eu86.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-codegreg1-lotsprojectms-dyx26i75tfs.ws-eu87.gitpod.io']
 
 # Application definition
 
