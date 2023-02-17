@@ -5,6 +5,8 @@ html {
 .busbackground {
     background: url('/media/7.jpg') no-repeat center center fixed;
     background-size: cover;
+    width: 100%;
+    height: auto;
     top: 200px;
     /* height: calc(100vh - 164px); */
     color: #555;
@@ -230,7 +232,7 @@ a {
     list-style: none;
     position: relative;
     width: 500%;
-    height: 300px;
+    height: auto;
     margin: 0;
     padding: 0;
     -webkit-animation: slider 20s infinite;
