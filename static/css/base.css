@@ -323,6 +323,8 @@ a {
 
 .card-body.pb-0.text-center {
   height: 70px;
+  display: grid;
+  align-content: center;
 }
 
 #imgSales {
@@ -337,4 +339,9 @@ a {
 
 #NoImgSales {
   height: 210px !important;
+}
+
+#prodDetImg {
+  max-height: 330px;
+  width: auto;
 }

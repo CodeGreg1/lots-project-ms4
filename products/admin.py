@@ -9,7 +9,7 @@ class ProductAdmin(admin.ModelAdmin):
         'name',
         'category',
         'price',
-        'quantity',
+        'quantity_remaining',
         'image',
     )
 
