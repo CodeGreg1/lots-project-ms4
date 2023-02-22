@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
 from django.contrib.staticfiles import storage
 
 
@@ -21,6 +21,30 @@ def add_to_bag(request, item_id):
         bag[item_id] = quantity
 
     request.session['bag'] = bag
-    print(request.session['bag'])
-
     return redirect(redirect_url)
+
+
+def adjust_bag(request, item_id):
+    """ Adjust the quantity of the specified product in the bag """
+
+    quantity = int(request.POST.get('quantity'))
+    bag = request.session.get('bag', {})
+
+    if quantity > 0:
+        bag[item_id] = quantity
+    else:
+        bag.pop(item_id)
+
+    request.session['bag'] = bag
+    return redirect(reverse('view_bag'))
+
+
+def remove_from_bag(request, item_id):
+    """ Remove the specified product from the bag """
+
+    bag = request.session.get('bag', {})
+
+    bag.pop(item_id)
+
+    request.session['bag'] = bag
+    return redirect(reverse('view_bag'))
