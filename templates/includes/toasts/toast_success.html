@@ -1,6 +1,6 @@
 <div id="closeJava" class="toast-container position-fixed top-0 end-0 p-3">
     <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-      <div class="toast-header bg-success">
+      <div class="toast-header bg-success text-light">
         <i class="fa-sharp fa-solid fa-circle-check"></i>
         <strong class="me-auto"> &nbsp Success</strong>
       </div>
@@ -32,7 +32,7 @@
                   Total: &nbsp 
                   <span class="float-right">£{{ total|floatformat:2 }}</span>
               </p></strong>
-                  <a href="{% url 'view_bag' %}" class="btn btn-black btn-block rounded-0">
+                  <a href="{% url 'view_bag' %}" id="secureLink" class="btn btn-black btn-block rounded-0 mx-auto">
                       <span class="text-uppercase">Go To Secure Checkout</span>
                       <span class="icon">
                           <i class="fas fa-lock"></i>
