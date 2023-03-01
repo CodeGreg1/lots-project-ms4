@@ -9,6 +9,7 @@ from products.models import Product
 
 import json
 import time
+import stripe
 
 
 class StripeWH_Handler:
@@ -122,6 +123,7 @@ class StripeWH_Handler:
                     street_address1=shipping_details.address.line1,
                     street_address2=shipping_details.address.line2,
                     county=shipping_details.address.state,
+                    grand_total=grand_total,
                     original_bag=bag,
                     stripe_pid=pid,
                 )
@@ -135,12 +137,11 @@ class StripeWH_Handler:
                         )
                         order_line_item.save()
                     else:
-                        for size, quantity in item_data['items_by_size'].items():  # noqa
+                        for quantity in item_data.items():  # noqa
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
                                 quantity=quantity,
-                                product_size=size,
                             )
                             order_line_item.save()
             except Exception as e:

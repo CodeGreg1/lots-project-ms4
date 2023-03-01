@@ -4,7 +4,7 @@ from django.views.decorators.http import require_POST
 from django.conf import settings
 
 from .forms import OrderForm
-from .models import OrderLineItem, Order
+from .models import Order, OrderLineItem
 from products.models import Product
 from bag.contexts import bag_contents
 
@@ -50,17 +50,28 @@ def checkout(request):
             }
         order_form = OrderForm(form_data)
         if order_form.is_valid():
-            order = order_form.save()
+            order = order_form.save(commit=False)
+            pid = request.POST.get('client_secret').split('_secret')[0]
+            order.stripe_pid = pid
+            order.original_bag = json.dumps(bag)
+            order.save()
             for item_id, item_data in bag.items():
                 try:
                     product = Product.objects.get(id=item_id)
-                    order_line_item = OrderLineItem(
-                        order=order,
-                        product=product,
-                        quantity=item_data,
-                    )
-                    order_line_item.save()
-                
+                    if isinstance(item_data, int):
+                        order_line_item = OrderLineItem(
+                            order=order,
+                            product=product,
+                            quantity=item_data,
+                        )
+                        order_line_item.save()
+                    else:
+                        order_line_item = OrderLineItem(
+                            order=order,
+                            product=product,
+                            quantity=quantity,
+                        )
+
                 except Product.DoesNotExist:
                     messages.error(request, (
                         "One of the products in your bag wasn't found in our database. "  # noqa
@@ -76,7 +87,7 @@ def checkout(request):
     else:
         bag = request.session.get('bag', {})
         if not bag:
-            messages.error(request, "There's nothing in your bag at the moment")
+            messages.error(request, "There's nothing in your bag at the moment")  # noqa
             return redirect(reversed('products'))
 
         current_bag = bag_contents(request)
@@ -127,7 +138,7 @@ def checkout_success(request, order_number):
     #             'default_street_address2': order.street_address2,
     #             'default_county': order.county,
     #         }
-    #         user_profile_form = UserProfileForm(profile_data, instance=profile)
+    #         user_profile_form = UserProfileForm(profile_data, instance=profile)  # noqa
     #         if user_profile_form.is_valid():
     #             user_profile_form.save()
 

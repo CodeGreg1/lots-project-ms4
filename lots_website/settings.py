@@ -14,6 +14,11 @@ import os
 import dj_database_url
 from pathlib import Path
 
+
+if os.path.exists("env.py"):
+    import env
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -28,7 +33,7 @@ SECRET_KEY = 'django-insecure-i4viu@33bnw#_!sf1#0nrkup8gz6zya7shjg2)s26r6#ip@u8z
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', ]
-CSRF_TRUSTED_ORIGINS = ['https://8000-codegreg1-lotsprojectms-dyx26i75tfs.ws-eu87.gitpod.io', 'https://8000-codegreg1-lotsprojectms-dyx26i75tfs.ws-eu88.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-codegreg1-lotsprojectms-dyx26i75tfs.ws-eu87.gitpod.io', 'https://8000-codegreg1-lotsprojectms-dyx26i75tfs.ws-eu88.gitpod.io', 'https://8000-codegreg1-lotsprojectms-dyx26i75tfs.ws-eu89.gitpod.io']
 
 # Application definition
 
