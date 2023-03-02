@@ -6,11 +6,11 @@
 {% endblock %}
 
 {% block page_header %}
-<div class="container header-container">
+<!-- <div class="container header-container">
     <div class="row">
         <div class="col"></div>
     </div>
-</div>
+</div> -->
 {% endblock %}
 
 {% block content %}
@@ -18,11 +18,10 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <hr>
-            <h2 class="logo-font mb-4">Thank You</h2>
+            <h1 class="mt-3">Thank You</h1>
             <hr>
             <p class="text-black">Your order information is below. A confirmation email will be sent to
-                <strong>{{ order.email }}</strong>. Your grand total is {{ total }}</p>
+                <strong>{{ order.email }}</strong>.</p>
         </div>
     </div>
 
@@ -89,6 +88,15 @@
 
                 <div class="row">
                     <div class="col-12 col-md-4">
+                        <p class="mb-0 text-black font-weight-bold">Phone Number</p>
+                    </div>
+                    <div class="col-12 col-md-8 text-md-right">
+                        <p class="mb-0">{{ order.phone_number }}</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-4">
                         <p class="mb-0 text-black font-weight-bold">Address 1</p>
                     </div>
                     <div class="col-12 col-md-8 text-md-right">
@@ -107,6 +115,15 @@
                 </div>
                 {% endif %}
 
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <p class="mb-0 text-black font-weight-bold">Town or City</p>
+                    </div>
+                    <div class="col-12 col-md-8 text-md-right">
+                        <p class="mb-0">{{ order.town_or_city }}</p>
+                    </div>
+                </div>
+
                 {% if order.county %}
                 <div class="row">
                     <div class="col-12 col-md-4">
@@ -117,15 +134,6 @@
                     </div>
                 </div>
                 {% endif %}
-
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <p class="mb-0 text-black font-weight-bold">Town or City</p>
-                    </div>
-                    <div class="col-12 col-md-8 text-md-right">
-                        <p class="mb-0">{{ order.town_or_city }}</p>
-                    </div>
-                </div>
 
                 {% if order.postcode %}
                 <div class="row">
@@ -146,15 +154,7 @@
                         <p class="mb-0">{{ order.country }}</p>
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <p class="mb-0 text-black font-weight-bold">Phone Number</p>
-                    </div>
-                    <div class="col-12 col-md-8 text-md-right">
-                        <p class="mb-0">{{ order.phone_number }}</p>
-                    </div>
-                </div>
+             
 
                 <div class="row">
                     <div class="col">
@@ -167,7 +167,7 @@
                         <p class="mb-0 text-black font-weight-bold">Order Total</p>
                     </div>
                     <div class="col-12 col-md-8 text-md-right">
-                        <p class="mb-0">{{ order.order_total }}</p>
+                        <p class="mb-0">£{{ order.order_total }}</p>
                     </div>
                 </div>
                 <div class="row">
@@ -175,7 +175,7 @@
                         <p class="mb-0 text-black font-weight-bold">Delivery</p>
                     </div>
                     <div class="col-12 col-md-8 text-md-right">
-                        <p class="mb-0">{{ order.delivery_cost }}</p>
+                        <p class="mb-0">£{{ order.delivery_cost }}</p>
                     </div>
                 </div>
 
@@ -184,8 +184,7 @@
                         <p class="mb-0 text-black font-weight-bold">Grand Total</p>
                     </div>
                     <div class="col-12 col-md-8 text-md-right">
-                        <p class="mb-0">{{ order.grand_total }}</p>
-                        <p class="mb-0">{{ grand_total | floatformat:2 }}</p>
+                        <p class="mb-0">£{{ order.grand_total }}</p>
                     </div>
                 </div>
             </div>

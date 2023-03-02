@@ -22,7 +22,7 @@ def bag_contents(request):
         })
 
     if total < 1000:
-        delivery = total * Decimal(0.15)
+        delivery = total * Decimal(0.10)
     else:
         delivery = 1 * product_count
 
