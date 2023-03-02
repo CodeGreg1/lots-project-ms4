@@ -1,0 +1,1 @@
+web: gunicorn lots-project-ms4.wsgi:application
