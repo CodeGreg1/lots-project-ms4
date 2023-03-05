@@ -19,6 +19,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*',
                  'lots-project.herokuapp.com/',
+                 '*.lots-project.herokuapp.com/',
                  '0.0.0.0',
                  'localhost',]
 
