@@ -17,7 +17,7 @@ SECRET_KEY = 'django-insecure-i4viu@33bnw#_!sf1#0nrkup8gz6zya7shjg2)s26r6#ip@u8z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', ]
+ALLOWED_HOSTS = ['https://lots-project.herokuapp.com/', 'localhost',]
 CSRF_TRUSTED_ORIGINS = ['https://8000-codegreg1-lotsprojectms-dyx26i75tfs.ws-eu89.gitpod.io']  # noqa
 
 # Application definition
