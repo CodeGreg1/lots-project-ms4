@@ -10,7 +10,9 @@
         <h1 class="col mt-3">Sales</h1>
     </div>
     <hr>
-
+    {% for message in messages %}
+    <div class="text-danger">{{message}}</div>
+    {% endfor %}
     <div class="row">
         <div class="product-container col-10 offset-1">
             <div class="row mt-1 mb-2"></div>
@@ -32,9 +34,13 @@
                             <div class="card-body pb-0 pt-0 text-center">
                                 <p class="text-dark">{{ product.name }}</p>
                             </div>
-                            {% for message in messages %}
-                            {{message}}
-                            {% endfor %}
+                            
+                            {% if request.user.is_superuser %}
+                                    <small class="ml-3">
+                                        <a href="{% url 'edit_product' product.id %}">Edit</a> | 
+                                        <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                    </small>
+                            {% endif %}
                             <div class="card-footer text-bg-danger pt-0 border-0 text-center">
                                 <div class="row ">
                                     <div class="col">
@@ -45,7 +51,6 @@
                     </div>
                     </a>
                 </div>
-
                 {% if forloop.counter|divisibleby:1 %}
                 <div class="col-12 d-sm-none mb-5">
                     <hr>
