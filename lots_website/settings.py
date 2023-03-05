@@ -180,11 +180,6 @@ STRIPE_WH_SECRET = 'whsec_Hpxs0tZP3TGmFlvlU4fVQw7td0RyptGU'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# if 'DEVELOPMENT' in os.environ:
-#     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-#     DEFAULT_FROM_EMAIL = 'lots-email@example.com'
-# else:
-
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
     DEFAULT_FROM_EMAIL = 'testwebgwd@gmail.com'
