@@ -1,1 +1,1 @@
-web: gunicorn lots-project.wsgi:application
+web: gunicorn lots_website.wsgi:application
