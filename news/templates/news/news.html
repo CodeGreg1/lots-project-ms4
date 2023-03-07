@@ -19,7 +19,7 @@
                     <div class="card-body">
                         <h2 class="card-title">{{ news.title }}</h2>
                         <p class="card-text text-muted h6">{{ news.author }} | {{ news.created_on }} </p>
-                        <p class="card-text">{{ news.content }}</p>
+                        <p class="card-text">{{ news.content|safe }}</p>
                         <!-- <a href="{% url 'post_detail' news.slug  %}" class="btn btn-primary">Read More &rarr;</a> -->
                     </div>
                 </div>
