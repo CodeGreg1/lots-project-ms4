@@ -47,7 +47,8 @@ INSTALLED_APPS = [
     'crispy_bootstrap5',
     'profiles',
     'storages',
-    # 'post',
+    'ckeditor',
+    'news',
 ]
 
 MIDDLEWARE = [
@@ -66,12 +67,15 @@ CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
+TEMPLATES_DIRS = os.path.join(BASE_DIR, 'templates')
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             os.path.join(BASE_DIR, 'templates'),
             os.path.join(BASE_DIR, 'templates', 'allauth'),
+            TEMPLATES_DIRS,
         ],
         'APP_DIRS': True,
         'OPTIONS': {

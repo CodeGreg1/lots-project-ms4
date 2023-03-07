@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <h1 class="col mt-3">News</h1>
+    </div>
+    <hr>
+    <h2 class="text-muted">Latest Update</h2>
+</div>
+
+<div class="container">
+    <div class="row">
+        <!-- Blog Entries Column -->
+        <div class="col-md-10 offset-md-1 mt-1">
+            {% for news in post %}
+            <div class="row ">
+                <div class="card mb-4" style="height: fit-content">
+                    <div class="card-body">
+                        <h2 class="card-title">{{ news.title }}</h2>
+                        <p class="card-text text-muted h6">{{ news.author }} | {{ news.created_on }} </p>
+                        <p class="card-text">{{ news.content }}</p>
+                        <!-- <a href="{% url 'post_detail' news.slug  %}" class="btn btn-primary">Read More &rarr;</a> -->
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}
