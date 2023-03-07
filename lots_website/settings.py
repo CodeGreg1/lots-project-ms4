@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'profiles',
     'storages',
     'ckeditor',
+    'ckeditor_uploader',
     'news',
 ]
 
@@ -227,3 +228,12 @@ else:
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# CKEDITOR_BASEPATH = "/my_static/ckeditor/ckeditor/"
+CKEDITOR_UPLOAD_PATH = "uploads/"
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'Basic',
+    },
+}
