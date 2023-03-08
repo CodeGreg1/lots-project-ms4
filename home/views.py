@@ -36,3 +36,59 @@ def sales(request):
 def news(request):
     """ A view to return the news page """
     return render(request, "home/news.html")
+
+
+def admin(request):
+    """ A view to return the admin page """
+    return render(request, "admin/")
+
+
+def add_post(request):
+    """ A view to return the admin page """
+    return render(request, "admin/news/post/add/")
+
+
+def LUk(request):
+    """ A view to return the Payment page """
+    return render(request, "home/membership-type/lbm-uk.html")
+
+
+def TUk(request):
+    """ A view to return the Payment page """
+    return render(request, "home/membership-type/tlb-uk.html")
+
+
+def TLUk(request):
+    """ A view to return the Payment page """
+    return render(request, "home/membership-type/tlb-lbm-uk.html")
+
+
+def TLEu(request):
+    """ A view to return the Payment page """
+    return render(request, "home/membership-type/tlb-lbm-europe.html")
+
+
+def TEu(request):
+    """ A view to return the Payment page """
+    return render(request, "home/membership-type/tlb-europe.html")
+
+
+def LEu(request):
+    """ A view to return the Payment page """
+    return render(request, "home/membership-type/lbm-europe.html")
+
+
+def TLWorld(request):
+    """ A view to return the Payment page """
+    return render(request, "home/membership-type/tlb-lbm-world.html")
+
+
+def TWorld(request):
+    """ A view to return the Payment page """
+    return render(request, "home/membership-type/tlb-world.html")
+
+
+def LWorld(request):
+    """ A view to return the Payment page """
+    return render(request, "home/membership-type/lbm-world.html")
+
