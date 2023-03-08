@@ -3,7 +3,7 @@ html {
 }
 
 .busbackground {
-    background: url('/media/7.jpg') no-repeat center center fixed;
+    background: url('/media/7.webp') no-repeat center center fixed;
     background-size: cover;
     width: 100%;
     height: auto;
@@ -408,4 +408,6 @@ a {
 #secureLink {
   width: 100%;
 }
-
+.dropdown-menu.show {
+  right: 30px !important;
+}

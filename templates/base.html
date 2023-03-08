@@ -73,8 +73,8 @@
         <div class="row tophead">
             <div class="col-4 col-sm-6 my-auto py-3 text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <img class="d-none d-sm-block" src="{{MEDIA_URL}}logo-red.png" height="75px" alt="">
-                    <img class="d-block d-sm-none" src="{{MEDIA_URL}}logo-sm.png" height="75px" alt="">
+                    <img class="d-none d-sm-block" src="{{MEDIA_URL}}logo-red.webp" height="75px" alt="">
+                    <img class="d-block d-sm-none" src="{{MEDIA_URL}}logo-sm.webp" height="75px" alt="">
                     <h2 class="logo-font text-black my-0">
                         <!-- <strong>London Omnibus Traction Society</strong> -->
                     </h2>
@@ -99,18 +99,17 @@
             <!--  -->
             <div class="col-8 col-sm-6 my-auto py-2 mx-0">
                 <ul class="list-inline list-unstyled text-end text-lg-right my-0 mx-0">
-                    <li class="list-inline-item dropdown align-middle">
-                        <a href="#" class="text-black nav-link" id="user-options" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
+                    <li class="list-inline-item align-middle">
+                        <a href="#" onclick="droppydown()" class="text-black nav-link">
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
-                                <a href="{% url 'profile' %}" class="dropdown-item"><p class="my-auto py-auto">My Account</p></a>
+                                <p class="my-auto py-auto">My Account</p>
                             </div>
                         </a>
-                        <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                        <div id="droppydown" class="dropdown-menu border-0">
                             {% if request.user.is_authenticated %}
                                 {% if request.user.is_superuser %}
-                                    <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                                <a href="{% url 'add_product' %}" class="dropdown-item">Add Product</a>
                                 {% endif %}
                                 <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                                 <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
@@ -224,7 +223,12 @@
             </p>
         </div>
     </footer>
-
+<script>
+    function droppydown() {
+        var droppydown = document.getElementById('droppydown')
+        droppydown.classList.toggle('show')
+    }
+</script>
 </body>
 
 </html>

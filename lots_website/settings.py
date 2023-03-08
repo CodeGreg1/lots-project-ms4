@@ -23,7 +23,7 @@ ALLOWED_HOSTS = ['*',
                  '0.0.0.0',
                  'localhost',]
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-codegreg1-lotsprojectms-dyx26i75tfs.ws-eu89.gitpod.io']  # noqa
+CSRF_TRUSTED_ORIGINS = ['https://8000-codegreg1-lotsprojectms-dyx26i75tfs.ws-eu89b.gitpod.io']  # noqa
 
 # Application definition
 
