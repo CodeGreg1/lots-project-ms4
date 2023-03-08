@@ -7,28 +7,27 @@
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LOTS</h5>
+                <img class="mx-auto" src="{{MEDIA_URL}}logo-red.webp" width="220px" alt="LOTS Logo">
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button></div>
             <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="{% url 'home' %}">Home</a></li>
+                        <a class="nav-link" aria-current="page" href="{% url 'home' %}"><strong>Home</strong></a></li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="{% url 'membership' %}">How to Join</a></li>
+                        <a class="nav-link" aria-current="page" href="{% url 'membership' %}"><strong>How to Join</strong></a></li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="{% url 'news' %}">News</a></li>
+                        <a class="nav-link" aria-current="page" href="{% url 'news' %}"><strong>News</strong></a></li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="{% url 'publications' %}">Publications</a></li>
+                        <a class="nav-link" aria-current="page" href="{% url 'publications' %}"><strong>Publications</strong></a></li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="{% url 'products' %}">Sales</a></li>
+                        <a class="nav-link" aria-current="page" href="{% url 'products' %}"><strong>Sales</strong></a></li>
                     <li class="nav-item">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        About LOTS</a>
+                        <strong>About LOTS</strong></a>
                         <ul class="dropdown-menu">
-                            <li><a href="{% url 'about_us' %}" class="dropdown-item">About Us</a></li>
-                            <li><a href="" class="dropdown-item">Information Service</a></li>
-                            <li><a href="{% url 'links' %}" class="dropdown-item">Links</a></li>
-                            <li><a href="" class="dropdown-item">Contact Us</a></li>
+                            <li><a href="{% url 'about_us' %}" class="dropdown-item text-center">About Us</a></li>
+                            <li><a href="{% url 'links' %}" class="dropdown-item text-center">Links</a></li>
+                            <li><a href="" class="dropdown-item text-center">Contact Us</a></li>
                         </ul>
                     </li>
                 </ul>

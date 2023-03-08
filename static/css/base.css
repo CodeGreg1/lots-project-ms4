@@ -257,9 +257,6 @@ a {
   
   @-webkit-keyframes slider {
     0% {
-      left: 0%;
-    }
-    0% {
       left: -100%;
     }
     35% {
@@ -278,9 +275,6 @@ a {
         left: 0%;}}
   
   @-moz-keyframes slider {
-    0% {
-      left: 0%;
-    }
     0% {
       left: -100%;
     }
@@ -301,9 +295,6 @@ a {
   
   @keyframes slider {
     0% {
-      left: 0%;
-    }
-    0% {
       left: -100%;
     }
     35% {
@@ -321,6 +312,7 @@ a {
     95% {
         left: 0%;
 }}
+  
 
 .card-body.pb-0.text-center {
   height: 70px;

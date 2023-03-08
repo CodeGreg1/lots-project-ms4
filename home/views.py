@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.contrib.staticfiles import storage
+from django.views.decorators.csrf import csrf_exempt
 
 
 # Create your views here.
@@ -11,6 +12,12 @@ def index(request):
 def about_us(request):
     """ A view to return the index page """
     return render(request, "home/about_us.html")
+
+
+@csrf_exempt
+def contact_us(request):
+    """ A view to return the index page """
+    return render(request, "home/contact_us.html")
 
 
 def links(request):
@@ -91,4 +98,3 @@ def TWorld(request):
 def LWorld(request):
     """ A view to return the Payment page """
     return render(request, "home/membership-type/lbm-world.html")
-

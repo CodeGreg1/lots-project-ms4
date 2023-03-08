@@ -19,11 +19,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
-
+    
     {% block extra_css %}
     {% endblock %}
-
+    
     {% block corejs %}
+    <!-- <link rel="stylesheet" href="{% static 'js/script.js' %}"> -->
     <script src="https://kit.fontawesome.com/9f41e2550b.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.js"
         integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
@@ -48,8 +49,8 @@
         <div class="row tophead">
             <div class="col-4 col-sm-6 my-auto py-3 text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <img class="d-none d-sm-block" src="{{MEDIA_URL}}logo-red.webp" height="75px" alt="">
-                    <img class="d-block d-sm-none" src="{{MEDIA_URL}}logo-sm.webp" height="75px" alt="">
+                    <img class="d-none d-sm-block" src="{{MEDIA_URL}}logo-red.webp" height="75px" alt="LOTS Logo">
+                    <img class="d-block d-sm-none" src="{{MEDIA_URL}}logo-sm.webp" height="75px" alt="LOTS Logo">
                 </a>
             </div>
             <!--  -->
