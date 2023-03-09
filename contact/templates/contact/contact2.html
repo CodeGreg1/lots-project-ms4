@@ -5,10 +5,10 @@
 {% endblock %}
 
 {% block extra_css %}
-<!-- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script>
     emailjs.init('uQkH-Hh5dEU1iUQ29')
-</script> -->
+</script>
 {% endblock %}
 
 {% block content %}
@@ -18,21 +18,15 @@
     </div>
     <hr>
 </div>
-{% if from_name %}
-<div><h2>Thanks {{ from_name }} your message has been sent.</h2></div>
-{% endif %}
-
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-10">
             <div class="row justify-content-center">
                 
                 <div class="col-md-6">
-                    <form id="form" class="form" action="{% url 'contact' %}">
-                        {% csrf_token %}
+                    <form id="form" class="form" action="POST">
                         <div class="container-fluid">
                             <div class="row justify-content-center">
-
                                 <div class="input-group mb-1">
                                     <label class="input-group-text basic-addon1" for="from_name">Name</label>
                                     <input class="form-control" placeholder="Name" type="text" name="from_name"
@@ -50,14 +44,14 @@
                                         placeholder="Email Address" required>
                                 </div>
                                 <div class="input-group mb-3">
-                                    <label for="message_received" class="input-group-text basic-addon1">Message:</label>
-                                    <textarea class="form-control" placeholder="Ask me anything" name="message_received"
-                                        id="message_received" required></textarea>
+                                    <label for="message" class="input-group-text basic-addon1">Message:</label>
+                                    <textarea class="form-control" placeholder="Ask me anything" name="message"
+                                        id="message" required></textarea>
                                 </div>
 
                                 <div class="text-center send-message-button">
                                     <button class="send-button btn btn-danger btn-large darken-4 center "
-                                    type="submit">Send Email</button>
+                                    type="submit" id="buttonsm" onclick="SendMail()">Send Email</button>
                                 </div>
                             </div>
                         </div>
@@ -91,6 +85,7 @@
                     </form> -->
                 </div>
                 <div class="col-md-6">
+                    <p>We will do our best to get back to you as soon as possible.</p>
                     <p><img src="{{ MEDIA_URL }}bus-contact.webp" alt="Image" class="img-fluid"></p>
                 </div>
             </div>
@@ -114,5 +109,5 @@
 {% block postloadjs %}
 <!-- <link rel="stylesheet" href="{% static 'js/email.min.js' %}"> -->
 <!-- <link rel="stylesheet" href="{% static 'js/script.js' %}"> -->
-<!-- <link rel="stylesheet" href="{% static 'js/email.js' %}"> -->
+<link rel="stylesheet" href="{% static 'js/email.js' %}">
 {% endblock %}

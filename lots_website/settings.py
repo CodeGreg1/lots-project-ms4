@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'storages',
     'news',
     'tinymce',
+    'contact',
 ]
 
 MIDDLEWARE = [
@@ -216,7 +217,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-    DEFAULT_FROM_EMAIL = 'testwebgwd@gmail.com'
+    EMAIL_PORT = 1025
+    DEFAULT_FROM_EMAIL = ''
+    EMAIL_USE_TLS = False
+    # EMAIL_USE_SSL = False
+    EMAIL_HOST = 'localhost'
+    EMAIL_HOST_USER = ''
+    EMAIL_HOST_PASSWORD = ''
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
