@@ -22,4 +22,4 @@ def contact(request):
             [settings.EMAIL_HOST_USER, ],
             fail_silently=False,
         )
-    return render(request, 'contact/contact_us.html')
+    return render(request, 'contact/contact.html')

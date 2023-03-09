@@ -2,6 +2,10 @@ from django.shortcuts import render
 from django.contrib.staticfiles import storage
 from django.views.decorators.csrf import csrf_exempt
 
+from django.http import HttpResponse
+from django.core.mail import send_mail
+from django.conf import settings
+
 
 # Create your views here.
 def index(request):
@@ -12,6 +16,28 @@ def index(request):
 def about_us(request):
     """ A view to return the index page """
     return render(request, "home/about_us.html")
+
+
+def contact(request):
+    if request.method == 'POST':
+        message = request.POST['message']
+        email = request.POST['reply_to']
+        name = request.POST['from_name']
+        number = request.POST['contact_number']
+
+        send_mail(
+            f'LOTS Contact form filled in by {name}',
+            f'Name:{name} \
+            Message: {message}\
+            Number: {number}\
+            Email: {email}',
+            email,
+            [settings.EMAIL_HOST_USER, ],
+            fail_silently=False,
+        )
+        return render(request, 'home/contact.html')
+    else:
+        return render(request, 'home/contact.html')
 
 
 # @csrf_exempt
