@@ -14,10 +14,10 @@ def about_us(request):
     return render(request, "home/about_us.html")
 
 
-@csrf_exempt
-def contact_us(request):
-    """ A view to return the index page """
-    return render(request, "home/contact_us.html")
+# @csrf_exempt
+# def contact_us(request):
+#     """ A view to return the index page """
+#     return render(request, "home/contact_us.html")
 
 
 def links(request):

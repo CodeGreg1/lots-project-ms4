@@ -24,8 +24,7 @@
             <div class="row justify-content-center">
                 
                 <div class="col-md-6">
-                    <!--  -->
-                    <form id="form" class="form" action="">
+                    <form id="form" class="form" action="POST">
                         <div class="container-fluid">
                             <div class="row justify-content-center">
                                 <div class="input-group mb-1">
@@ -51,8 +50,8 @@
                                 </div>
 
                                 <div class="text-center send-message-button">
-                                    <input class="send-button btn btn-danger btn-large darken-4 center "
-                                        type="submit" id="buttonsm" value="Send Email" onclick="SendMail()">
+                                    <button class="send-button btn btn-danger btn-large darken-4 center "
+                                    type="submit" id="buttonsm" onclick="SendMail()">Send Email</button>
                                 </div>
                             </div>
                         </div>
@@ -107,8 +106,8 @@
 {% endblock %}
 
 
-<link rel="stylesheet" href="{% static 'js/email.js' %}">
 {% block postloadjs %}
 <!-- <link rel="stylesheet" href="{% static 'js/email.min.js' %}"> -->
 <!-- <link rel="stylesheet" href="{% static 'js/script.js' %}"> -->
+<link rel="stylesheet" href="{% static 'js/email.js' %}">
 {% endblock %}

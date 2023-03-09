@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+{% endblock %}
+
+{% block extra_css %}
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+    emailjs.init('uQkH-Hh5dEU1iUQ29')
+</script>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <h1 class="col mt-3">Contact Us</h1>
+    </div>
+    <hr>
+</div>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="row justify-content-center">
+                
+                <div class="col-md-6">
+                    <form id="form" class="form" action="POST">
+                        <div class="container-fluid">
+                            <div class="row justify-content-center">
+                                <div class="input-group mb-1">
+                                    <label class="input-group-text basic-addon1" for="from_name">Name</label>
+                                    <input class="form-control" placeholder="Name" type="text" name="from_name"
+                                        id="from_name" required>
+                                </div>
+                                <div class="input-group mb-1">
+                                    <label class="input-group-text basic-addon1" for="contact_number">Phone
+                                        Number</label>
+                                    <input type="text" class="form-control" placeholder="Phone Number"
+                                        name="contact_number" id="contact_number">
+                                </div>
+                                <div class="input-group mb-1">
+                                    <label class="input-group-text basic-addon1" for="reply_to">Email Address</label>
+                                    <input type="email" name="reply_to" id="reply_to" class="form-control"
+                                        placeholder="Email Address" required>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <label for="message" class="input-group-text basic-addon1">Message:</label>
+                                    <textarea class="form-control" placeholder="Ask me anything" name="message"
+                                        id="message" required></textarea>
+                                </div>
+
+                                <div class="text-center send-message-button">
+                                    <button class="send-button btn btn-danger btn-large darken-4 center "
+                                    type="submit" id="buttonsm" onclick="SendMail()">Send Email</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!--  -->
+                    <!-- <form class="mb-5" method="post" id="contactForm" name="contactForm" novalidate="novalidate">
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <input type="text" class="form-control m-2 " name="name" id="name"
+                                    placeholder="Your name">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <input type="text" class="form-control m-2" name="email" id="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <textarea class="form-control m-2" name="message" id="message" cols="30" rows="6"
+                                    placeholder="Write your message"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <input class="send-button btn btn-primary btn-large blue darken-4 center " type="submit" id="buttonsm"
+                  value="Send Email" onclick="SendMail()">
+                            </div>
+                        </div>
+                    </form> -->
+                </div>
+                <div class="col-md-6">
+                    <p>We will do our best to get back to you as soon as possible.</p>
+                    <p><img src="{{ MEDIA_URL }}bus-contact.webp" alt="Image" class="img-fluid"></p>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h2>Information Service</h2>
+        <p>LOTS' Information Service (available only to members).</p>
+        <p>LOTS members may contact Andrew Robertson:</p>
+
+        <p>Curry Farm, Halstead Lane, Knockholt, Sevenoaks, Kent, TN14 7EP.
+            <a href="mailto:lots.info@btinternet.com">lots.info@btinternet.com</a></p>
+        <p>Our archives hold information about bus routes and the vehicles that operated them throughout the
+            history of London's road passenger transport.</p>
+    </div>
+</div>
+
+{% endblock %}
+
+
+{% block postloadjs %}
+<!-- <link rel="stylesheet" href="{% static 'js/email.min.js' %}"> -->
+<!-- <link rel="stylesheet" href="{% static 'js/script.js' %}"> -->
+<link rel="stylesheet" href="{% static 'js/email.js' %}">
+{% endblock %}
