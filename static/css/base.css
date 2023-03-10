@@ -403,3 +403,7 @@ a {
 .dropdown-menu.show {
   right: 30px !important;
 }
+
+.contactform {
+  width: 250px;
+}
