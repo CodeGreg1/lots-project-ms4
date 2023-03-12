@@ -221,14 +221,6 @@ The Wireframes were created using Wondershare Mockitt App this was for the basic
 -   [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 -   [Django](https://docs.djangoproject.com/en/4.1/)
 
-HTML, CSS, JavaScript, Python+Django
-
-Relational database (recommending MySQL or PostgreSQL)
-
-Stripe payments
-
-Additional libraries and APIs
-
 <br>
 <a name='frameworks'/>
 
@@ -245,17 +237,23 @@ Additional libraries and APIs
 - [Wondershare Mockitt:]()
     - Balsamiq was used to create the wireframes during the design process.
 - [EmailJS](https://www.emailjs.com/)
-- I used EmailJS to enable free emailing to the therapist on the home page.
-- [GoCardless]
-- [PostgreSQL]
-- [Bootstrap]
-- [Heroku]
-- [Stripe]
-- [DbSchema]
-- [ElephantSQL]
-- [AmazonAWS]
-
-    - I used MongoDB as the database for storing information gathered in the app.
+-   I used EmailJS to enable free emailing to the therapist on the home page.
+- [GoCardless](https://gocardless.com/)
+-   This is the preferred payment platform that LOTS wanted to use for their annual subscriptions. 
+- [PostgreSQL](https://www.postgresql.org/)
+-   This is the Relational database I used to store the information on forms collected throughout the site.
+- [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+-   Bootstrap is the front end tool kit I decided to use.
+- [Heroku](https://www.heroku.com/)
+-   Heroku is the cloud platform I have chosen to deploy the website with.
+- [Stripe](https://stripe.com/en-gb)
+-   Stripe is the payment gateway I have used to handle the point of sale payments so card payments can be made. 
+- [DbSchema](https://dbschema.com/)
+-   DbSchema was used to outline the database layout. 
+- [ElephantSQL](https://www.elephantsql.com/)
+-   This was used for the integration of the postgresql database that Django used.
+- [AmazonAWS](https://aws.amazon.com/s3/)
+-   The S3 bucket was used to store all media and static files here.
 
     <br>
     <a name='credit'/>
