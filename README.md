@@ -149,41 +149,59 @@ If you look at the schema you will see the fundamental differences in the colour
 
 ## Wireframes 
 
+The Wireframes were created using Wondershare Mockitt App this was for the basic structure of the main site pages such as the ones detailed below. The only pages of exception were those that were created by some of the installed application such as the AllAuth pages for confirming emails and signing up etc. These pages were edited to conform with the general page aesthetics with button design and general look to match all the other pages of the website.   
+
+**Index/Home page:** The home page gives the site it's initial entry point and clear purpose as to what the end user is to expect. There is clear navigation to the top of the page either fully across the top or on smaller displays in a drop down navigation bar.
+
+**How To Join Page:** The how to join page is the membership page for the site. It was discussed whether it should be called the membership page as it clearly is the main purpose of this page. The Society preferred calling it 'How To Join' so I stuck with their intention. This page forms a gateway to any of the different forms that enables the user to sign up for a membership.
+
+**News Page:** The News page will populate with all the posts that the society chooses to put out to it's members.
+
+**Publications Page:** The publications page has been created to show some of the different publications that are produced by The London Omnibus Traction Society. 
+
+**Sales Page:** This is the main products sales page. It shows all the products available and is going to be managed by the Society on the volume of stock for each product.
+
+
+**About Us Page:** This page has a small amount of history of the society and brief amount of information about their publications.
+
+**Links Page:** These are all relevant pages that the members of the society and users of the website might be interested in.
+
+**Contact Us Page:** The contact us page is used for communication purposes from website users to the society. Included on this site is old Information Service page.
+
+
 |Pages|Mobile View|Tablet View|Desktop View|
 |---|---|---|---|
 |Index|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/Index-Mobile.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/Index-Tablet.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/Index-Desktop.png)|
-|How To Join|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/How-To-Join-mobile.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/How-To-Join-tablet.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/How-To-Join-Desktop.png)|
-|Publications|[View]()|[View]()|  [View]() |
-|Sales|[View]()|[View]()|[View]()|
-|About Us|[View]()|[View]()|[View]()|
-|Links|[View]()|[View]()|[View]()|
-|Contact|[View]()|[View]()|[View]()|
+|How To Join|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/How-To-Join-Mobile.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/How-To-Join-Tablet.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/How-To-Join-Desktop.png)|
+|Publications|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/Publications-Mobile.png)|  [View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/Publications-Tablet.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/Publications-Desktop.png)|
+|Sales|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/Sales-Mobile.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/Sales-Tablet.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/Sales-Desktop.png)|
+|News|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/News-Mobile.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/News-Tablet.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/News-Desktop.png)|
+|About Us|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/About-Us-Mobile.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/About-Us-Tablet.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/About-Us-Desktop.png)|
+|Links|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/Links-Mobile.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/Links-Tablet.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/Links-Desktop.png)|
+|Contact|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/Contact-Us-Mobile.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/Contact-Us-Tablet.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/Contact-Us-Desktop.png)|
 
--   Home Screen Wireframe - [View](https://milestone3-greg-goodrem.herokuapp.com/static/images/readme_images/home.png)
--   Login Screen Wireframe - [View](https://milestone3-greg-goodrem.herokuapp.com/static/images/readme_images/login.jpg)
--   Register Screen Wireframe - [View](https://milestone3-greg-goodrem.herokuapp.com/static/images/readme_images/register.jpg)
--   Add Client Screen Wireframe - [View](https://milestone3-greg-goodrem.herokuapp.com/static/images/readme_images/add_client.jpg)
--   Add Treatment Screen Wireframe - [View](https://milestone3-greg-goodrem.herokuapp.com/static/images/readme_images/add_treatment.jpg)
--   Edit Client Screen Wireframe - [View](https://milestone3-greg-goodrem.herokuapp.com/static/images/readme_images/edit_client.jpg)
--   Edit Treatment Screen Wireframe - [View](https://milestone3-greg-goodrem.herokuapp.com/static/images/readme_images/edit_treatment.png)
--   Treatments Screen Wireframe - [View](https://milestone3-greg-goodrem.herokuapp.com/static/images/readme_images/treatments.jpg)
--   Manage Clients Screen Wireframe - [View](https://milestone3-greg-goodrem.herokuapp.com/static/images/readme_images/manage_clients.jpg)
--   Report Screen Wireframe - [View](https://milestone3-greg-goodrem.herokuapp.com/static/images/readme_images/report.jpg)
+### Wireframes side by side
+
+
+<img src="media/readme_images/wireframes/wire-home.png"> 
+<img src="media/readme_images/wireframes/wire-join.png"> 
+<img src="media/readme_images/wireframes/wire-pubs.png"> 
+<img src="media/readme_images/wireframes/wire-sales.png"> 
+<img src="media/readme_images/wireframes/wire-news.png"> 
+<img src="media/readme_images/wireframes/wire-about.png"> 
+<img src="media/readme_images/wireframes/wire-links.png"> 
+<img src="media/readme_images/wireframes/wire-contact.png">
+
 
 <br>
 <a name='responsive'/>
 
 ## Responsive Design Features 
--   The App has been made to be responsive on varying sized screens.
--   The App will resize from the screen of a mobile phone all the way to a full desktop display.
--   Its intended use is for the therapist to generally use a computer or tablet device to input informaion and the end user (Client) to review on their phones.
--   Even though the intended use is as stated it can still be used on a mobile by a therapist if required.
--   The treatment advice and notes are immediately available to the client after their session.
--   The treatments and clients can be edited and deleted. The delete function has a modal setup so people don't accidently delete treatments or clients.  
--   The reports page keeps track of trends with overall numbers of clients and treatments on different areas oof the body.
--   Individually you can review treatments of clients and how many they've had on different areas of the body. This can help out for returning clients and reviewing previous sessions.
--   The booking system has been embeded using an iframe and automatically filling the name and email data from the users own information. 
--   The booking system automatically emails out to the client confirmation of appointment.
+-   The website has been made to be responsive on varying sized screens.
+-   The website will resize from the screen of a mobile phone all the way to a full desktop display.
+-   It is intended use is for potential members to come and view the site and options for annual membership and publication sales.
+-   It is also for current members to visit and see the news updates.
+-   Another usage is for the society to be able to administrate the posts and products as and when they please.
 
 <br>        
 <a name='future'/>
@@ -201,7 +219,15 @@ If you look at the schema you will see the fundamental differences in the colour
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 -   [Javascript](https://en.wikipedia.org/wiki/javascript)
 -   [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
--   [Jinja](https://en.wikipedia.org/wiki/Jinja_(template_engine))
+-   [Django](https://docs.djangoproject.com/en/4.1/)
+
+HTML, CSS, JavaScript, Python+Django
+
+Relational database (recommending MySQL or PostgreSQL)
+
+Stripe payments
+
+Additional libraries and APIs
 
 <br>
 <a name='frameworks'/>
@@ -216,14 +242,19 @@ If you look at the schema you will see the fundamental differences in the colour
     - Git was used for version control by utilizing the terminal to commit to Git and Push to GitHub.
 - [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
-- [Wondershare Mockitt:](https://balsamiq.com/)
+- [Wondershare Mockitt:]()
     - Balsamiq was used to create the wireframes during the design process.
 - [EmailJS](https://www.emailjs.com/)
 - I used EmailJS to enable free emailing to the therapist on the home page.
 - [GoCardless]
-- []
+- [PostgreSQL]
+- [Bootstrap]
+- [Heroku]
+- [Stripe]
+- [DbSchema]
+- [ElephantSQL]
+- [AmazonAWS]
 
-- [MongoDB](https://www.mongodb.com/)
     - I used MongoDB as the database for storing information gathered in the app.
 
     <br>
