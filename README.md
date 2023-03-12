@@ -94,21 +94,21 @@ One of the main instructions from the London Omnibus Traction Society was that t
 |   |   |
 |---|---|
 |<h2>New Index Page</h2>|<h2>Old Index Page</h2>|
-|<img src="media/readme_images/LOTS-new-index.png">|<img src="media/readme_images/LOTS-old-index.png">|
+|<img src="documentation/website-screenshots/LOTS-new-index.png">|<img src="documentation/website-screenshots/LOTS-old-index.png">|
 |<h2>New Membership Page</h2>|<h2>Old Membership Page</h2>|
-|<img src="media/readme_images/LOTS-new-membership.png">|<img src="media/readme_images/LOTS-old-membership.png">|
+|<img src="documentation/website-screenshots/LOTS-new-membership.png">|<img src="documentation/website-screenshots/LOTS-old-membership.png">|
 |<h2>New News Page</h2>|<h2>Old News Page</h2>|
-|<img src="media/readme_images/LOTS-new-news.png">|<img src="media/readme_images/LOTS-old-news.png">|
+|<img src="documentation/website-screenshots/LOTS-new-news.png">|<img src="documentation/website-screenshots/LOTS-old-news.png">|
 |<h2>New Publications Page</h2>|<h2>Old Publications Page</h2>|
-|<img src="media/readme_images/LOTS-new-publications.png">|<img src="media/readme_images/LOTS-old-publications.png">|
+|<img src="documentation/website-screenshots/LOTS-new-publications.png">|<img src="documentation/website-screenshots/LOTS-old-publications.png">|
 |<h2>New Sales Page</h2>|<h2>Old Sales Page</h2>|
-|<img src="media/readme_images/LOTS-new-sales.png">|<img src="media/readme_images/LOTS-old-sales.png">|
+|<img src="documentation/website-screenshots/LOTS-new-sales.png">|<img src="documentation/website-screenshots/LOTS-old-sales.png">|
 |<h2>New About Page</h2>|<h2>Old About Page</h2>|
-|<img src="media/readme_images/LOTS-new-about.png">|<img src="media/readme_images/LOTS-old-about.png">|
+|<img src="documentation/website-screenshots/LOTS-new-about.png">|<img src="documentation/website-screenshots/LOTS-old-about.png">|
 |<h2>New Links Page</h2>|<h2>Old Links Page</h2>|
-|<img src="media/readme_images/LOTS-new-links.png">|<img src="media/readme_images/LOTS-old-links.png">|
+|<img src="documentation/website-screenshots/LOTS-new-links.png">|<img src="documentation/website-screenshots/LOTS-old-links.png">|
 |<h2>New Contact Page</h2>|<h2>Old Info Page</h2>|
-|<img src="media/readme_images/LOTS-new-contact.png">|<img src="media/readme_images/LOTS-old-info.png">|
+|<img src="documentation/website-screenshots/LOTS-new-contact.png">|<img src="documentation/website-screenshots/LOTS-old-info.png">|
 
 ### Brand Logo
 -   The Brand logo was quite pixelated when I first started looking at the original website and decided it was worth tweaking it and creating a newer clearer logo. I used Canva to redesign it and give it a couple of different designs. I created a smaller logo for when the display is responsive and the width gets smaller to only show the basic smaller logo seen below.
@@ -116,17 +116,17 @@ One of the main instructions from the London Omnibus Traction Society was that t
 |   |   |
 |---|---|
 |New Redesigned Logo|Old Logo|
-|<img src="media/readme_images/lots-logo-new.webp">|<img src="media/readme_images/lots-logo-old.gif">|
+|<img src="documentation/readme_images/lots-logo-new.webp">|<img src="documentation/readme_images/lots-logo-old.gif">|
 |New Redesigned Alternative Red Logo|   |
-|<img src="media/readme_images/logo-red.webp">|   |
+|<img src="documentation/readme_images/logo-red.webp">|   |
 |Smaller Redesigned Logo|   |
-|<img src="media/readme_images/logo-sm.webp">|   |
+|<img src="documentation/readme_images/logo-sm.webp">|   |
 
 
 ### Colour Scheme
 -   The main colours used all associated with the original website and the different logos that the society has used in the past. I tried to incorporate these into the menus and the drop down menus and throughout the site.
 
-<img src="media/readme_images/lots-colours.png">
+<img src="documentation/readme_images/lots-colours.png">
 
 ### Typography
 -   To conform with the simplistic request from the society I have used the more common professional fonts such as Arial, Helvetica and sans-serif. These will help the older users of the website be able to clearly read the text and feel comfortable.
@@ -142,7 +142,7 @@ If you look at the schema you will see the fundamental differences in the colour
     -   Blue - This is the Django admin and installed admin interface theme manager which was installed.
     -   Orange - This is the main schema structure for products and checkouts with the use of the profiles as an entry point.
 
-<img src="media/readme_images/lots-project-schema.png"> 
+<img src="documentation/readme_images/lots-project-schema.png"> 
 
 <br>
 <a name='wireframes'/>
@@ -183,14 +183,14 @@ The Wireframes were created using Wondershare Mockitt App this was for the basic
 ### Wireframes side by side
 
 
-<img src="media/readme_images/wireframes/wire-home.png"> 
-<img src="media/readme_images/wireframes/wire-join.png"> 
-<img src="media/readme_images/wireframes/wire-pubs.png"> 
-<img src="media/readme_images/wireframes/wire-sales.png"> 
-<img src="media/readme_images/wireframes/wire-news.png"> 
-<img src="media/readme_images/wireframes/wire-about.png"> 
-<img src="media/readme_images/wireframes/wire-links.png"> 
-<img src="media/readme_images/wireframes/wire-contact.png">
+<img src="documentation/wireframes/wire-home.png"> 
+<img src="documentation/wireframes/wire-join.png"> 
+<img src="documentation/wireframes/wire-pubs.png"> 
+<img src="documentation/wireframes/wire-sales.png"> 
+<img src="documentation/wireframes/wire-news.png"> 
+<img src="documentation/wireframes/wire-about.png"> 
+<img src="documentation/wireframes/wire-links.png"> 
+<img src="documentation/wireframes/wire-contact.png">
 
 
 <br>
@@ -278,18 +278,23 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
     ### Lighthouse Reports 
 
-| Pages  |  Mobile | Desktop |
-|---|---|---|
-| Home  | <img src="milestone3/static/images/readme_images/home_LHR_mob.png">  | <img src="milestone3/static/images/readme_images/home_LHR.png">  |
-| Manage Clients | <img src="milestone3/static/images/readme_images/clients_LHR_mob.png">  |  <img src="milestone3/static/images/readme_images/clients_LHR.png"> |
-| Add Client  |  <img src="milestone3/static/images/readme_images/add_client_LHR_mob.png">  |  <img src="milestone3/static/images/readme_images/add_client_LHR.png"> |
-| Edit Client | <img src="milestone3/static/images/readme_images/edit_client_LHR_mob.png">  | <img src="milestone3/static/images/readme_images/edit_client_LHR.png">  |
-| Add Treatment  | <img src="milestone3/static/images/readme_images/add_treatment_LHR_mob.png">  | <img src="milestone3/static/images/readme_images/add_treatment_LHR.png">  |
-| Edit Treatment  | <img src="milestone3/static/images/readme_images/Edit_treatment_LHR_mob.png">  | <img src="milestone3/static/images/readme_images/Edit_treatment_LHR.png">  |
-| Treatments  | <img src="milestone3/static/images/readme_images/Treatments_LHR_mob.png">  | <img src="milestone3/static/images/readme_images/Treatments_LHR.png">  |
-| Report  | <img src="milestone3/static/images/readme_images/Report_LHR_mob.png">  | <img src="milestone3/static/images/readme_images/Report_LHR.png">  |
-| Login  | <img src="milestone3/static/images/readme_images/Login_LHR_mob.png">  | <img src="milestone3/static/images/readme_images/Login_LHR.png">  |
-| Register | <img src="milestone3/static/images/readme_images/Register_LHR_mob.png">  | <img src="milestone3/static/images/readme_images/Register_LHR.png">  |
+Below you will see the Lighthouse reports for the different pages of the website. As you can see the average percentage is above 90%. Some of the main issues with the best practice section in all pages are related to Chrome Dev Tools however I  
+
+| Pages  |  Report  |
+|---|---|
+| Home  |<img src="documentation/lighthouse-images/lighthouse-home.png">|
+| How To Join |<img src="documentation/lighthouse-images/lighthouse-membership.png">|
+| News  |<img src="documentation/lighthouse-images/lighthouse-news.png">|
+| Publications |<img src="documentation/lighthouse-images/lighthouse-publications.png">|
+| Sales  |<img src="documentation/lighthouse-images/lighthouse-sales.png">|
+| About Us  |<img src="documentation/lighthouse-images/lighthouse-about.png">|
+| Links  |<img src="documentation/lighthouse-images/lighthouse-links.png">|
+| Contact Us  |<img src="documentation/lighthouse-images/lighthouse-contact-us.png">|
+| Register  |<img src="documentation/lighthouse-images/lighthouse-register.png">|
+| Login |<img src="documentation/lighthouse-images/lighthouse-login.png">|
+| Logout |<img src="documentation/lighthouse-images/lighthouse-logout.png">|
+| Profile |<img src="documentation/lighthouse-images/lighthouse-profile.png">|
+| Add Product |<img src="documentation/lighthouse-images/lighthouse-add-product.png">|
 
 
 -   [Wave Report](https://wave.webaim.org/report#/https://milestone3-greg-goodrem.herokuapp.com/home) - There are 4 alerts which relate to Table layout (which is the timetable of availability), 2 redundant links which I want to keep on the page and a 1st level heading alert. All of these alerts are absolutely fine for my requirements of the pages.
