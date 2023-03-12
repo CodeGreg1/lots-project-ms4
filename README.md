@@ -1,10 +1,17 @@
 <h1 align="center">Greg Goodrem Milestone Project 4</h1>
 <h2 align='center'>London Omnibus Traction Society Website</h2>
 <br>
-
-This project is the first stepin creating a fully functional website with capabilities to have products both sold and to sign up to the annual memberships. This website is constructed with my knowledge level of HTML, CSS, Python, Javascript, Django, Webhooks and API. The overall goal of the website is to serve as a sales site of publications with also the ability to sign up for the annual memberships with the base to build into a fully functioning membership site with several backend uses. The main thing is to revamp the old site that hasn't been updated since 2002.
-Members currently have to download and print an order form for publications and then they send their order to the Society. The idea is to change this into a website with sales ability so that it helps both the Society to sell publications and also the customer receiving their products quicker due to less time from the customer sending in an order form etc.
-
+<p>
+This project is the first step in creating a fully functional website with capabilities to have products both sold and to sign up to the annual memberships. This website is constructed with my knowledge level of HTML, CSS, Python, Javascript, Django, Webhooks and API. 
+</p>
+<p>
+The overall goal of the website is to build an annual subscription membership. The other main feature is to sell the many other publications that are being sold by LOTS.
+</p>
+<p>
+The original website hasn't been updated properly since 2002 so the third and fundamental purpose is to revamp and make it much more modern and functional.
+</p><p>
+Members currently have to download and print an order form for publications and then they send their order to the Society. The idea is to change this into a website with sales ability so that it helps both the Society to sell more publications and also the customer receiving their products far quicker due to a more streamline website experience.
+</p>
 
 [View the live project here.](https://lots-project.herokuapp.com/)
 
@@ -29,67 +36,114 @@ Members currently have to download and print an order form for publications and 
 <a name='ux'/>
 
 ## User Experience (UX and UI) 
--   ### Initial Therapist Experience
-    - As the therapist it is important that they direct their clients towards the application so that they initially create a login and then go on to book an in person appointment. This starts the future interactions with the app. 
-
--   ### Initial Client Goals
-    - As a first time user they will sign up and create a login in order to book their treatment session with a qualified therapist. 
-        
-    - As a first time user after they have booked their session they need to atttend and see their therapist.
-
--   ### After/During Treatment session for the Therapist 
-
-    - As the Therapist they will use all the available inputs in order to make the correct treatment decisions and record them. The information can be used in the future for legal situations if a claim was made against the therapist. However most importantly it is to share the data with the client directly. The information shared will also trigger an advice sheet for download by the client to follow between sessions after the session is complete.  
     
-- ### After Treatment session for the clients
+### User Profile
 
-    - As the client they have full access to what the therapist has observed and record and what was being assessed in the session. The added benefit is that you are able to come away with their notes as well as a recovery guide for that particular area of the body.
+- The profile of the users of this website are generally as follows:
+    -   People that grew up in a period of time transportation was more prevalent(so over 55).
+    -   More commonly to be male.
+    -   Have used the old website & still use cheques.
+    -   Often well-informed and knowledgeable about the technical and historical aspects of buses and public transportation.
+    -   More likely to be found in urban areas where public transportation is a significant part of daily life.
 
-    - The information from this can be invaluable if the client needs to see another therapist, they can share previous treatment information.
+### User Profile Impact
+    
+-   The world is changing rapidly and the automation of lots of public & private services means they are more likely to start using the website over the old way of sending a cheque.
+-   The option of the old way can be included into the new website however with the intention to phase the old way of working out. 
 
-    <br>
-    <a name='research'/>
+
+### Initial User Experience
+- The user is initially looking for 1 of 3 things:
+    -   News from the society.
+    -   Annual membership for The Bus Magazine or London Bus Magazine
+    -   Buying publications about Buses
+-   I would expect the people using this website being semi regular visitors to the old website.
+-   The current members will be encouraged to use the new site so the renewals of membership is far easier.
+-   The current members will have a new means of purchasing their other publications. 
+
+<br>
+<a name='research'/>
 
 ##  Research  
+<p>The original website has been established for over 20 years and the brand itself has been around for almost 60 years.</p>
+<p>There are many magazines websites that deal with Buses and transportation these are some of them:<p>
     
+
 I wanted to explore a solution to the very heavily paperwork based industry when it comes to physiotherapy and sports therapy. I personally have experienced as client and also very much understand the role of the therapist as I have done a Sports Massage course.
 Reaching out to active therapists I found that a lot of therapists still use paper based systems to collect this information and also when relaying the aftercare information. Not all therapists give advice sheets with detailed examples of the exercises a person should do to help continue injury recovery after a treatment. 
 I found their are few treatment apps that include the client as the focus for outputting information to. A lot of the applications available such as Vagaro, Pabau, Noterro among others focus on the therapist souly being the user. 
--   [Vagaro](https://sales.vagaro.co.uk/pricing) - The basic cost of this system is £30 per month and up to over £200+ per month and the focus of the app is for the business side for the Therapist covering bookings, reports, customer tracking etc.
-- [Pabau](https://www.pabau.com/) - Very much a similar client management system focused on running a clinic such as booking systems, payments, marketing and staff management. Pricing starts at £65 per month.
-- [Noterro](https://noterro.com/practice-management-software-features) - Another practice management software that covers a lot of other aspects of the therapy environment but not so much on the continued recovery after a session has been made. Starts at £25 per month.
-- [Rehabguru](https://www.rehabguru.com/) - This is the closest to the application I've designed which focuses on the exercise library so a therapist can create recovery sheets to share with their clients and also take treatment notes etc. Starts at £10 per month.
 
+-   [Omnibus Magazine](https://www.omnibus-society.org/omnibus-magazine) - Subscriptions and back issues are available. I think the website looks clean and well informed however the route to getting a membership is very slow and could be less complicated.
+-   [Buses Magazine](https://www.keybuses.com/subscribe-now) - I think the website looks good and looks professional however it does only sell its own publications and not other organisations. It also has different periods of purchase such as quarterly, bi annually, annually and also back issues. 
+-   [Classic Bus](https://www.classicbusmag.co.uk/subscriptions) - This website offers sales of annual memberships, back issues and also digital versions. Website looks good and easy to navigate. It is a very basic site. 
+-   [On The Buses](https://shop.kelsey.co.uk/on-the-buses-magazine) - Magazines sold through Kelsey media with back issues monthly, annual or digital subscriptions.
+-   [Buses Worldwide](https://www.magzter.com/GB/CPUK-Print-Publishing-Ltd/Buses-Worldwide/Automotive/) - This magazine is sold through Magzter with back issues, annual and monthly subscriptions with a digital subscription optional.
+-   [LOTS](http://www.lots.org.uk) - Established for 59 years the society has been producing over a thousand different magazines through the variety of publications they provide. The website as it stands is very old with very little interactivity. It is still being updated on the news page fairly regularly with various information applicable to their audiance.
 
 -   ### Research Analysis
-    It appears there are fewer apps that focus mainly on providing clients with the tools to carry on the clients rehab journey. A lot of the applications out there have focused on the business side with the additional treatment advice outside of their remit. The Rehabguru app was good because it offered 2 different apps one for the Therapist using it and one for the client who receives the information and can make bookings etc.
+    It appears there are a lot of different Bus magazines out there for which they all cover various areas of interest to the Bus enthiuiastsf. It clearly is a very niche sector and from talking also to some of the people running LOTS it is clear that they are suffering from the society membership dwindling. The hope of getting more memberships from the website being setup is vital for future developments with the ever decreasing use of cheques which a lot of members are still using. The reoccuring direct debit will help them to not lose customers in the long run as the DD will continue until it is cancelled without the need to send out renewal letters and spending money on letters etc.
     
     <br>
     <a name='#design'></a>
 ## Design 
--   The design has a clean look website. I've used Materialize to help with the creation of HTML and CSS. I've made the website as a whole as something I could potentially us as a native app in the future. 
+-   I opted to use Bootstrap for this website as it is a well known framework and you can create professional looking websites. The style I was able to come up with based on talks with the members of the society. I'll cover all aspects of design in the sections below however please have a look at the new pages compaired to the original website that was created back in 2002.
+
+One of the main instructions from the London Omnibus Traction Society was that they wanted to keep the website quite simple and not to change too much. The main reasoning was that the members that would use the site don't like too much change.
 
 
-    ### Colour Scheme
-    -   The main colour used is a Dark Blue with White and also Dark Grey tones used on some of the background cards and icons. Using very simple colour combinations allows me to alter the colour for another Therapist who may want this addition to their practice.
-   
-    ### Typography
-    -   The font I've used in this applicaton is Muli. It is a minimalist Sans Serif font. Muli is described as mainly for use as a display font so I thought this works well with the cleaness of the web application that I've created.
+|   |   |
+|---|---|
+|<h2>New Index Page</h2>|<h2>Old Index Page</h2>|
+|<img src="media/readme_images/LOTS-new-index.png">|<img src="media/readme_images/LOTS-old-index.png">|
+|<h2>New Membership Page</h2>|<h2>Old Membership Page</h2>|
+|<img src="media/readme_images/LOTS-new-membership.png">|<img src="media/readme_images/LOTS-old-membership.png">|
+|<h2>New News Page</h2>|<h2>Old News Page</h2>|
+|<img src="media/readme_images/LOTS-new-news.png">|<img src="media/readme_images/LOTS-old-news.png">|
+|<h2>New Publications Page</h2>|<h2>Old Publications Page</h2>|
+|<img src="media/readme_images/LOTS-new-publications.png">|<img src="media/readme_images/LOTS-old-publications.png">|
+|<h2>New Sales Page</h2>|<h2>Old Sales Page</h2>|
+|<img src="media/readme_images/LOTS-new-sales.png">|<img src="media/readme_images/LOTS-old-sales.png">|
+|<h2>New About Page</h2>|<h2>Old About Page</h2>|
+|<img src="media/readme_images/LOTS-new-about.png">|<img src="media/readme_images/LOTS-old-about.png">|
+|<h2>New Links Page</h2>|<h2>Old Links Page</h2>|
+|<img src="media/readme_images/LOTS-new-links.png">|<img src="media/readme_images/LOTS-old-links.png">|
+|<h2>New Contact Page</h2>|<h2>Old Info Page</h2>|
+|<img src="media/readme_images/LOTS-new-contact.png">|<img src="media/readme_images/LOTS-old-info.png">|
 
-    ### Imagery
-    -   The pictures I have used have mainly come from Balanced Training. They are mainly in the form of headshots for staff and also the fullwidth banner picture of a massage. I have also used a picture from the TV show friends with the character Ross delivering a massage with spoons. I've used this as a placeholder till another picture of myself is made whilst delivering a massage.
-    -   I've used mainly real world pictures so this could very easily be used straight away.
+### Brand Logo
+-   The Brand logo was quite pixelated when I first started looking at the original website and decided it was worth tweaking it and creating a newer clearer logo. I used Canva to redesign it and give it a couple of different designs. I created a smaller logo for when the display is responsive and the width gets smaller to only show the basic smaller logo seen below.
 
-    ### Database
-    -   I decided to use MongoDB as it will be easier to scale in the future being a non-relational database. The schema is flexible so this will help when it comes to more additions to the data collected.
-    -   One of the benefits of MongoDB is the high performance which is always a benefit.
-    -   I feel using MongoDB we can use all the positives of this Non-relational database and the negatives of consistency and reliability will not effect what we are trying to achieve.  
-    -   Below is the Schema for the database I created:
+|   |   |
+|---|---|
+|New Redesigned Logo|Old Logo|
+|<img src="media/readme_images/lots-logo-new.webp">|<img src="media/readme_images/lots-logo-old.gif">|
+|New Redesigned Alternative Red Logo|   |
+|<img src="media/readme_images/logo-red.webp">|   |
+|Smaller Redesigned Logo|   |
+|<img src="media/readme_images/logo-sm.webp">|   |
 
-<h2 align="center"><img src="milestone3/static/images/Schema.webp"></h2>
 
-    <br>
-    <a name='wireframes'/>
+### Colour Scheme
+-   The main colours used all associated with the original website and the different logos that the society has used in the past. I tried to incorporate these into the menus and the drop down menus and throughout the site.
+
+<img src="media/readme_images/lots-colours.png">
+
+### Typography
+-   To conform with the simplistic request from the society I have used the more common professional fonts such as Arial, Helvetica and sans-serif. These will help the older users of the website be able to clearly read the text and feel comfortable.
+
+### Imagery
+-   The pictures used on this website have all come from the London Omnibus Traction Society. The majority of the imagery is from the publications themselves however I have also used some pictures of single buses for the sliders.
+
+### Database
+-   Django officially supports Postgres, My SQL, Oracle and many more. The top of the list was Postgres and so I continued to use this as it was already established in the backend of Django. If you look at the schema below you will see the fundamental differences in the colour schemes used to identify the different parts that are being used in this project.
+    -   Green - This identifies the Django created backend this also includes the news posting part of the site that I created.
+    -   Blue - This is the Django admin and installed admin interface theme manager which was installed.
+    -   Orange - This is the main schema structure for products and checkouts with the use of the profiles as an entry point.
+
+<img src="media/readme_images/lots-project-schema.png"> 
+
+<br>
+<a name='wireframes'/>
 
 ## Wireframes 
 
@@ -150,14 +204,13 @@ I found their are few treatment apps that include the client as the focus for ou
     - Git was used for version control by utilizing the terminal to commit to Git and Push to GitHub.
 - [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
-- [Balsamiq:](https://balsamiq.com/)
+- [Wondershare Mockitt:](https://balsamiq.com/)
     - Balsamiq was used to create the wireframes during the design process.
 - [EmailJS](https://www.emailjs.com/)
-    - I used EmailJS to enable free emailing to the therapist on the home page.
-- [Calendly](https://developer.calendly.com/)
-    - I used Calendly to interact directly with a booking system already set up and being used for treatment appointments.
-- [Flask](https://en.wikipedia.org/wiki/Flask_(web_framework))
-    - I used Flask as the web framework to build the website on.
+- I used EmailJS to enable free emailing to the therapist on the home page.
+- [GoCardless]
+- []
+
 - [MongoDB](https://www.mongodb.com/)
     - I used MongoDB as the database for storing information gathered in the app.
 

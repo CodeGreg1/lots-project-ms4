@@ -22,9 +22,9 @@ ALLOWED_HOSTS = ['*',
                  '*.lots-project.herokuapp.com/',
                  '0.0.0.0',
                  'localhost',
-                 'https://8000-codegreg1-lotsprojectms-boyz3hrrvh9.ws-eu89b.gitpod.io/',]
+                 'https://8000-codegreg1-lotsprojectms-boyz3hrrvh9.ws-eu90.gitpod.io/',]  # noqa
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-codegreg1-lotsprojectms-boyz3hrrvh9.ws-eu89b.gitpod.io/*']  # noqa
+CSRF_TRUSTED_ORIGINS = ['https://8000-codegreg1-lotsprojectms-boyz3hrrvh9.ws-eu90.gitpod.io/*']  # noqa
 
 # Application definition
 
