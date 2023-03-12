@@ -135,8 +135,10 @@ One of the main instructions from the London Omnibus Traction Society was that t
 -   The pictures used on this website have all come from the London Omnibus Traction Society. The majority of the imagery is from the publications themselves however I have also used some pictures of single buses for the sliders.
 
 ### Database
--   Django officially supports Postgres, My SQL, Oracle and many more. The top of the list was Postgres and so I continued to use this as it was already established in the backend of Django. If you look at the schema below you will see the fundamental differences in the colour schemes used to identify the different parts that are being used in this project.
-    -   Green - This identifies the Django created backend this also includes the news posting part of the site that I created.
+-   Django officially supports Postgres, My SQL, Oracle and many more I used Postgres during this project. These schema tables below are a visual representation of the data is collected that will be in the database and during the project development it has evolved to the below.
+
+If you look at the schema you will see the fundamental differences in the colour schemes used to identify the different parts that are being used in this project.
+    -   Green - This identifies the authorised section of Django this also includes the News app for posting.
     -   Blue - This is the Django admin and installed admin interface theme manager which was installed.
     -   Orange - This is the main schema structure for products and checkouts with the use of the profiles as an entry point.
 
@@ -146,6 +148,16 @@ One of the main instructions from the London Omnibus Traction Society was that t
 <a name='wireframes'/>
 
 ## Wireframes 
+
+|Pages|Mobile View|Tablet View|Desktop View|
+|---|---|---|---|
+|Index|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/Index-Mobile.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/Index-Tablet.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/Index-Desktop.png)|
+|How To Join|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/How-To-Join-mobile.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/How-To-Join-tablet.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/media/readme_images/wireframes/How-To-Join-Desktop.png)|
+|Publications|[View]()|[View]()|  [View]() |
+|Sales|[View]()|[View]()|[View]()|
+|About Us|[View]()|[View]()|[View]()|
+|Links|[View]()|[View]()|[View]()|
+|Contact|[View]()|[View]()|[View]()|
 
 -   Home Screen Wireframe - [View](https://milestone3-greg-goodrem.herokuapp.com/static/images/readme_images/home.png)
 -   Login Screen Wireframe - [View](https://milestone3-greg-goodrem.herokuapp.com/static/images/readme_images/login.jpg)

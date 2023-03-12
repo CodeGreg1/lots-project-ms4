@@ -2,615 +2,732 @@
 {% load static %}
 
 {% block page_header %}
-<!-- <div class="container header-container">
-    <div class="row">
-        <div class="col">
-        </div>
-    </div>
-</div> -->
 {% endblock %}
 
 {% block content %}
 <div class="container h-100">
-        <div class="row h-100">
-                <div class="col col-6-md my-auto">
-                        <!--  -->
-                        <h1 class="col mt-3">Links</h1>
-                        <hr>
-                        <div>
-                                <p>Links below take you to external websites and are provided solely for reference.</p>
-                                <p>The inclusion of a link does not indicate a recommendation or endorsement of the
-                                        company or
-                                        organisation concerned and LOTS takes no responsibility for the site's content.
-                                </p>
-                                <p>We do not provide service information for these or any other bus
-                                        operators<b><br /></b></p>
-                                <div>
-                                <strong>Bus operators in our area:</strong>
-                                <div class="container-fluid">
-                                        <div class="row">
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3 ">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative pb-0 my-2 mx-2">
-                                                                <a href="http://www.abellio.co.uk/" target="_blank" class="card-link">
-                                                                <img class=" buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/abellio_logo.webp" alt=""><br>
-                                                                <h6 class="card-title text-center pb-0">Abellio</h6></a>
-                                                        </div>
-                                                </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.arrivalondon.com/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/arriva_red.webp" alt=""><br>
-                                                                <h6 class="card-title text-center pb-0">Arriva London</h6></a>
-                                                        </div>
-                                                </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="https://www.arrivabus.co.uk/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/arriva.webp" alt=""><br>
-                                                                <h6 class="card-title text-center pb-0">Arriva</h6></a>
-                                                        </div>
-                                                        </div>
-                        
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.cardinalbuses.co.uk/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/cardinal.webp" alt=""><br>
-                                                                <h6 class="card-title text-center pb-0">Cardinal</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.carouselbuses.co.uk/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/carousel.webp" alt=""><br>
-                                                                <h6 class="card-title text-center pb-0">Carousel</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.centrebus.info/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/centrebus.webp" alt="Centre Bus Logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Centrebus</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.compass-travel.co.uk/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/compass_travel_logo.webp" alt="Compass Bus Logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Compass Bus</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.courtneybuses.com/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/thames_valley.avif" alt="Thames Valley Logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Thames Valley</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.ensignbus.com/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/ensignbus.webp" alt="Ensignbus logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Ensignbus</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.falconcoachhire.com/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/falcon.webp" alt="Falcon Coaches logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Falcon Coaches</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="https://www.firstgroup.com/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/first_bus.webp" alt="First Bus Logo"><br>
-                                                                <h6 class="card-title text-center pb-0">First Bus</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.go-ahead-london.com/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/go_ahead.webp" alt="Go-Ahead London Logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Go-Ahead London</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.go-coach.co.uk/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/go.webp" alt="Go-Coach Hire Logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Go-Coach Hire</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.goldentours.com/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/goldentours.webp" alt="Golden Tours Logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Golden Tours</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.grantpalmer.com/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/grantp.webp" alt="Grant Palmer Logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Grant Palmer</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.hallmarkcoaches.com/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/hallmark.webp" alt="Hallmark Logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Hallmark</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.landmarkhire.com/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/landmark.webp" alt="Landmark Logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Landmark</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.thelondonbuscompany.co.uk/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/londonbuscompany.webp" alt="London Bus Company Logo"><br>
-                                                                <h6 class="card-title text-center pb-0">London Bus Company</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://london.city-tour.com/en/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/juliatravel.webp" alt="London City Tours logo"><br>
-                                                                <h6 class="card-title text-center pb-0">London City Tours</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.metrobus.co.uk/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/metro_bus.webp" alt="Metrobus logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Metrobus</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.metroline.co.uk/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/metroline.webp" alt="Metroline logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Metroline</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.mullanyscoaches.com/bus.html" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/mullanys.webp" alt="Mullany logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Mullany</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.nationalexpress.com/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/natexp.webp" alt="National Express logo"><br>
-                                                                <h6 class="card-title text-center pb-0">National Express</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.nibsbuses.com/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/nibs.webp" alt="NIBS logo"><br>
-                                                                <h6 class="card-title text-center pb-0">NIBS</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.nu-venture.co.uk/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/nu.webp" alt="Nu-Venture logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Nu-Venture</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="https://www.theoriginaltour.com/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/tootbus.webp" alt=">Original Tour Toot Logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Original Tour Toot</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.reading-buses.co.uk/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/reading_buses.webp" alt="Reading Buses logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Reading Buses</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.redrosetravel.com/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/red_rose.webp" alt="Red Rose logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Red Rose</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.redlinebuses.com/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/redline.webp" alt="Redline Buses logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Redline Buses</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.redroutebuses.co.uk/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/redroutebuses.webp" alt="Redroute logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Redroute</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.reptonscoaches.com/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/reptons.webp" alt="Reptons Coaches logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Reptons Coaches</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.richmonds-coaches.co.uk/ " target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/richmond.webp" alt="Richmond's Coaches logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Richmond's Coaches</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.safeguardcoaches.co.uk/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/safeguard_coaches.webp" alt="Safeguard Coaches logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Safeguard Coaches</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.seelondonbynight.com/ " target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/see_london.webp" alt="SeeLondon by Night logo"><br>
-                                                                <h6 class="card-title text-center pb-0">SeeLondon by Night</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="https://www.southdown.net/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/southdown.webp" alt="Southdown PSV logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Southdown PSV</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.stagecoachbus.com/ " target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/stagecoach.webp" alt="Stagecoach logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Stagecoach</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://startravelbuses.co.uk/ " target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/star_travel.webp" alt="StarTravel logo"><br>
-                                                                <h6 class="card-title text-center pb-0">StarTravel</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.stephensonsofessex.com/ " target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/stephensons.webp" alt="Stephenson's logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Stephenson's</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.sullivanbuses.co.uk/ " target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/sullivan.webp" alt="Sullivan logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Sullivan Buses</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.timebus.co.uk/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/timebus.webp" alt="Timebus logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Timebus</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.towertransit.co.uk/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/tower_transit.webp" alt="Tower Transit logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Tower Transit</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.trustybus.co.uk/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/trusty.webp" alt="Trustybus logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Trustybus</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.unobus.info/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/uno.webp" alt="Uno logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Uno</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/trusty.webp" alt="Trustybus logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Trustybus</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.valetravel.net/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/vale_travel.webp" alt="Vale Travel logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Vale Travel</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.whitebus.co.uk/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/white_bus.webp" alt="White Bus logo"><br>
-                                                                <h6 class="card-title text-center pb-0">White Bus</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                                <div class="col-6 col-lg-3 col-md-4 pt-3">
-                                                        <div class="card">
-                                                        <div class="card-body position-relative my-2 mx-2 pb-0">
-                                                                <a href="http://www.zands.co.uk/" target="_blank" class="card-link">
-                                                                <img class="buslogo position-absolute top-40 start-50 translate-middle"
-                                                                src="{{MEDIA_URL}}logos/ZandS.webp" alt="zands logo"><br>
-                                                                <h6 class="card-title text-center pb-0">Z &amp; S</h6></a>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                        </div>
+    <div class="row h-100">
+        <div class="col col-6-md my-auto">
+            <!--  -->
+            <h1 class="col mt-3">Links</h1>
+            <hr>
+            <div>
+                <p>Links below take you to external websites and are provided solely for reference.</p>
+                <p>The inclusion of a link does not indicate a recommendation or endorsement of the
+                    company or
+                    organisation concerned and LOTS takes no responsibility for the site's content.
+                </p>
+                <p>We do not provide service information for these or any other bus
+                    operators<b><br /></b></p>
+                <div>
+                    <strong>Bus operators in our area:</strong>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-6 col-lg-3 col-md-4 pt-3 ">
+                                <div class="card">
+                                    <div class="card-body position-relative pb-0 my-2 mx-2">
+                                        <a href="http://www.abellio.co.uk/" target="_blank" class="card-link">
+                                            <img class=" buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/abellio_logo.webp" alt=""><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Abellio</h6>
+                                        </a>
+                                    </div>
                                 </div>
-                                <hr />
-                                <div>
-                                        <strong>Miscellaneous:</strong>
-                                        <ul class="one-column">
-                                                <li><a href="http://www.ltsv.com/" target="_blank"> LT Service
-                                                                Vehicles</a><span> - Support
-                                                                vehicles for London's bus and rail operations</span>
-                                                </li>
-                                                <li><a href="http://omnibus-society.org/branches/london-historical-research-group/"
-                                                                target="_blank"> Omnibus Society</a><span> - (London
-                                                                Historical Research Group) Devoted
-                                                                to research into London operations</span></li>
-                                                <li><a href="http://red-rf.com/" target="_blank"> Red RF dot
-                                                                com</a><span> - Dedicated to London
-                                                                Transport's red single deckers</span></li>
-                                                <li><a href="https://timebus.co.uk/rlh/" target="_blank"> RLH
-                                                                Information Centre</a><span> -
-                                                                Timebus' RLH site</span></li>
-                                                <li><a href="http://www.routemaster.org.uk/" target="_blank">
-                                                                Routemaster Association </a><span>
-                                                                - For owners and operators of RM family buses</span>
-                                                </li>
-                                                <li><a href="http://www.blindsforbuses.com/" target="_blank">Blinds for
-                                                                Buses</a><span> -
-                                                                Destination blinds for preserved London buses</span>
-                                                </li>
-                                                <li><a href="http://www.buslistsontheweb.co.uk/" target="_blank">Bus
-                                                                Lists on the Web</a><span>
-                                                                - Database of UK bus details</span></li>
-                                                <li><a href="https://www.gov.uk/government/organisations/driver-and-vehicle-standards-agency"
-                                                                target="_blank">DVSA</a><span> - Government agency which
-                                                                replaced VOSA and DSA</span>
-                                                </li>
-                                                <li><a href="http://www.intalink.org.uk/"
-                                                                target="_blank">Intalink</a><span> - Hertfordshire
-                                                                County Council's public transport</span></li>
-                                                <li><a href="http://traintimes.org.uk/map/london-buses/#1"
-                                                                target="_blank">Live London Bus
-                                                                Map</a><span> - Map showing live bus locations</span>
-                                                </li>
-                                                <li><a href="http://www.londonbusmuseum.com/" target="_blank">London Bus
-                                                                Museum</a><span> -
-                                                                London Bus Preservation Trust </span></li>
-                                                <li><a href="http://www.londonbusroutes.net/" target="_blank">London Bus
-                                                                Routes</a><span> -
-                                                                Allocation details</span></li>
-                                                <li><a href="http://www.londonbuses.co.uk/" target="_blank">London Bus
-                                                                Routes
-                                                                1934-2018</a><span> - Bus route histories</span></li>
-                                                <li><a href="http://mjcarchive.www.idnet.com/" target="_blank">London
-                                                                Bus Timetable
-                                                                Graveyard</a><span> - Old London bus timetables and more
-                                                                fun</span></li>
-                                                <li><a href="http://www.ltmuseum.co.uk/" target="_blank">London
-                                                                Transport Museum</a><span> -
-                                                                TfL's museum</span></li>
-                                                <li><a href="http://www.londontravelwatch.org.uk/"
-                                                                target="_blank">London TravelWatch</a><span>
-                                                                - Statutory watchdog for London's transport consumers
-                                                        </span></li>
-                                                <li><a href="http://www.londonvf.co.uk/" target="_blank">London Vehicle
-                                                                Finder</a><span> -
-                                                                SPONSORED BY LOTS
-                                                                Locate buses on TfL routes</span></li>
-                                                <li><a href="http://www.londonvf.co.uk/" target="_blank">London Vehicle
-                                                                Finder</a><span> -
-                                                                Locate buses on TfL routes</span></li>
-                                                <li><a href="http://www.ludo.co.uk/" target="_blank">Ludo Press
-                                                        </a><span> - Printer of LOTS'
-                                                                publications</span></li>
-                                                <li><a href="http://www.classicbuses.co.uk/events.html"
-                                                                target="_blank">The Bus Events Diary
-                                                        </a><span> - British bus events, rallies and running days</span>
-                                                </li>
-                                                <li><a href="http://www.busmap.org/" target="_blank">The Greater London
-                                                                Bus Map</a><span> - Past
-                                                                and present London bus maps. </span></li>
-                                                <li><a href="http://www.tfl.gov.uk/" target="_blank">Transport for
-                                                                London</a><span> - TfL's
-                                                                official site</span></li>
-                                        </ul>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.arrivalondon.com/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/arriva_red.webp" alt=""><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Arriva London</h6>
+                                        </a>
+                                    </div>
                                 </div>
-                                <hr />
-                                <div>
-                                        <strong>Other Enthusiast Groups:</strong>
-                                        <ul class="">
-                                                <li><a href="http://www.essexbus.org.uk/" target="_blank">Essex Bus
-                                                                Enthusiasts Group</a><span>
-                                                                - Bus and coach operations in Essex</span></li>
-                                                <li><a href="http://www.mdekbusclub.org.uk/" target="_blank">M&D and
-                                                                East Kent Bus Club
-                                                        </a><span> - Bus enthusiasts in the Kent and East Sussex.
-                                                                area</span></li>
-                                                <li><a href="http://www.southdownenthusiastsclub.org.uk/"
-                                                                target="_blank">Southdown Enthusiasts
-                                                                Club </a><span> - Bus enthusiasts in the former
-                                                                Southdown area</span></li>
-                                                <li><a href="http://www.sussex-transport.co.uk/" target="_blank">Sussex
-                                                                Transport Enthusiasts
-                                                        </a><span> - Various transport sites in Sussex</span></li>
-                                        </ul>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="https://www.arrivabus.co.uk/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/arriva.webp" alt=""><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Arriva</h6>
+                                        </a>
+                                    </div>
                                 </div>
-                                <hr />
-                               
-                        </div>
-                </div>
 
-                <!--  -->
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.cardinalbuses.co.uk/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/cardinal.webp" alt=""><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Cardinal</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.carouselbuses.co.uk/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/carousel.webp" alt=""><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Carousel</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.centrebus.info/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/centrebus.webp" alt="Centre Bus Logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Centrebus</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.compass-travel.co.uk/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/compass_travel_logo.webp"
+                                                alt="Compass Bus Logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Compass Bus</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.courtneybuses.com/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/thames_valley.avif"
+                                                alt="Thames Valley Logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Thames Valley</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.ensignbus.com/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/ensignbus.webp" alt="Ensignbus logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Ensignbus</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.falconcoachhire.com/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/falcon.webp" alt="Falcon Coaches logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Falcon Coaches</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="https://www.firstgroup.com/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/first_bus.webp" alt="First Bus Logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                First Bus</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.go-ahead-london.com/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/go_ahead.webp" alt="Go-Ahead London Logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Go-Ahead London</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.go-coach.co.uk/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/go.webp" alt="Go-Coach Hire Logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Go-Coach Hire</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.goldentours.com/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/goldentours.webp" alt="Golden Tours Logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Golden Tours</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.grantpalmer.com/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/grantp.webp" alt="Grant Palmer Logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Grant Palmer</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.hallmarkcoaches.com/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/hallmark.webp" alt="Hallmark Logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Hallmark</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.landmarkhire.com/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/landmark.webp" alt="Landmark Logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Landmark</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.thelondonbuscompany.co.uk/" target="_blank"
+                                            class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/londonbuscompany.webp"
+                                                alt="London Bus Company Logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                London Bus Company</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://london.city-tour.com/en/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/juliatravel.webp"
+                                                alt="London City Tours logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                London City Tours</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.metrobus.co.uk/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/metro_bus.webp" alt="Metrobus logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Metrobus</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.metroline.co.uk/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/metroline.webp" alt="Metroline logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Metroline</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.mullanyscoaches.com/bus.html" target="_blank"
+                                            class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/mullanys.webp" alt="Mullany logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Mullany</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.nationalexpress.com/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/natexp.webp" alt="National Express logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                National Express</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.nibsbuses.com/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/nibs.webp" alt="NIBS logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                NIBS</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.nu-venture.co.uk/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/nu.webp" alt="Nu-Venture logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Nu-Venture</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="https://www.theoriginaltour.com/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/tootbus.webp"
+                                                alt=">Original Tour Toot Logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Original Tour Toot</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.reading-buses.co.uk/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/reading_buses.webp"
+                                                alt="Reading Buses logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Reading Buses</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.redrosetravel.com/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/red_rose.webp" alt="Red Rose logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Red Rose</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.redlinebuses.com/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/redline.webp" alt="Redline Buses logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Redline Buses</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.redroutebuses.co.uk/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/redroutebuses.webp" alt="Redroute logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Redroute</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.reptonscoaches.com/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/reptons.webp" alt="Reptons Coaches logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Reptons Coaches</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.richmonds-coaches.co.uk/ " target="_blank"
+                                            class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/richmond.webp"
+                                                alt="Richmond's Coaches logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Richmond's Coaches</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.safeguardcoaches.co.uk/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/safeguard_coaches.webp"
+                                                alt="Safeguard Coaches logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Safeguard Coaches</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.seelondonbynight.com/ " target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/see_london.webp"
+                                                alt="SeeLondon by Night logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                SeeLondon by Night</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="https://www.southdown.net/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/southdown.webp" alt="Southdown PSV logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Southdown PSV</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.stagecoachbus.com/ " target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/stagecoach.webp" alt="Stagecoach logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Stagecoach</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://startravelbuses.co.uk/ " target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/star_travel.webp" alt="StarTravel logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                StarTravel</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.stephensonsofessex.com/ " target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/stephensons.webp" alt="Stephenson's logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Stephenson's</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.sullivanbuses.co.uk/ " target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/sullivan.webp" alt="Sullivan logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Sullivan Buses</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.timebus.co.uk/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/timebus.webp" alt="Timebus logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Timebus</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.towertransit.co.uk/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/tower_transit.webp"
+                                                alt="Tower Transit logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Tower Transit</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.trustybus.co.uk/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/trusty.webp" alt="Trustybus logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Trustybus</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.unobus.info/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/uno.webp" alt="Uno logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Uno</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/trusty.webp" alt="Trustybus logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Trustybus</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.valetravel.net/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/vale_travel.webp" alt="Vale Travel logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Vale Travel</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.whitebus.co.uk/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/white_bus.webp" alt="White Bus logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                White Bus</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 pt-3">
+                                <div class="card">
+                                    <div class="card-body position-relative my-2 mx-2 pb-0">
+                                        <a href="http://www.zands.co.uk/" target="_blank" class="card-link">
+                                            <img class="buslogo position-absolute top-40 start-50 translate-middle"
+                                                src="{{MEDIA_URL}}logos/ZandS.webp" alt="zands logo"><br>
+                                            <h6 class="card-title text-center pb-0">
+                                                Z &amp; S</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div>
+                        <strong>Miscellaneous:</strong>
+                        <ul class="one-column">
+                            <li><a href="http://www.ltsv.com/" target="_blank"> LT Service
+                                    Vehicles</a><span> - Support
+                                    vehicles for London's bus and rail
+                                    operations</span>
+                            </li>
+                            <li><a href="http://omnibus-society.org/branches/london-historical-research-group/"
+                                    target="_blank"> Omnibus Society</a><span> -
+                                    (London
+                                    Historical Research Group) Devoted
+                                    to research into London operations</span></li>
+                            <li><a href="http://red-rf.com/" target="_blank"> Red RF dot
+                                    com</a><span> - Dedicated to London
+                                    Transport's red single deckers</span></li>
+                            <li><a href="https://timebus.co.uk/rlh/" target="_blank"> RLH
+                                    Information Centre</a><span> -
+                                    Timebus' RLH site</span></li>
+                            <li><a href="http://www.routemaster.org.uk/" target="_blank">
+                                    Routemaster Association </a><span>
+                                    - For owners and operators of RM family
+                                    buses</span>
+                            </li>
+                            <li><a href="http://www.blindsforbuses.com/" target="_blank">Blinds for
+                                    Buses</a><span> -
+                                    Destination blinds for preserved London
+                                    buses</span>
+                            </li>
+                            <li><a href="http://www.buslistsontheweb.co.uk/" target="_blank">Bus
+                                    Lists on the Web</a><span>
+                                    - Database of UK bus details</span></li>
+                            <li><a href="https://www.gov.uk/government/organisations/driver-and-vehicle-standards-agency"
+                                    target="_blank">DVSA</a><span> - Government
+                                    agency which
+                                    replaced VOSA and DSA</span>
+                            </li>
+                            <li><a href="http://www.intalink.org.uk/" target="_blank">Intalink</a><span> -
+                                    Hertfordshire
+                                    County Council's public transport</span></li>
+                            <li><a href="http://traintimes.org.uk/map/london-buses/#1" target="_blank">Live London Bus
+                                    Map</a><span> - Map showing live bus
+                                    locations</span>
+                            </li>
+                            <li><a href="http://www.londonbusmuseum.com/" target="_blank">London Bus
+                                    Museum</a><span> -
+                                    London Bus Preservation Trust </span></li>
+                            <li><a href="http://www.londonbusroutes.net/" target="_blank">London Bus
+                                    Routes</a><span> -
+                                    Allocation details</span></li>
+                            <li><a href="http://www.londonbuses.co.uk/" target="_blank">London Bus
+                                    Routes
+                                    1934-2018</a><span> - Bus route histories</span>
+                            </li>
+                            <li><a href="http://mjcarchive.www.idnet.com/" target="_blank">London
+                                    Bus Timetable
+                                    Graveyard</a><span> - Old London bus timetables
+                                    and more
+                                    fun</span></li>
+                            <li><a href="http://www.ltmuseum.co.uk/" target="_blank">London
+                                    Transport Museum</a><span> -
+                                    TfL's museum</span></li>
+                            <li><a href="http://www.londontravelwatch.org.uk/" target="_blank">London
+                                    TravelWatch</a><span>
+                                    - Statutory watchdog for London's transport
+                                    consumers
+                                </span></li>
+                            <li><a href="http://www.londonvf.co.uk/" target="_blank">London
+                                    Vehicle
+                                    Finder</a><span> -
+                                    SPONSORED BY LOTS
+                                    Locate buses on TfL routes</span></li>
+                            <li><a href="http://www.londonvf.co.uk/" target="_blank">London
+                                    Vehicle
+                                    Finder</a><span> -
+                                    Locate buses on TfL routes</span></li>
+                            <li><a href="http://www.ludo.co.uk/" target="_blank">Ludo Press
+                                </a><span> - Printer of LOTS'
+                                    publications</span></li>
+                            <li><a href="http://www.classicbuses.co.uk/events.html" target="_blank">The Bus Events Diary
+                                </a><span> - British bus events, rallies and running
+                                    days</span>
+                            </li>
+                            <li><a href="http://www.busmap.org/" target="_blank">The Greater
+                                    London
+                                    Bus Map</a><span> - Past
+                                    and present London bus maps. </span></li>
+                            <li><a href="http://www.tfl.gov.uk/" target="_blank">Transport
+                                    for
+                                    London</a><span> - TfL's
+                                    official site</span></li>
+                        </ul>
+                    </div>
+                    <hr />
+                    <div>
+                        <strong>Other Enthusiast Groups:</strong>
+                        <ul class="">
+                            <li><a href="http://www.essexbus.org.uk/" target="_blank">Essex
+                                    Bus
+                                    Enthusiasts Group</a><span>
+                                    - Bus and coach operations in Essex</span></li>
+                            <li><a href="http://www.mdekbusclub.org.uk/" target="_blank">M&D
+                                    and
+                                    East Kent Bus Club
+                                </a><span> - Bus enthusiasts in the Kent and East
+                                    Sussex.
+                                    area</span></li>
+                            <li><a href="http://www.southdownenthusiastsclub.org.uk/" target="_blank">Southdown
+                                    Enthusiasts
+                                    Club </a><span> - Bus enthusiasts in the former
+                                    Southdown area</span></li>
+                            <li><a href="http://www.sussex-transport.co.uk/" target="_blank">Sussex
+                                    Transport Enthusiasts
+                                </a><span> - Various transport sites in Sussex</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr />
+
+                </div>
+            </div>
+
+            <!--  -->
         </div>
-</div>
+    </div>
 </div>
 {% endblock %}
