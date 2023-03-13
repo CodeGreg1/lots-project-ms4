@@ -323,7 +323,7 @@ a {
   align-content: center;
 }
 
-#imgSales,
+.imgSales,
 .img-fluid.bagImg {
   height: 200px;
   width: auto;
