@@ -320,9 +320,9 @@ Below you will see the Lighthouse reports for the different pages of the website
 
 | Pages  |  Wave Report  |Alerts|
 |---|---|---|
-| Home  |[Report](https://wave.webaim.org/report#/https://lots-project.herokuapp.com/)|  |
+| Home  |[Report](https://wave.webaim.org/report#/https://lots-project.herokuapp.com/)|1 Contrast Error and   |
 | How To Join |[Report](https://wave.webaim.org/report#/https://lots-project.herokuapp.com/membership.html)|Skipped Heading and Tables  |
-| News  |[Report](https://wave.webaim.org/report#/https://lots-project.herokuapp.com/news/)||
+| News  |[Report](https://wave.webaim.org/report#/https://lots-project.herokuapp.com/news/)|No Errors or Alerts|
 | Publications |[Report](https://wave.webaim.org/report#/https://lots-project.herokuapp.com/publications.html)|Skipped headings and redundant links  |
 | Sales  |[Report](https://wave.webaim.org/report#/https://lots-project.herokuapp.com/products/)|  |
 | About Us  |[Report](https://wave.webaim.org/report#/https://lots-project.herokuapp.com/about_us.html)|  |
