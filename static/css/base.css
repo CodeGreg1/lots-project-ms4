@@ -334,9 +334,10 @@ a {
   border-radius: 0px !important;
 }
 
-#NoImgSales {
+.NoImgSales {
   height: 210px !important;
 }
+
 
 #prodDetImg {
   max-height: 330px;
