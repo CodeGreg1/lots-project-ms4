@@ -138,9 +138,11 @@ One of the main instructions from the London Omnibus Traction Society was that t
 -   Django officially supports Postgres, My SQL, Oracle and many more I used Postgres during this project. These schema tables below are a visual representation of the data is collected that will be in the database and during the project development it has evolved to the below.
 
 If you look at the schema you will see the fundamental differences in the colour schemes used to identify the different parts that are being used in this project.
-    -   Green - This identifies the authorised section of Django this also includes the News app for posting.
-    -   Blue - This is the Django admin and installed admin interface theme manager which was installed.
-    -   Orange - This is the main schema structure for products and checkouts with the use of the profiles as an entry point.
+-   Green - This identifies the authorised section of Django. So in order to update any of these parts of the database you would need either superuser level or a staff level login. The News App you can see is in this section as it is for posting news onto the website. Also the email confirmation is also included so that certain pages can be used by real people.
+-   Blue - This is the Django admin databases and logs. You can see I installed an admin Theme editor which is identified here as admin_interface_theme, the other database elements in blue are tmore temporary such as the django session data and the migrations.
+-   Orange - This is the main schema structure for products, checkouts and profiles. As you can see the profiles database interacts with the auth_user database in order to get email confirmation etc. The checkout is reliant on both profiles and products. 
+
+The Checkout, products, profile and news all have different models which have been created and any edits would need migrations.
 
 <img src="documentation/readme_images/lots-project-schema.png"> 
 
@@ -289,12 +291,12 @@ The website has been continually tested manually and also with defensive coding 
 I've also tested the site on several different devices with different types of screen sizes for responsiveness.     
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
-https://lots-project.herokuapp.com/news/
+**https://lots-project.herokuapp.com/**
 
 - [W3C Markup Validator](https://validator.w3.org/nu/?doc=https://lots-project.herokuapp.com/) - Results - No Errors or Warnings on any page.
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmilestone3-greg-goodrem.herokuapp.com%2Fstatic%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - Results No Errors
 
-    ### Lighthouse Reports 
+### Lighthouse Reports 
 
 Below you will see the Lighthouse reports for the different pages of the website. As you can see the average percentage is above 90%. Some of the main issues with the best practice section in all pages are related to Chrome Dev Tools however I  
 
@@ -331,6 +333,43 @@ Below you will see the Lighthouse reports for the different pages of the website
 
 There are no Errors however there are several alerts which I'm quite happy with regards to the layout. The alerts such as the skipped heading and redundant links if changed to satisfy the WAVE report would be counter to how I want the completed website to look.
 
+### Stripe
+
+Testing the functionality with stripe to receive payment I used the developer test environment within Stripe. This enabled me to correctly set up the webhooks without any confusion.
+
+Initially I did have some problems due to using an incorrect webhook with did communicate with Stripe however it wasn't able to complete the service of purchasing the items at checkout. 
+
+Once there was a successful purchase you would see the toast and an email confirming a successful purchase.
+
+Below you can see a real world confirmation of a purchase:
+
+**Stripe at Checkout**
+As you can see all fields are filled in fictiously and Stripe is currently still in test mode.
+
+<img src="documentation/readme_images/stripe-checkout.png">
+
+**Checkout Success with Toast**
+You can see the order has been processed at least on the system however the checkout app does only show the toasts in the top right when a 200 status is returned.
+
+<img src="documentation/readme_images/stripe-success-page.png">
+
+**Confirmations**
+So not only do you see the success toast appear you also will get an email with a confirmation. 
+
+<img src="documentation/readme_images/stripe-success-toast.png">
+<img src="documentation/readme_images/stripe-email-confirmation.png">
+
+**Events Log in Stripe**
+You can see in this picture a clear log of all the attempted purchases.
+
+<img src="documentation/readme_images/stripe-events-log.png">
+
+
+**Webhook Information in Stripe**
+You can see in this picture the log is of all the individual webhook events and if they were successful.
+
+<img src="documentation/readme_images/stripe-success-200.png">
+
 ### Unittest
 -   [Unittest](https://docs.python.org/3/library/unittest.html) - I've implimented a number of automatic tests to check whether the page loads and what kind of content is found. I've created 3 tests for each of the following Home, Login and registration pages:
     -   First is a test to check if the page exists with a 200 Status code response.
@@ -349,25 +388,31 @@ There are no Errors however there are several alerts which I'm quite happy with 
 |Contact Us|Email not sending|So I had created the function to send mail initially I had it set up to send via Javascript and to use EmailJS then I realised Django had a Send Mail function which I used. Initially this wasn't working due to the fact I had used the django documentation as a template and then ultimately made it my own. I had the message defined as the text area for the user to fill out now this conflicted with the messages set up earlier in the project for confirmations etc. This obviously caused a bit of a problem having muliple definitions. I didn't stop this error initially and tried to edit the html as I thought this could of been the problem as the page was loading. I went round in circles and then it was somewhat obvious what the error was it was corrected and the email works as expected.|
 |Stripe|Subscriptions|The stripe account was setup so that we could sell the products in the Sales shop. The subscription model that Stripe has built is very stringent on more of a rolling basis. What the society needed was a system that would start a renewal in 11 months time then it would renew that same day yearly. The reason for this was because they send out the previous months publication of The London Bus as the first subscription and so the renewal would be from the month before instead of the month of. The solution I found was to create a gocardless account that enabled the setup on a specific day of the year. So all the links currently in place are for specific dates.|
 |Checkout|400 Errors|I was getting a lot of 400 errors which also stopped the confirmation emails to being received. The main error was a simple typo that instead of 'STRIPE_SECRET_KEY' I wrote 'STRIPE_KEY_SECRET' on the webhook file and I didn't spot it straight away. I changed it and it all got sorted fairly quickly after that.|
-|News|Displying New Posts|I seemed to be having problems displaying new posts on the news page however I was able to change this with the use of the views.py file by adding this to context **'post': Post.objects.all(),**. After this displayed all posts I then changed the template HTML to show only with the STATUS 1 which is for Published.| 
+|News|Displaying New Posts|I seemed to be having problems displaying new posts on the news page however I was able to change this with the use of the views.py file by adding this to context **'post': Post.objects.all(),**. After this displayed all posts I then changed the template HTML to show only with the STATUS 1 which is for Published.| 
 
 Throughout the project I have had momentarilly problems or bugs have appeared however I was able to correct them very quickly and therefore have not been included above. 
 
 <br> 
 <a name='conclusion'/>
 
-## Conclusion 
+## Requirements Commentary
 
-#### I think in reflection over this project there are several things I think went well.
-#### The positives I believe I have done well is:
--   Create a basic functional SOAP notes application for a Sports Therapist.
--   I've made it look professional and clean.
--   It has several features for creating, updating and deleting client information.
+|Requirement|Commentary|
+|---|---|
+|Build a Django Full Stack Project|I feel I have built a very good Django project using a relational database which allows users to store and manipulate there own data such as their address etc.|
+|Multiple Apps|My Django Project has 6 seperate apps that work with one and other. <p>1. **Bag App**: This works with the products app to store the information about the products that are wanted to be purchased by the user.</p><p>2. **Checkout App:** Once the bag app has been used and the user chooses to purchase their items they then enter this app that links to Stripe for payment authorisation.</p><p>3. **Contact App**: The contact app is the contact page a very simple app that provides the ability for the user to contact the website owner.</p><p>4. **News App**: This app enables an authorised admin user to create posts and also these are rich text posts they are able to create and publish to the site. Their is an option to keep news in draft mode if required.</p><p>5. **Products App**: This app allows for items to be created and displayed on the website.</p><p>6. **Profiles App**: The profiles app will enable us to collect information about the user and also use this data with their orders.|
+|Data Modeling|You can see in the News/Products models that I've created something unique. Especially with using Tiny MCE the administrator that is adding a product can really create something special using the RichText format.|
+|User Authentication|The authenication mechanism used is very much a standard to any website nowadays with the ability to keep things in their shopping cart between uses of the website.|
+|Use of Stripe|Stripe is the payment method used within this project and can be used to pay for the products at checkout. The site administrator can then add this user to their own CRM to communicate with them about similar products in the future. I have shown some of the steps above about the confirmation that stripe is working sufficiently.|
+|Structure and Navigation|I have used Bootstrap and a little Javascript of my own display main navigation and a well structured layout of the site.|
+|Use of JavaScript|I have written several pieces of Javascript to help enhance the user's experience such as a drop down menu on every page.| 
+|Documentation|All information about this project I have thought to supply is in this README.md file.|
+|Version Control|You can see the different versions of the site by clicking above at the top on commits and you can see all the different commits I have made.|
+|Attribution|Any attributions I have outlined in the Credits section.|
+|Deployment| The Deploying of the final version of my code is found on heroku and the live link is at the top of the README.md document.|
 
-Areas I could improve is having a physical signature of the client so verify them when they start using their therapist. I think even though this currently works it has a lot to be added to it to make it a really effective app.
 
-
- 
+Security: Make sure to not include any passwords or secret keys in the project repository. Make sure to turn off the Django DEBUG mode, which could expose secrets. 
 
 # **LOTS Website Deployment &amp; Local Development**
 
