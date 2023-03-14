@@ -69,9 +69,9 @@ Members currently have to download and print an order form for publications and 
 <p>There are many magazines websites that deal with Buses and transportation these are some of them:<p>
     
 
-I wanted to explore a solution to the very heavily paperwork based industry when it comes to physiotherapy and sports therapy. I personally have experienced as client and also very much understand the role of the therapist as I have done a Sports Massage course.
+<!-- I wanted to explore a solution to the very heavily paperwork based industry when it comes to physiotherapy and sports therapy. I personally have experienced as client and also very much understand the role of the therapist as I have done a Sports Massage course.
 Reaching out to active therapists I found that a lot of therapists still use paper based systems to collect this information and also when relaying the aftercare information. Not all therapists give advice sheets with detailed examples of the exercises a person should do to help continue injury recovery after a treatment. 
-I found their are few treatment apps that include the client as the focus for outputting information to. A lot of the applications available such as Vagaro, Pabau, Noterro among others focus on the therapist souly being the user. 
+I found their are few treatment apps that include the client as the focus for outputting information to. A lot of the applications available such as Vagaro, Pabau, Noterro among others focus on the therapist souly being the user.  -->
 
 -   [Omnibus Magazine](https://www.omnibus-society.org/omnibus-magazine) - Subscriptions and back issues are available. I think the website looks clean and well informed however the route to getting a membership is very slow and could be less complicated.
 -   [Buses Magazine](https://www.keybuses.com/subscribe-now) - I think the website looks good and looks professional however it does only sell its own publications and not other organisations. It also has different periods of purchase such as quarterly, bi annually, annually and also back issues. 
@@ -94,21 +94,21 @@ One of the main instructions from the London Omnibus Traction Society was that t
 |   |   |
 |---|---|
 |<h2>New Index Page</h2>|<h2>Old Index Page</h2>|
-|<img src="documentation/website-screenshots/LOTS-new-index.png">|<img src="documentation/website-screenshots/LOTS-old-index.png">|
+|<img src="documentation/website-screenshots/lots-new-index.png">|<img src="documentation/website-screenshots/lots-old-index.png">|
 |<h2>New Membership Page</h2>|<h2>Old Membership Page</h2>|
-|<img src="documentation/website-screenshots/LOTS-new-membership.png">|<img src="documentation/website-screenshots/LOTS-old-membership.png">|
+|<img src="documentation/website-screenshots/lots-new-membership.png">|<img src="documentation/website-screenshots/lots-old-membership.png">|
 |<h2>New News Page</h2>|<h2>Old News Page</h2>|
-|<img src="documentation/website-screenshots/LOTS-new-news.png">|<img src="documentation/website-screenshots/LOTS-old-news.png">|
+|<img src="documentation/website-screenshots/lots-new-news.png">|<img src="documentation/website-screenshots/lots-old-news.png">|
 |<h2>New Publications Page</h2>|<h2>Old Publications Page</h2>|
-|<img src="documentation/website-screenshots/LOTS-new-publications.png">|<img src="documentation/website-screenshots/LOTS-old-publications.png">|
+|<img src="documentation/website-screenshots/lots-new-publications.png">|<img src="documentation/website-screenshots/lots-old-publications.png">|
 |<h2>New Sales Page</h2>|<h2>Old Sales Page</h2>|
-|<img src="documentation/website-screenshots/LOTS-new-sales.png">|<img src="documentation/website-screenshots/LOTS-old-sales.png">|
+|<img src="documentation/website-screenshots/lots-new-sales.png">|<img src="documentation/website-screenshots/lots-old-sales.png">|
 |<h2>New About Page</h2>|<h2>Old About Page</h2>|
-|<img src="documentation/website-screenshots/LOTS-new-about.png">|<img src="documentation/website-screenshots/LOTS-old-about.png">|
+|<img src="documentation/website-screenshots/lots-new-about.png">|<img src="documentation/website-screenshots/lots-old-about.png">|
 |<h2>New Links Page</h2>|<h2>Old Links Page</h2>|
-|<img src="documentation/website-screenshots/LOTS-new-links.png">|<img src="documentation/website-screenshots/LOTS-old-links.png">|
+|<img src="documentation/website-screenshots/lots-new-links.png">|<img src="documentation/website-screenshots/lots-old-links.png">|
 |<h2>New Contact Page</h2>|<h2>Old Info Page</h2>|
-|<img src="documentation/website-screenshots/LOTS-new-contact.png">|<img src="documentation/website-screenshots/LOTS-old-info.png">|
+|<img src="documentation/website-screenshots/lots-new-contact.png">|<img src="documentation/website-screenshots/lots-old-info.png">|
 
 ### Brand Logo
 -   The Brand logo was quite pixelated when I first started looking at the original website and decided it was worth tweaking it and creating a newer clearer logo. I used Canva to redesign it and give it a couple of different designs. I created a smaller logo for when the display is responsive and the width gets smaller to only show the basic smaller logo seen below.
@@ -129,7 +129,7 @@ One of the main instructions from the London Omnibus Traction Society was that t
 <img src="documentation/readme_images/lots-colours.png">
 
 ### Typography
--   To conform with the simplistic request from the society I have used the more common professional fonts such as Arial, Helvetica and sans-serif. These will help the older users of the website be able to clearly read the text and feel comfortable.
+-   To conform with the simplistic request from the society I have used the more common professional fonts such as Arial, Helvetica and sans-serif. These will help the older users of the website be able to clearly read the text and feel comfortable on the site.
 
 ### Imagery
 -   The pictures used on this website have all come from the London Omnibus Traction Society. The majority of the imagery is from the publications themselves however I have also used some pictures of single buses for the sliders.
@@ -150,32 +150,32 @@ If you look at the schema you will see the fundamental differences in the colour
 **Creating a product**
 
 As you can see below a test product is being created in the form that is accessible from the My Account tab if the user is an admin.
-<img src="documentation/CRUD/CRUD-product-created.png">
+<img src="documentation/crud/crud-product-created.png">
 
 **Reviewing a product**
 
 As you can see below the test product was successful and also enables reviewing of this product. This however can be reviewed by anyone using the site as long as the product has more than 1 in the quantity_remaining field.
-<img src="documentation/CRUD/CRUD-product-created2.png">
+<img src="documentation/crud/crud-product-created-2.png">
 
 **Reviewing a product continued**
 
 To clarify the product can now be seen on the sales page amoungst all other products.
-<img src="documentation/CRUD/CRUD-product-review.png">
+<img src="documentation/crud/crud-product-review.png">
 
 **Updating a product**
 
 As an administrator to the site all they would need to do is press edit and it brings them do an edit product page a very similar page as before. Clear difference is that there is the current product information displaying and Update Product button for confirmation.
-<img src="documentation/CRUD/CRUD-product-updating.png">
+<img src="documentation/crud/crud-product-updating.png">
 
 **Updated product**
 
 You can see the product has been updated compaired to the original product that was created.
-<img src="documentation/CRUD/CRUD-product-updated.png">
+<img src="documentation/crud/crud-product-updated.png">
 
 **Deleting a product**
 
 Deleting a product is pretty straight forward you just have to click the delete button and it will confirm deletion of product afterwards.
-<img src="documentation/CRUD/CRUD-product-deleted.png">
+<img src="documentation/crud/crud-product-deleted.png">
 
 <br>
 <a name='wireframes'/>
@@ -204,14 +204,14 @@ The Wireframes were created using Wondershare Mockitt App this was for the basic
 
 |Pages|Mobile View|Tablet View|Desktop View|
 |---|---|---|---|
-|Index|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/Index-Mobile.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/Index-Tablet.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/Index-Desktop.png)|
-|How To Join|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/How-To-Join-Mobile.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/How-To-Join-Tablet.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/How-To-Join-Desktop.png)|
-|Publications|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/Publications-Mobile.png)|  [View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/Publications-Tablet.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/Publications-Desktop.png)|
-|Sales|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/Sales-Mobile.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/Sales-Tablet.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/Sales-Desktop.png)|
-|News|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/News-Mobile.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/News-Tablet.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/News-Desktop.png)|
-|About Us|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/About-Us-Mobile.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/About-Us-Tablet.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/About-Us-Desktop.png)|
-|Links|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/Links-Mobile.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/Links-Tablet.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/Links-Desktop.png)|
-|Contact|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/Contact-Us-Mobile.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/Contact-Us-Tablet.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/Contact-Us-Desktop.png)|
+|Index|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/index-mobile.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/index-tablet.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/index-desktop.png)|
+|How To Join|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/how-to-join-mobile.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/how-to-join-tablet.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/how-to-join-desktop.png)|
+|Publications|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/publications-mobile.png)|  [View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/publications-tablet.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/publications-desktop.png)|
+|Sales|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/sales-mobile.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/sales-tablet.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/sales-desktop.png)|
+|News|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/news-mobile.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/news-tablet.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/news-desktop.png)|
+|About Us|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/about-us-mobile.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/about-us-tablet.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/about-us-desktop.png)|
+|Links|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/links-mobile.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/links-tablet.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/links-desktop.png)|
+|Contact|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/contact-us-mobile.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/contact-us-tablet.png)|[View](https://github.com/CodeGreg1/lots-project-ms4/blob/main/documentation/wireframes/contact-us-desktop.png)|
 
 ### Wireframes side by side
 
@@ -258,13 +258,10 @@ The Wireframes were created using Wondershare Mockitt App this was for the basic
 <a name='frameworks'/>
 
 ## Frameworks, Libraries & Programs Used 
-
-- [Google Fonts:](https://fonts.google.com/) Google fonts were used to import the 'Roboto' font into the style.css file which is used on all pages throughout the project.
 - [Font Awesome:](https://fontawesome.com/) Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
 - [Git:](https://git-scm.com/) Git was used for version control by utilizing the terminal to commit to Git and Push to GitHub.
 - [GitHub:](https://github.com/): GitHub is used to store the projects code after being pushed from Git.
-- [Wondershare Mockitt:]() Wondershare was used to create the wireframes during the design process.
-- [EmailJS:](https://www.emailjs.com/) I used EmailJS to enable free emailing to the therapist on the home page.
+- [Wondershare Mockitt:](https://mockittapp.wondershare.com/) Wondershare was used to create the wireframes during the design process.
 - [GoCardless:](https://gocardless.com/) This is the preferred payment platform that LOTS wanted to use for their annual subscriptions. 
 - [PostgreSQL:](https://www.postgresql.org/) This is the Relational database I used to store the information on forms collected throughout the site.
 - [Bootstrap:](https://getbootstrap.com/docs/5.3/getting-started/introduction/) Bootstrap is the front end tool kit I decided to use.
@@ -279,7 +276,8 @@ The Wireframes were created using Wondershare Mockitt App this was for the basic
 
 ## Credits
 
-I got some assistance from the Code institute tutors when I was using PostgreSQL but was really helpful in helping me identify the why as to thing. Also my mentor was able to help me identify a few changes in regards to MongoDB which helped me create a cascade style delete function even though this is a non-relational database.
+I got some assistance from the Code institute tutors when I was approaching problems with the errors I had created. They were really helpful at helping me identify the why the errors were occuring.
+The deployment text and instructions came from the Code Institute tutorial for this section and is mostly unchanged from that point of view since this expressed the exact points I needed to make.
 
 <br>
 <a name='testing'/>
@@ -320,18 +318,18 @@ Below you will see the Lighthouse reports for the different pages of the website
 
 | Pages  |  Wave Report  |Alerts|
 |---|---|---|
-| Home  |[Report](https://wave.webaim.org/report#/https://lots-project.herokuapp.com/)|1 Contrast Error and   |
-| How To Join |[Report](https://wave.webaim.org/report#/https://lots-project.herokuapp.com/membership.html)|Skipped Heading and Tables  |
+| Home  |[Report](https://wave.webaim.org/report#/https://lots-project.herokuapp.com/)| Alerts: Redundant link and First Level Heading  |
+| How To Join |[Report](https://wave.webaim.org/report#/https://lots-project.herokuapp.com/membership.html)|Alerts: Skipped Heading and Tables  |
 | News  |[Report](https://wave.webaim.org/report#/https://lots-project.herokuapp.com/news/)|No Errors or Alerts|
-| Publications |[Report](https://wave.webaim.org/report#/https://lots-project.herokuapp.com/publications.html)|Skipped headings and redundant links  |
-| Sales  |[Report](https://wave.webaim.org/report#/https://lots-project.herokuapp.com/products/)|  |
-| About Us  |[Report](https://wave.webaim.org/report#/https://lots-project.herokuapp.com/about_us.html)|  |
-| Links  |[Report](https://wave.webaim.org/report#/https://lots-project.herokuapp.com/links.html)|Skipped Heading|
-| Contact Us  |[Report](https://wave.webaim.org/report#/https://lots-project.herokuapp.com/contact/)|  |
-| Register  |[Report](https://wave.webaim.org/report#/https://lots-project.herokuapp.com/accounts/register)| redundant link  |
-| Login |[Report](https://wave.webaim.org/report#/https://lots-project.herokuapp.com/accounts/login)|  |
+| Publications |[Report](https://wave.webaim.org/report#/https://lots-project.herokuapp.com/publications.html)|Alerts: Skipped headings and redundant links  |
+| Sales  |[Report](https://wave.webaim.org/report#/https://lots-project.herokuapp.com/products/)|No Errors or Alerts  |
+| About Us  |[Report](https://wave.webaim.org/report#/https://lots-project.herokuapp.com/about_us.html)|No Errors or Alerts  |
+| Links  |[Report](https://wave.webaim.org/report#/https://lots-project.herokuapp.com/links.html)|Alerts: Skipped Heading|
+| Contact Us  |[Report](https://wave.webaim.org/report#/https://lots-project.herokuapp.com/contact/)|No Errors or Alerts  |
+| Register  |[Report](https://wave.webaim.org/report#/https://lots-project.herokuapp.com/accounts/signup)|Alerts: Redundant link  |
+| Login |[Report](https://wave.webaim.org/report#/https://lots-project.herokuapp.com/accounts/login)|No Errors or Alerts  |
 
-Current the only Error is the Broken ARIA reference which actually works on the website, it is most likely that the Error is showing as it is in the mobile header that it appears however WAVE tests on the desktop. The other alerts such as the skipped heading and redundant links if changed to satisfy the WAVE report would be counter to how I want to complete the website.
+There are no Errors however there are several alerts which I'm quite happy with regards to the layout. The alerts such as the skipped heading and redundant links if changed to satisfy the WAVE report would be counter to how I want the completed website to look.
 
 ### Unittest
 -   [Unittest](https://docs.python.org/3/library/unittest.html) - I've implimented a number of automatic tests to check whether the page loads and what kind of content is found. I've created 3 tests for each of the following Home, Login and registration pages:
@@ -344,23 +342,17 @@ Current the only Error is the Broken ARIA reference which actually works on the 
 <br>
 <a name='errors'/>
 
-## Errors and Bugs 
+## Bugs, Problems and Solutions 
+|Pages|Bug|Solution|
+|---|---|---|
+|Product Detail|Quantity Decrease|It appeared as though this was not working so I changed the function and realised I hadn't written the code well enough as it was automatically disabling the decrement function when this was only suppose to happen when the number got to 1. I edited the entire function and now works|
+|Contact Us|Email not sending|So I had created the function to send mail initially I had it set up to send via Javascript and to use EmailJS then I realised Django had a Send Mail function which I used. Initially this wasn't working due to the fact I had used the django documentation as a template and then ultimately made it my own. I had the message defined as the text area for the user to fill out now this conflicted with the messages set up earlier in the project for confirmations etc. This obviously caused a bit of a problem having muliple definitions. I didn't stop this error initially and tried to edit the html as I thought this could of been the problem as the page was loading. I went round in circles and then it was somewhat obvious what the error was it was corrected and the email works as expected.|
+|Stripe|Subscriptions|The stripe account was setup so that we could sell the products in the Sales shop. The subscription model that Stripe has built is very stringent on more of a rolling basis. What the society needed was a system that would start a renewal in 11 months time then it would renew that same day yearly. The reason for this was because they send out the previous months publication of The London Bus as the first subscription and so the renewal would be from the month before instead of the month of. The solution I found was to create a gocardless account that enabled the setup on a specific day of the year. So all the links currently in place are for specific dates.|
+|Checkout|400 Errors|I was getting a lot of 400 errors which also stopped the confirmation emails to being received. The main error was a simple typo that instead of 'STRIPE_SECRET_KEY' I wrote 'STRIPE_KEY_SECRET' on the webhook file and I didn't spot it straight away. I changed it and it all got sorted fairly quickly after that.|
+|News|Displying New Posts|I seemed to be having problems displaying new posts on the news page however I was able to change this with the use of the views.py file by adding this to context **'post': Post.objects.all(),**. After this displayed all posts I then changed the template HTML to show only with the STATUS 1 which is for Published.| 
 
-<!-- -   The biggest problem I had initially was when I had both postgres and mongodb working at the same time I opted for the use of MongoDB as this was in many ways an easier database to use and also meant that I could have as much or little data entered as required. See the SOAP notes that will be written by the therapist allows for different parts to be filled out and others to be left blank. Also the ongoing future development of the application means that I would be able to keep adding to this database a lot easier than in postgreSQL.  
+Throughout the project I have had momentarilly problems or bugs have appeared however I was able to correct them very quickly and therefore have not been included above. 
 
--   The following were bugs that I found and corrected:
-    - Deleting Clients & their treatments - So on two fronts I couldn't find a suitable Python Message box that was able to be triggered if you selected to delete something. Ordinarilly the delete button would go straight ahead and delete without any security measures. So I failed to find a python message box I could easily code so I implemented a modal that triggered with the press of the delete button to open up to an option of cancel or delete which solved both problems.
-
-    -   A second issue was the displaying the map correctly without triggering issues with HTML errors. I realised that I had to use the iframe and specifically state in the style inline on the html to get the result I required.
-
-    -   Another issue I had was using the booking system having it input the names and emails automatically into the form to schedule an appointment to the Calendly site I had linked. I overcame this by using Jinja in the HTML document. 
-
-    -   I had trouble at one point displaying the old searched field when the page refreshed. This was quite an easy fix which was made in the routes file.
-
-    -   I played with having a full width banner picture on the home page however due to the base.html file made all the pages content sit within a container which gave the banner a smaller size. I was able to change the size of the banner so it fit 100% across visually but this then had a knock on effect of the page beng able to be scrolled horizontally. I could of edited the base and then included a container on each page however I'm happy with the result that I have.
-
-    -   After initially starting with postgres I found that I had to go through and remove all the links and programming related to it which a few times made a few problems happen. Working through this was the best option because otherwise it would have been wasted code and could of led to other faults further down the line even though it wasn't directly being used.    
--->
 <br> 
 <a name='conclusion'/>
 
@@ -376,14 +368,15 @@ Areas I could improve is having a physical signature of the client so verify the
 
 
  
- # **LOTS Website Deployment &amp; Local Development**
+
+# **LOTS Website Deployment &amp; Local Development**
 
 <h2 align="center"><img src="documentation/readme_images/all-devices-black.png"></h2>
 <br/>
 
 **[Link to the Deployed Site](https://lots-project.herokuapp.com/)**
 
----
+
 ## **Deployment Steps**
 
 LOTS website is deployed on Heroku and uses AWS3 for staticfiles cloud storage.

@@ -14,6 +14,7 @@
         <!-- Blog Entries Column -->
         <div class="col-md-10 offset-md-1 mt-1">
             {% for news in post %}
+            {% if news.status == 1 %}
             <div class="row ">
                 <div class="card mb-4" style="height: fit-content">
                     <div class="card-body">
@@ -24,6 +25,7 @@
                     </div>
                 </div>
             </div>
+            {% endif %}
             {% endfor %}
         </div>
     </div>

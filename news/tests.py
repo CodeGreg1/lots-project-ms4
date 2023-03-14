@@ -1,11 +1,11 @@
 from django.test import TestCase
 from django import setup
+from .models import Post
 import os
+
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_project.settings')
 setup()
 
-
-from .models import Post
 
 class PostTestCase(TestCase):
     def test_queryset_exists(self):

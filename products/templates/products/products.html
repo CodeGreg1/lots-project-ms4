@@ -28,8 +28,8 @@
                         </a>
                         {% else %}
                         <a href="{% url 'product_detail' product.id %}" class="text-black text-center ">
-                            <img class="card-img-top img-fluid NoImgSales" width="auto" src="{{ MEDIA_URL }}noimage.webp"
-                                alt="{{ product.name }}">{{ product.name }}
+                            <img class="card-img-top img-fluid NoImgSales" width="auto" src="{{ MEDIA_URL }}no-image.webp"
+                                alt="Picture of {{ product.name }}">{{ product.name }}
                         </a>
                         {% endif %}
                         <!-- <a href="{% url 'product_detail' product.id %}">
