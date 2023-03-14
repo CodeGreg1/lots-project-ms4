@@ -242,10 +242,18 @@ The Wireframes were created using Wondershare Mockitt App this was for the basic
 <a name='future'/>
 
 ## Future Features 
-<!-- -   I think adding more advice sheets with video links and instructionals would be a great feature. Currently I have used Knee, Back, Shoulder and a general one advice sheet so I would actually break this down further to more specific injuries as well. For example if someone comes in with a shoulder injury the recovery advice can vary from being very general to being very specific e.g. If someone has an anterior injury of the deltoid or a injury to the rotator cuff the advice would be very different but are both in the shoulder area.
--   Having a time limited access to content could really help injury recovery and help promote a client to come back if at the end of that period if they haven't seen any progress. After all the client could try and do the recovery advice at another time and potentially make it worse because its a different type of injury. It could also be a completely different type of medical issue.
--   The ability to see the time of the next appointment with the therapist in the app itself and also the ability to pay for services in the app. This would be good for client tracking.
--   I could also include a communications system within the app so the therapist can respond and help injury recovery more thoroughly going forward. -->
+
+-   Creating a membership system backend that can display all the different membership types that the society has both online and offline in their current status. 
+
+-   Product reviews would be a great addition to the products especially since there are always newer publications, this could increase the site traffic.
+
+-   Also the ability to comment on the news posts would be a great way of communication between users and the society.
+
+-   Having the ability to login with social accounts.
+
+-   Wish list functionality could also be a good addition for users to add and remove products from their own wish list.
+
+
 <br>
 <a name='tech'/>
 
@@ -401,7 +409,8 @@ Throughout the project I have had momentarilly problems or bugs have appeared ho
 |---|---|
 |Build a Django Full Stack Project|I feel I have built a very good Django project using a relational database which allows users to store and manipulate there own data such as their address etc.|
 |Multiple Apps|My Django Project has 6 seperate apps that work with one and other. <p>1. **Bag App**: This works with the products app to store the information about the products that are wanted to be purchased by the user.</p><p>2. **Checkout App:** Once the bag app has been used and the user chooses to purchase their items they then enter this app that links to Stripe for payment authorisation.</p><p>3. **Contact App**: The contact app is the contact page a very simple app that provides the ability for the user to contact the website owner.</p><p>4. **News App**: This app enables an authorised admin user to create posts and also these are rich text posts they are able to create and publish to the site. Their is an option to keep news in draft mode if required.</p><p>5. **Products App**: This app allows for items to be created and displayed on the website.</p><p>6. **Profiles App**: The profiles app will enable us to collect information about the user and also use this data with their orders.|
-|Data Modeling|You can see in the News/Products models that I've created something unique. Especially with using Tiny MCE the administrator that is adding a product can really create something special using the RichText format.|
+|Data Modeling|You can see in the News/Products/Contact models that I've created something unique. Especially with using Tiny MCE the administrator that adds a product or post has the ability to be much more creative using the RichText format. Also in the Contact App it delivers both a success toast as well as a message on page for the user.|
+|User Interaction| This is relevant across the website especially having the user being able to interact with a contact form creating their on messages for us to get in contact. Also the profile App enabling them to create and modify their personal details.|
 |User Authentication|The authenication mechanism used is very much a standard to any website nowadays with the ability to keep things in their shopping cart between uses of the website.|
 |Use of Stripe|Stripe is the payment method used within this project and can be used to pay for the products at checkout. The site administrator can then add this user to their own CRM to communicate with them about similar products in the future. I have shown some of the steps above about the confirmation that stripe is working sufficiently.|
 |Structure and Navigation|I have used Bootstrap and a little Javascript of my own display main navigation and a well structured layout of the site.|
