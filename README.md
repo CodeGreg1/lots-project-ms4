@@ -19,24 +19,43 @@ Members currently have to download and print an order form for publications and 
 
 ## Contents
 
--   ### [User Experience](#ux)
--   ### [Research](#research)
--   ### [Design Process](#design)
--   ### [Wireframe Outlines](#wireframes)
--   ### [Responsive Design Features](#responsive)
--   ### [Future Features](#future)
--   ### [Technologies used](#tech)
--   ### [Frameworks, Libraries & Programs Used](#frameworks)
--   ### [Credits](#credit)
--   ### [Testing & links](#testing)
--   ### [Errors and Bugs](#errors)
--   ### [Personal Conclusion](#conclusion)
+* [User Experience](#user-experience)
+    * [User profile](#user-profile)
+    * [User profile impact](#user-profile-impact)
+    * [Initial User Experience](#initial-user-experience)
+* [Research](#research)
+    * [Research Analysis](#research-analysis)
+* [Design Process](#design-process)
+    * [Wireframes](#wireframes)
+    * [Brand Logo](#brand-logo)
+    * [Colour Scheme](#colour-scheme)
+    * [Typography](#typography)
+    * [Imagery](#imagery)
+    * [New and Old](#new-and-old)
+    * [Database](#database)
+* [Responsive Design Features](#responsive-design-features)
+    * [CRUD Functionality](#crud-functionality)
+* [Future Features](#future-features)
+* [Technologies used](#technologies-used)
+* [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
+* [Credits](#credits)
+* [Testing](#testing)
+    * [W3C Markup Validator](#w3c-markup-validator)
+    * [W3C CSS Validator](#w3c-css-validator)
+    * [Lighthouse Reports](#lighthouse-reports)
+    * [Wave Reports](#wave-reports)
+    * [Stripe Testing](#stripe-testing)
+    * [Django Automated Testing](#django-automated-testing)
+* [Bugs, Problems and Solutions](#bugs-problems-and-solutions)
+* [Requirements Commentary](#requirements-commentary)
+* [Deployment](#deployment)
 
-***
-<a name='ux'/>
+<br>
+
 
 ## User Experience (UX and UI) 
-    
+
+
 ### User Profile
 
 - The profile of the users of this website are generally as follows:
@@ -46,11 +65,14 @@ Members currently have to download and print an order form for publications and 
     -   Often well-informed and knowledgeable about the technical and historical aspects of buses and public transportation.
     -   More likely to be found in urban areas where public transportation is a significant part of daily life.
 
+<br>
+
 ### User Profile Impact
     
 -   The world is changing rapidly and the automation of lots of public & private services means they are more likely to start using the website over the old way of sending a cheque.
 -   The option of the old way can be included into the new website however with the intention to phase the old way of working out. 
 
+<br>
 
 ### Initial User Experience
 - The user is initially looking for 1 of 3 things:
@@ -62,125 +84,29 @@ Members currently have to download and print an order form for publications and 
 -   The current members will have a new means of purchasing their other publications. 
 
 <br>
-<a name='research'/>
 
 ##  Research  
 <p>The original website has been established for over 20 years and the brand itself has been around for almost 60 years.</p>
 <p>There are many magazines websites that deal with Buses and transportation these are some of them:<p>
-    
-
-<!-- I wanted to explore a solution to the very heavily paperwork based industry when it comes to physiotherapy and sports therapy. I personally have experienced as client and also very much understand the role of the therapist as I have done a Sports Massage course.
-Reaching out to active therapists I found that a lot of therapists still use paper based systems to collect this information and also when relaying the aftercare information. Not all therapists give advice sheets with detailed examples of the exercises a person should do to help continue injury recovery after a treatment. 
-I found their are few treatment apps that include the client as the focus for outputting information to. A lot of the applications available such as Vagaro, Pabau, Noterro among others focus on the therapist souly being the user.  -->
 
 -   [Omnibus Magazine](https://www.omnibus-society.org/omnibus-magazine) - Subscriptions and back issues are available. I think the website looks clean and well informed however the route to getting a membership is very slow and could be less complicated.
 -   [Buses Magazine](https://www.keybuses.com/subscribe-now) - I think the website looks good and looks professional however it does only sell its own publications and not other organisations. It also has different periods of purchase such as quarterly, bi annually, annually and also back issues. 
 -   [Classic Bus](https://www.classicbusmag.co.uk/subscriptions) - This website offers sales of annual memberships, back issues and also digital versions. Website looks good and easy to navigate. It is a very basic site. 
 -   [On The Buses](https://shop.kelsey.co.uk/on-the-buses-magazine) - Magazines sold through Kelsey media with back issues monthly, annual or digital subscriptions.
 -   [Buses Worldwide](https://www.magzter.com/GB/CPUK-Print-Publishing-Ltd/Buses-Worldwide/Automotive/) - This magazine is sold through Magzter with back issues, annual and monthly subscriptions with a digital subscription optional.
--   [LOTS](http://www.lots.org.uk) - Established for 59 years the society has been producing over a thousand different magazines through the variety of publications they provide. The website as it stands is very old with very little interactivity. It is still being updated on the news page fairly regularly with various information applicable to their audiance.
-
--   ### Research Analysis
-    It appears there are a lot of different Bus magazines out there for which they all cover various areas of interest to the Bus enthiuiastsf. It clearly is a very niche sector and from talking also to some of the people running LOTS it is clear that they are suffering from the society membership dwindling. The hope of getting more memberships from the website being setup is vital for future developments with the ever decreasing use of cheques which a lot of members are still using. The reoccuring direct debit will help them to not lose customers in the long run as the DD will continue until it is cancelled without the need to send out renewal letters and spending money on letters etc.
-    
-    <br>
-    <a name='#design'></a>
-## Design 
--   I opted to use Bootstrap for this website as it is a well known framework and you can create professional looking websites. The style I was able to come up with based on talks with the members of the society. I'll cover all aspects of design in the sections below however please have a look at the new pages compaired to the original website that was created back in 2002.
-
-One of the main instructions from the London Omnibus Traction Society was that they wanted to keep the website quite simple and not to change too much. The main reasoning was that the members that would use the site don't like too much change.
-
-
-|   |   |
-|---|---|
-|<h2>New Index Page</h2>|<h2>Old Index Page</h2>|
-|<img src="documentation/website-screenshots/lots-new-index.png">|<img src="documentation/website-screenshots/lots-old-index.png">|
-|<h2>New Membership Page</h2>|<h2>Old Membership Page</h2>|
-|<img src="documentation/website-screenshots/lots-new-membership.png">|<img src="documentation/website-screenshots/lots-old-membership.png">|
-|<h2>New News Page</h2>|<h2>Old News Page</h2>|
-|<img src="documentation/website-screenshots/lots-new-news.png">|<img src="documentation/website-screenshots/lots-old-news.png">|
-|<h2>New Publications Page</h2>|<h2>Old Publications Page</h2>|
-|<img src="documentation/website-screenshots/lots-new-publications.png">|<img src="documentation/website-screenshots/lots-old-publications.png">|
-|<h2>New Sales Page</h2>|<h2>Old Sales Page</h2>|
-|<img src="documentation/website-screenshots/lots-new-sales.png">|<img src="documentation/website-screenshots/lots-old-sales.png">|
-|<h2>New About Page</h2>|<h2>Old About Page</h2>|
-|<img src="documentation/website-screenshots/lots-new-about.png">|<img src="documentation/website-screenshots/lots-old-about.png">|
-|<h2>New Links Page</h2>|<h2>Old Links Page</h2>|
-|<img src="documentation/website-screenshots/lots-new-links.png">|<img src="documentation/website-screenshots/lots-old-links.png">|
-|<h2>New Contact Page</h2>|<h2>Old Info Page</h2>|
-|<img src="documentation/website-screenshots/lots-new-contact.png">|<img src="documentation/website-screenshots/lots-old-info.png">|
-
-### Brand Logo
--   The Brand logo was quite pixelated when I first started looking at the original website and decided it was worth tweaking it and creating a newer clearer logo. I used Canva to redesign it and give it a couple of different designs. I created a smaller logo for when the display is responsive and the width gets smaller to only show the basic smaller logo seen below.
-
-|   |   |
-|---|---|
-|New Redesigned Logo|Old Logo|
-|<img src="documentation/readme_images/lots-logo-new.webp">|<img src="documentation/readme_images/lots-logo-old.gif">|
-|New Redesigned Alternative Red Logo|   |
-|<img src="documentation/readme_images/logo-red.webp">|   |
-|Smaller Redesigned Logo|   |
-|<img src="documentation/readme_images/logo-sm.webp">|   |
-
-
-### Colour Scheme
--   The main colours used all associated with the original website and the different logos that the society has used in the past. I tried to incorporate these into the menus and the drop down menus and throughout the site.
-
-<img src="documentation/readme_images/lots-colours.png">
-
-### Typography
--   To conform with the simplistic request from the society I have used the more common professional fonts such as Arial, Helvetica and sans-serif. These will help the older users of the website be able to clearly read the text and feel comfortable on the site.
-
-### Imagery
--   The pictures used on this website have all come from the London Omnibus Traction Society. The majority of the imagery is from the publications themselves however I have also used some pictures of single buses for the sliders.
-
-### Database
--   Django officially supports Postgres, My SQL, Oracle and many more I used Postgres during this project. These schema tables below are a visual representation of the data is collected that will be in the database and during the project development it has evolved to the below.
-
-If you look at the schema you will see the fundamental differences in the colour schemes used to identify the different parts that are being used in this project.
--   Green - This identifies the authorised section of Django. So in order to update any of these parts of the database you would need either superuser level or a staff level login. The News App you can see is in this section as it is for posting news onto the website. Also the email confirmation is also included so that certain pages can be used by real people.
--   Blue - This is the Django admin databases and logs. You can see I installed an admin Theme editor which is identified here as admin_interface_theme, the other database elements in blue are tmore temporary such as the django session data and the migrations.
--   Orange - This is the main schema structure for products, checkouts and profiles. As you can see the profiles database interacts with the auth_user database in order to get email confirmation etc. The checkout is reliant on both profiles and products. 
-
-The Checkout, products, profile and news all have different models which have been created and any edits would need migrations.
-
-<img src="documentation/readme_images/lots-project-schema.png"> 
-
-### CRUD Functionality
--   The society will need to add and remove products as and when they need to so please see below some screenshots of the different stages of CRUD in the products section.
-
-**Creating a product**
-
-As you can see below a test product is being created in the form that is accessible from the My Account tab if the user is an admin.
-<img src="documentation/crud/crud-product-created.png">
-
-**Reviewing a product**
-
-As you can see below the test product was successful and also enables reviewing of this product. This however can be reviewed by anyone using the site as long as the product has more than 1 in the quantity_remaining field.
-<img src="documentation/crud/crud-product-created-2.png">
-
-**Reviewing a product continued**
-
-To clarify the product can now be seen on the sales page amoungst all other products.
-<img src="documentation/crud/crud-product-review.png">
-
-**Updating a product**
-
-As an administrator to the site all they would need to do is press edit and it brings them do an edit product page a very similar page as before. Clear difference is that there is the current product information displaying and Update Product button for confirmation.
-<img src="documentation/crud/crud-product-updating.png">
-
-**Updated product**
-
-You can see the product has been updated compaired to the original product that was created.
-<img src="documentation/crud/crud-product-updated.png">
-
-**Deleting a product**
-
-Deleting a product is pretty straight forward you just have to click the delete button and it will confirm deletion of product afterwards.
-<img src="documentation/crud/crud-product-deleted.png">
+-   [LOTS](http://www.lots.org.uk) - Established for 59 years the society has been producing over a thousand different magazines through the variety of publications they provide. The website as it stands is very old with very little interactivity. It is still being updated on the news page fairly regularly with various information applicable to their audience.
 
 <br>
-<a name='wireframes'/>
+
+-   ### Research Analysis
+    It appears there are a lot of different Bus magazines out there for which they all cover various areas of interest to the Bus enthusiasts. It clearly is a very niche sector and from talking also to some of the people running LOTS it is clear that they are suffering from the society membership dwindling. The hope of getting more memberships from the website being setup is vital for future developments with the ever decreasing use of cheques which a lot of members are still using. The reoccurring direct debit will help them to not lose customers in the long run as the DD will continue until it is cancelled without the need to send out renewal letters and spending money on letters etc.
+    
+<br>
+
+## Design 
+-   I opted to use Bootstrap for this website as it is a well known framework and you can create professional looking websites. The style I was able to come up with based on talks with the members of the society. I'll cover all aspects of design in the sections below.
+
+<br>
 
 ## Wireframes 
 
@@ -227,9 +153,78 @@ The Wireframes were created using Wondershare Mockitt App this was for the basic
 <img src="documentation/wireframes/wire-links.png"> 
 <img src="documentation/wireframes/wire-contact.png">
 
+<br>
+
+### Brand Logo
+-   The Brand logo was quite pixelated when I first started looking at the original website and decided it was worth tweaking it and creating a newer clearer logo. I used Canva to redesign it and give it a couple of different designs. I created a smaller logo for when the display is responsive and the width gets smaller to only show the basic smaller logo seen below.
+
+|   |   |
+|---|---|
+|New Redesigned Logo|Old Logo|
+|<img src="documentation/readme_images/lots-logo-new.webp">|<img src="documentation/readme_images/lots-logo-old.gif">|
+|New Redesigned Alternative Red Logo|   |
+|<img src="documentation/readme_images/logo-red.webp">|   |
+|Smaller Redesigned Logo|   |
+|<img src="documentation/readme_images/logo-sm.webp">|   |
 
 <br>
-<a name='responsive'/>
+
+### Colour Scheme
+-   The main colours used all associated with the original website and the different logos that the society has used in the past. I tried to incorporate these into the menus and the drop down menus and throughout the site.
+
+<img src="documentation/readme_images/lots-colours.png">
+
+<br>
+
+### Typography
+-   To conform with the simplistic request from the society I have used the more common professional fonts such as Arial, Helvetica and sans-serif. These will help the older users of the website be able to clearly read the text and feel comfortable on the site.
+
+<br>
+
+### Imagery
+-   The pictures used on this website have all come from the London Omnibus Traction Society. The majority of the imagery is from the publications themselves however I have also used some pictures of single buses for the sliders.
+
+<br>
+
+### New & Old
+Below are screenshots of the original website that was created back in 2002 and the new and improved website.
+
+One of the main instructions from the London Omnibus Traction Society was that they wanted to keep the website quite simple and not to change too much. The main reasoning was that the members that would use the site don't like too much change.
+
+|   |   |
+|---|---|
+|<h2>New Index Page</h2>|<h2>Old Index Page</h2>|
+|<img src="documentation/website-screenshots/lots-new-index.png">|<img src="documentation/website-screenshots/lots-old-index.png">|
+|<h2>New Membership Page</h2>|<h2>Old Membership Page</h2>|
+|<img src="documentation/website-screenshots/lots-new-membership.png">|<img src="documentation/website-screenshots/lots-old-membership.png">|
+|<h2>New News Page</h2>|<h2>Old News Page</h2>|
+|<img src="documentation/website-screenshots/lots-new-news.png">|<img src="documentation/website-screenshots/lots-old-news.png">|
+|<h2>New Publications Page</h2>|<h2>Old Publications Page</h2>|
+|<img src="documentation/website-screenshots/lots-new-publications.png">|<img src="documentation/website-screenshots/lots-old-publications.png">|
+|<h2>New Sales Page</h2>|<h2>Old Sales Page</h2>|
+|<img src="documentation/website-screenshots/lots-new-sales.png">|<img src="documentation/website-screenshots/lots-old-sales.png">|
+|<h2>New About Page</h2>|<h2>Old About Page</h2>|
+|<img src="documentation/website-screenshots/lots-new-about.png">|<img src="documentation/website-screenshots/lots-old-about.png">|
+|<h2>New Links Page</h2>|<h2>Old Links Page</h2>|
+|<img src="documentation/website-screenshots/lots-new-links.png">|<img src="documentation/website-screenshots/lots-old-links.png">|
+|<h2>New Contact Page</h2>|<h2>Old Info Page</h2>|
+|<img src="documentation/website-screenshots/lots-new-contact.png">|<img src="documentation/website-screenshots/lots-old-info.png">|
+
+<br>
+
+### Database
+-   Django officially supports Postgres, My SQL, Oracle and many more I used Postgres during this project. These schema tables below are a visual representation of the data is collected that will be in the database and during the project development it has evolved to the below.
+
+If you look at the schema you will see the fundamental differences in the colour schemes used to identify the different parts that are being used in this project.
+-   Green - This identifies the authorised section of Django. So in order to update any of these parts of the database you would need either superuser level or a staff level login. The News App you can see is in this section as it is for posting news onto the website. Also the email confirmation is also included so that certain pages can be used by real people.
+-   Blue - This is the Django admin databases and logs. You can see I installed an admin Theme editor which is identified here as admin_interface_theme, the other database elements in blue are more temporary such as the django session data and the migrations.
+-   Orange - This is the main schema structure for products, checkouts and profiles. As you can see the profiles database interacts with the auth_user database in order to get email confirmation etc. The checkout is reliant on both profiles and products. 
+
+The Checkout, products, profile and news all have different models which have been created and any edits would need migrations.
+
+<img src="documentation/readme_images/lots-project-schema.png"> 
+
+<br>
 
 ## Responsive Design Features 
 -   The website has been made to be responsive on varying sized screens.
@@ -238,8 +233,43 @@ The Wireframes were created using Wondershare Mockitt App this was for the basic
 -   It is also for current members to visit and see the news updates.
 -   Another usage is for the society to be able to administrate the posts and products as and when they please.
 
+
+<br>
+
+### CRUD Functionality
+-   The society will need to add and remove products as and when they need to so please see below some screenshots of the different stages of CRUD in the products section.
+
+**Creating a product**
+
+As you can see below a test product is being created in the form that is accessible from the My Account tab if the user is an admin.
+<img src="documentation/crud/crud-product-created.png">
+
+**Reviewing a product**
+
+As you can see below the test product was successful and also enables reviewing of this product. This however can be reviewed by anyone using the site as long as the product has more than 1 in the quantity_remaining field.
+<img src="documentation/crud/crud-product-created-2.png">
+
+**Reviewing a product continued**
+
+To clarify the product can now be seen on the sales page amongst all other products.
+<img src="documentation/crud/crud-product-review.png">
+
+**Updating a product**
+
+As an administrator to the site all they would need to do is press edit and it brings them do an edit product page a very similar page as before. Clear difference is that there is the current product information displaying and Update Product button for confirmation.
+<img src="documentation/crud/crud-product-updating.png">
+
+**Updated product**
+
+You can see the product has been updated compared to the original product that was created.
+<img src="documentation/crud/crud-product-updated.png">
+
+**Deleting a product**
+
+Deleting a product is pretty straight forward you just have to click the delete button and it will confirm deletion of product afterwards.
+<img src="documentation/crud/crud-product-deleted.png">
+
 <br>        
-<a name='future'/>
 
 ## Future Features 
 
@@ -255,7 +285,6 @@ The Wireframes were created using Wondershare Mockitt App this was for the basic
 
 
 <br>
-<a name='tech'/>
 
 ## Technologies used 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
@@ -265,11 +294,10 @@ The Wireframes were created using Wondershare Mockitt App this was for the basic
 -   [Django](https://docs.djangoproject.com/en/4.1/)
 
 <br>
-<a name='frameworks'/>
 
 ## Frameworks, Libraries & Programs Used 
 - [Font Awesome:](https://fontawesome.com/) Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
-- [Git:](https://git-scm.com/) Git was used for version control by utilizing the terminal to commit to Git and Push to GitHub.
+- [Git:](https://git-scm.com/) Git was used for version control by utilising the terminal to commit to Git and Push to GitHub.
 - [GitHub:](https://github.com/): GitHub is used to store the projects code after being pushed from Git.
 - [Wondershare Mockitt:](https://mockittapp.wondershare.com/) Wondershare was used to create the wireframes during the design process.
 - [GoCardless:](https://gocardless.com/) This is the preferred payment platform that LOTS wanted to use for their annual subscriptions. 
@@ -281,16 +309,14 @@ The Wireframes were created using Wondershare Mockitt App this was for the basic
 - [ElephantSQL:](https://www.elephantsql.com/) This was used for the integration of the postgresql database that Django used.
 - [AmazonAWS:](https://aws.amazon.com/s3/) The S3 bucket was used to store all media and static files here.
 
-    <br>
-    <a name='credit'/>
+<br>
 
 ## Credits
 
-I got some assistance from the Code institute tutors when I was approaching problems with the errors I had created. They were really helpful at helping me identify the why the errors were occuring.
+I got some assistance from the Code institute tutors when I was approaching problems with the errors I had created. They were really helpful at helping me identify the why the errors were occurring.
 The deployment text and instructions came from the Code Institute tutorial for this section and is mostly unchanged from that point of view since this expressed the exact points I needed to make.
 
 <br>
-<a name='testing'/>
 
 ## Testing 
 
@@ -298,11 +324,21 @@ The website has been continually tested manually and also with defensive coding 
 
 I've also tested the site on several different devices with different types of screen sizes for responsiveness.     
 
+<br>
+
+### W3C Markup Validator
+
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 **https://lots-project.herokuapp.com/**
 
 - [W3C Markup Validator](https://validator.w3.org/nu/?doc=https://lots-project.herokuapp.com/) - Results - No Errors or Warnings on any page.
+
+<br>
+
+### W3C Markup Validator
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmilestone3-greg-goodrem.herokuapp.com%2Fstatic%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - Results No Errors
+
+<br>
 
 ### Lighthouse Reports 
 
@@ -324,6 +360,8 @@ Below you will see the Lighthouse reports for the different pages of the website
 | Profile |<img src="documentation/lighthouse-images/lighthouse-profile.png">|
 | Add Product |<img src="documentation/lighthouse-images/lighthouse-add-product.png">|
 
+<br>
+
 ### Wave Reports 
 
 | Pages  |  Wave Report  |Alerts|
@@ -341,7 +379,9 @@ Below you will see the Lighthouse reports for the different pages of the website
 
 There are no Errors however there are several alerts which I'm quite happy with regards to the layout. The alerts such as the skipped heading and redundant links if changed to satisfy the WAVE report would be counter to how I want the completed website to look.
 
-### Stripe
+<br>
+
+### Stripe Testing
 
 Testing the functionality with stripe to receive payment I used the developer test environment within Stripe. This enabled me to correctly set up the webhooks without any confusion.
 
@@ -378,40 +418,38 @@ You can see in this picture the log is of all the individual webhook events and 
 
 <img src="documentation/readme_images/stripe-success-200.png">
 
-### Unittest
--   [Unittest](https://docs.python.org/3/library/unittest.html) - I've implimented a number of automatic tests to check whether the page loads and what kind of content is found. I've created 3 tests for each of the following Home, Login and registration pages:
-    -   First is a test to check if the page exists with a 200 Status code response.
-    -   Second is a test to check the type of data that exists and in this case it should be HTML.
-    -   Third is a test to check specific string data on the page exists e.g. Log In, Username etc.
-    
-    These tests are carried out and all pass how they should.
+<br>
+
+### Django Automated Testing
+
+The built in automated testing module for Django is quite extensive, when I used the coverage report and you can see that the overall average is 83%. Some apps did better than others but did highlight that some areas needed more testing. 100% would obviously be the target however I will learn more to be able to achieve this in the future. 
+
+<img src="documentation/coverage-report.png">
 
 <br>
-<a name='errors'/>
 
 ## Bugs, Problems and Solutions 
 |Pages|Bug|Solution|
 |---|---|---|
 |Product Detail|Quantity Decrease|It appeared as though this was not working so I changed the function and realised I hadn't written the code well enough as it was automatically disabling the decrement function when this was only suppose to happen when the number got to 1. I edited the entire function and now works|
-|Contact Us|Email not sending|So I had created the function to send mail initially I had it set up to send via Javascript and to use EmailJS then I realised Django had a Send Mail function which I used. Initially this wasn't working due to the fact I had used the django documentation as a template and then ultimately made it my own. I had the message defined as the text area for the user to fill out now this conflicted with the messages set up earlier in the project for confirmations etc. This obviously caused a bit of a problem having muliple definitions. I didn't stop this error initially and tried to edit the html as I thought this could of been the problem as the page was loading. I went round in circles and then it was somewhat obvious what the error was it was corrected and the email works as expected.|
+|Contact Us|Email not sending|So I had created the function to send mail initially I had it set up to send via Javascript and to use EmailJS then I realised Django had a Send Mail function which I used. Initially this wasn't working due to the fact I had used the django documentation as a template and then ultimately made it my own. I had the message defined as the text area for the user to fill out now this conflicted with the messages set up earlier in the project for confirmations etc. This obviously caused a bit of a problem having multiple definitions. I didn't stop this error initially and tried to edit the html as I thought this could of been the problem as the page was loading. I went round in circles and then it was somewhat obvious what the error was it was corrected and the email works as expected.|
 |Stripe|Subscriptions|The stripe account was setup so that we could sell the products in the Sales shop. The subscription model that Stripe has built is very stringent on more of a rolling basis. What the society needed was a system that would start a renewal in 11 months time then it would renew that same day yearly. The reason for this was because they send out the previous months publication of The London Bus as the first subscription and so the renewal would be from the month before instead of the month of. The solution I found was to create a gocardless account that enabled the setup on a specific day of the year. So all the links currently in place are for specific dates.|
 |Checkout|400 Errors|I was getting a lot of 400 errors which also stopped the confirmation emails to being received. The main error was a simple typo that instead of 'STRIPE_SECRET_KEY' I wrote 'STRIPE_KEY_SECRET' on the webhook file and I didn't spot it straight away. I changed it and it all got sorted fairly quickly after that.|
 |News|Displaying New Posts|I seemed to be having problems displaying new posts on the news page however I was able to change this with the use of the views.py file by adding this to context **'post': Post.objects.all(),**. After this displayed all posts I then changed the template HTML to show only with the STATUS 1 which is for Published.| 
 
-Throughout the project I have had momentarilly problems or bugs have appeared however I was able to correct them very quickly and therefore have not been included above. 
+Throughout the project I have had momentarily problems or bugs have appeared however I was able to correct them very quickly and therefore have not been included above. 
 
 <br> 
-<a name='conclusion'/>
 
 ## Requirements Commentary
 
 |Requirement|Commentary|
 |---|---|
 |Build a Django Full Stack Project|I feel I have built a very good Django project using a relational database which allows users to store and manipulate there own data such as their address etc.|
-|Multiple Apps|My Django Project has 6 seperate apps that work with one and other. <p>1. **Bag App**: This works with the products app to store the information about the products that are wanted to be purchased by the user.</p><p>2. **Checkout App:** Once the bag app has been used and the user chooses to purchase their items they then enter this app that links to Stripe for payment authorisation.</p><p>3. **Contact App**: The contact app is the contact page a very simple app that provides the ability for the user to contact the website owner.</p><p>4. **News App**: This app enables an authorised admin user to create posts and also these are rich text posts they are able to create and publish to the site. Their is an option to keep news in draft mode if required.</p><p>5. **Products App**: This app allows for items to be created and displayed on the website.</p><p>6. **Profiles App**: The profiles app will enable us to collect information about the user and also use this data with their orders.|
-|Data Modeling|You can see in the News/Products/Contact models that I've created something unique. Especially with using Tiny MCE the administrator that adds a product or post has the ability to be much more creative using the RichText format. Also in the Contact App it delivers both a success toast as well as a message on page for the user.|
+|Multiple Apps|My Django Project has 6 separate apps that work with one and other. <p>1. **Bag App**: This works with the products app to store the information about the products that are wanted to be purchased by the user.</p><p>2. **Checkout App:** Once the bag app has been used and the user chooses to purchase their items they then enter this app that links to Stripe for payment authorisation.</p><p>3. **Contact App**: The contact app is the contact page a very simple app that provides the ability for the user to contact the website owner.</p><p>4. **News App**: This app enables an authorised admin user to create posts and also these are rich text posts they are able to create and publish to the site. Their is an option to keep news in draft mode if required.</p><p>5. **Products App**: This app allows for items to be created and displayed on the website.</p><p>6. **Profiles App**: The profiles app will enable us to collect information about the user and also use this data with their orders.|
+|Data Modelling|You can see in the News/Products/Contact models that I've created something unique. Especially with using Tiny MCE the administrator that adds a product or post has the ability to be much more creative using the RichText format. Also in the Contact App it delivers both a success toast as well as a message on page for the user.|
 |User Interaction| This is relevant across the website especially having the user being able to interact with a contact form creating their on messages for us to get in contact. Also the profile App enabling them to create and modify their personal details.|
-|User Authentication|The authenication mechanism used is very much a standard to any website nowadays with the ability to keep things in their shopping cart between uses of the website.|
+|User Authentication|The authentication mechanism used is very much a standard to any website nowadays with the ability to keep things in their shopping cart between uses of the website.|
 |Use of Stripe|Stripe is the payment method used within this project and can be used to pay for the products at checkout. The site administrator can then add this user to their own CRM to communicate with them about similar products in the future. I have shown some of the steps above about the confirmation that stripe is working sufficiently.|
 |Structure and Navigation|I have used Bootstrap and a little Javascript of my own display main navigation and a well structured layout of the site.|
 |Use of JavaScript|I have written several pieces of Javascript to help enhance the user's experience such as a drop down menu on every page.| 
@@ -423,6 +461,8 @@ Throughout the project I have had momentarilly problems or bugs have appeared ho
 
 Security: Make sure to not include any passwords or secret keys in the project repository. Make sure to turn off the Django DEBUG mode, which could expose secrets. 
 
+
+<br>
 # **LOTS Website Deployment &amp; Local Development**
 
 <h2 align="center"><img src="documentation/readme_images/all-devices-black.png"></h2>
@@ -442,7 +482,7 @@ In the terminal, enter the command ```pip3 freeze > requirements.txt ``` and a f
 The sqlite3 database that came with Django and which we have been using is only available for use in development. We need to create a new database that is suitable for production.
 * Go to [ElephantSQL.com](https://www.elephantsql.com/) and click *Get a managed database today* button.
 * Select Tiny Turtle by pressing the *Try now for FREE* button
-* Select *Log in with GitHub* and authorize ElephantSQL with your selected GitHub account
+* Select *Log in with GitHub* and authorise ElephantSQL with your selected GitHub account
 * In the create new team form:
     * Add a *team name* (your own name is fine)
     * Read and agree to the Terms of Service
@@ -623,7 +663,7 @@ Save the **settings.py** file, add, commit and then git push these changes.
 * Complete the verification and once you confirm all the required information, your account will be created.
 **Create a bucket**
 * Once your signed in to your account, find S3 using the search bar, select and navigate to S3 to create a new bucket which will be used to store your static and media files
-* Click the *create bucket* button and on the General configuration section, add the name of your bucket. It is a good idea to name the bucket the same as your project to keep your buckets organized and clear
+* Click the *create bucket* button and on the General configuration section, add the name of your bucket. It is a good idea to name the bucket the same as your project to keep your buckets organised and clear
 * Select the region closest to you
 * On the Object Ownership section, select *ACLs enabled* and a bucket ownership dropdown will appear, select *Bucket owner preferred*
 * On the Block Public Access settings for this bucket section, uncheck *Block all public access*, check the *I acknowledge that the current settings might result in this bucket and the objects within becoming public* checkbox to make the bucket public and click *create bucket*
@@ -749,12 +789,12 @@ class MediaStorage(S3Boto3Storage):
 ---
 ## How to Fork the repository
 To create a copy of the repository on your account and change it without affection the original project, click the *Fork* button on GitHub:
-* On the LOTS website repository, click the *Fork* butoon on the top right side of the page.
+* On the LOTS website repository, click the *Fork* button on the top right side of the page.
 * A forked version of LOTS website will be available as one of your repositories on GitHub
 
 ---
 ## How to Clone the repository
-* On the LOTS website repositoru page, click the *<> Code* button (left of the green *GitPod* button)
+* On the LOTS website repository page, click the *<> Code* button (left of the green *GitPod* button)
 * Choose from *HTTPS, SSH and GitHub CLI* (I recommend *HTTPS*) and *copy the link* given
 * On your IDE, open *Git Bash*
 * Enter the command `git clone` followed by the copied link

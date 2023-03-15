@@ -164,16 +164,14 @@
     <footer>
         <!-- Footer Menu -->
         <nav class="text-light text-center">
-            <a class="text-light" href="index.html">Home |</a>
-            <a class="text-light" href="about.html">About Lots |</a>
-            <a class="text-light" href="membership.html">Membership |</a>
-            <a class="text-light" href="information-service.html">Information Service |</a>
-            <a class="text-light" href="publications.html">Publications |</a>
-            <a class="text-light" href="sales.html">Sales |</a>
-            <a class="text-light" href="news.html">News |</a>
-            <a class="text-light" href="events.html">Events |</a>
-            <a class="text-light" href="links.html">Links |</a>
-            <a class="text-light" href="contact-us.html">Contact Us |</a>
+            <a class="text-light" href="{% url 'home' %}">Home |</a>
+            <a class="text-light" href="{% url 'about_us' %}">About Lots |</a>
+            <a class="text-light" href="{% url 'membership' %}">Membership |</a>
+            <a class="text-light" href="{% url 'publications' %}">Publications |</a>
+            <a class="text-light" href="{% url 'products' %}">Sales |</a>
+            <a class="text-light" href="{% url 'news' %}">News |</a>
+            <a class="text-light" href="{% url 'links' %}">Links |</a>
+            <a class="text-light" href="{% url 'contact' %}">Contact Us |</a>
         </nav>
         <div>
             <p class="text-light text-center">
