@@ -95,3 +95,16 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+def search_products(request):
+    """ Search Catalogue """
+    if request.method == "POST":
+        searched = request.POST['searched']
+        searched_products = Product.objects.filter(name__icontains=searched)
+        search_count = Product.objects.filter(name__icontains=searched).count()
+        return render(request, 'products/products_search.html', {
+            'searched': searched, 'searched_products': searched_products,
+            'search_count': search_count, })
+    else:
+        return render(request, 'products/products_search.html', {})

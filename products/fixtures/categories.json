@@ -12,15 +12,95 @@
         "model": "products.category",
         "fields": {
             "name": "capital_publications",
-            "friendly_name": "Capital Transport Publications"
+            "friendly_name": "Capital Transport"
         }
     },
     {
         "pk": 3,
         "model": "products.category",
         "fields": {
-            "name": "other_publications",
-            "friendly_name": "Other Publications"
+            "name": "adam_gordon",
+            "friendly_name": "Adam Gordon"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.category",
+        "fields": {
+            "name": "bowden_publishing",
+            "friendly_name": "Bowden Publishing"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.category",
+        "fields": {
+            "name": "essex_bus_enthuiasts",
+            "friendly_name": "Essex Bus Enthusiasts Group"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.category",
+        "fields": {
+            "name": "fawndoon_books",
+            "friendly_name": "Fawndoon Books"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.category",
+        "fields": {
+            "name": "heathfield_publishing",
+            "friendly_name": "Heathfield Publishing"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.category",
+        "fields": {
+            "name": "lhrg",
+            "friendly_name": "LHRG"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.category",
+        "fields": {
+            "name": "mike_harris_maps",
+            "friendly_name": "Mike Harris Maps"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.category",
+        "fields": {
+            "name": "pen_and_sword",
+            "friendly_name": "Pen & Sword"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.category",
+        "fields": {
+            "name": "southdown_enthusiasts",
+            "friendly_name": "Southdown Enthusiasts Group"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.category",
+        "fields": {
+            "name": "unknown",
+            "friendly_name": "Unknown"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.category",
+        "fields": {
+            "name": "woolybus",
+            "friendly_name": "Woolybus"
         }
     }
 ]

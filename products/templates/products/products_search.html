@@ -15,6 +15,11 @@
         <button class="btn btn-outline-black rounded-0 mt-3" type="submit">Search</button>
 
     </form>
+    {% if searched %}
+    <h2 class="text-center mt-3">You searched for: {{ searched }} - {{ search_count }} found.</h2>
+    {% else %}
+    <h2 class="text-center mt-3">You forgot you write anything in the search.</h2>
+    {% endif %}
     <hr>
     {% for message in messages %}
     <div class="text-danger">{{message}}</div>
@@ -23,32 +28,33 @@
         <div class="product-container col-10 offset-1">
             <div class="row mt-1 mb-2"></div>
             <div class="row">
-                {% for product in products %}
-                {% if product.quantity_remaining > 0 %}
+                {% for searched_product in searched_products %}
+                
+                {% if searched_product.quantity_remaining > 0 %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                     <div class="card h-100 border">
-                        {% if product.image %}
-                        <a href="{% url 'product_detail' product.id %}" class="text-black text-center">
-                            <img class="card-img-top img-fluid imgSales" src="{{ product.image.url }}"
-                                alt="Picture of {{ product.name }}">{{ product.name }}
+                        {% if searched_product.image %}
+                        <a href="{% url 'product_detail' searched_product.id %}" class="text-black text-center">
+                            <img class="card-img-top img-fluid imgSales" src="{{ searched_product.image.url }}"
+                                alt="Picture of {{ searched_product.name }}">{{ searched_product.name }}
                         </a>
                         {% else %}
-                        <a href="{% url 'product_detail' product.id %}" class="text-black text-center ">
+                        <a href="{% url 'product_detail' searched_product.id %}" class="text-black text-center ">
                             <img class="card-img-top img-fluid NoImgSales" width="auto" src="{{ MEDIA_URL }}no-image.webp"
-                                alt="Picture of {{ product.name }}">{{ product.name }}
+                                alt="Picture of {{ searched_product.name }}">{{ searched_product.name }}
                         </a>
                         {% endif %}
 
                         {% if request.user.is_superuser %}
                         <small class="ml-3">
-                            <a href="{% url 'edit_product' product.id %}">Edit</a> |
-                            <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                            <a href="{% url 'edit_product' searched_product.id %}">Edit</a> |
+                            <a class="text-danger" href="{% url 'delete_product' searched_product.id %}">Delete</a>
                         </small>
                         {% endif %}
                         <div class="card-footer text-bg-danger pt-0 border-0 text-center">
                             <div class="row ">
                                 <div class="col">
-                                    <p class="lead mb-0 text-left font-weight-bold ">£{{ product.price }}</p>
+                                    <p class="lead mb-0 text-left font-weight-bold ">£{{ searched_product.price }}</p>
                                 </div>
                             </div>
                         </div>
